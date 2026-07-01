@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "Informational Cyclic Cosmology"
+message: "Please cite the manuscript using the metadata in preferred-citation."
+authors:
+  - family-names: "Pustejovsky"
+    given-names: "Patrik William"
+version: "0.1"
+date-released: "2026-07-01"
+license: "CC-BY-4.0"
+url: "https://github.com/patrikwilliam/informational-cyclic-cosmology"
+abstract: >-
+  A speculative hypothesis treating the universe as a globally conserved
+  informational structure, where cosmological cycles correspond to changes in
+  local information readability rather than temporal restarts.
+preferred-citation:
+  type: unpublished
+  title: >-
+    Informational Cyclic Cosmology: A Conceptual Hypothesis of Relational Time,
+    Algebra-Relative Entropy, and Aeonic Readability
+  authors:
+    - family-names: "Pustejovsky"
+      given-names: "Patrik William"
+  year: 2026
+  status: preprint
+  url: "https://github.com/patrikwilliam/informational-cyclic-cosmology"
