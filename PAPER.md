@@ -4,9 +4,13 @@
 
 Author: Patrik William Pustejovsky
 
-Version: 0.1
+ORCID: [0009-0008-1618-6619](https://orcid.org/0009-0008-1618-6619)
 
-Release date: 1 July 2026
+DOI (all versions): [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416)
+
+Version: 0.1.1
+
+Release date: 2 July 2026
 
 Status: speculative hypothesis, not a completed physical theory.
 
@@ -234,10 +238,10 @@ $$
 Here:
 
 ```text
-rho      = assumed pure, stationary global state
-A_old    = abstract local observable algebra in the old aeon
-A_new    = abstract local observable algebra in the new aeon
-iota     = embedding of an abstract local algebra into the global algebra
+rho = assumed pure, stationary global state
+A_old = abstract local observable algebra in the old aeon
+A_new = abstract local observable algebra in the new aeon
+iota = embedding of an abstract local algebra into the global algebra
 ```
 
 The proposal concerns the embedding and factorization of local observables
@@ -264,12 +268,12 @@ $$
 Here:
 
 ```text
-A_n^infty     = candidate algebra assigned to the end-boundary regime of aeon n
-A_{n+1}^0     = candidate algebra assigned to the start-boundary regime of aeon n+1
-M = B(H)      = schematic type-I global algebra
-iota           = embedding of a local algebra into the global algebra
-R              = proposed boundary relation, not yet a physical law
-T_n            = one candidate pair of related embeddings
+A_n^infty = candidate algebra assigned to the end-boundary regime of aeon n
+A_{n+1}^0 = candidate algebra assigned to the start-boundary regime of aeon n+1
+M = B(H) = schematic type-I global algebra
+iota = embedding of a local algebra into the global algebra
+R = proposed boundary relation, not yet a physical law
+T_n = one candidate pair of related embeddings
 ```
 
 The superscripts $\infty$ and $0$ are mnemonic boundary labels in this version.
