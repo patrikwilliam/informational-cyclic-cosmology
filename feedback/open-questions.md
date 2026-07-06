@@ -1,6 +1,15 @@
 # Open Questions
 
-This is version 0.1. Its purpose is to be broken.
+This is version 0.1.2. Its purpose is to be broken.
+
+The first selection-rule issue is isolated as a finite-dimensional
+construction-or-no-go question in the
+[main mathematical problem](./main-mathematical-problem.md). The tested
+interaction-projection selector now has a preliminary negative answer in
+[the general no-go analysis](./general-no-go-analysis.md). Independent checking
+of that argument, especially its purity-based quotient-separation lemma, is the
+immediate question; a confirmed result would require a genuinely different
+selector.
 
 ## Main failure points
 
@@ -38,37 +47,43 @@ This is version 0.1. Its purpose is to be broken.
 
 ## Technical questions
 
-1. What exactly is the observable algebra `A_n` in a cosmological setting?
-2. Which intrinsic data define the admissible family of embeddings
+1. Is the arbitrary-dimension no-go argument for the interaction-projection
+   selector correct, including the reduced-state-purity proof that an entangled
+   isolated eigenstate supplies arbitrarily nearby, non-equivalent
+   degenerate-block directions in the quotient?
+2. Does an established minimal-scrambling or quasi-classicality selector evade
+   that obstruction without encoding the target entropy?
+3. What exactly is the observable algebra `A_n` in a cosmological setting?
+4. Which intrinsic data define the admissible family of embeddings
    `E_lambda`: relational clock data, asymptotic observables, boundary
    conditions, a Hamiltonian, or a global constraint? How do those data vary
    between conditional regimes without being inserted by hand?
-3. Can the entropy/readability distinction be grounded in existing algebraic
+5. Can the entropy/readability distinction be grounded in existing algebraic
    quantum field theory or holographic entropy?
-4. Does the hypothesis require de Sitter holography, or can it be stated
+6. Does the hypothesis require de Sitter holography, or can it be stated
    independently of a specific asymptotic spacetime?
-5. Can the finite-dimensional illustration be extended beyond established
+7. Can the finite-dimensional illustration be extended beyond established
    factorization relativity by adding a non-arbitrary, physically motivated
    family of accessible algebras?
-6. What physical principle selects the new factorization: Hamiltonian locality,
+8. What physical principle selects the new factorization: Hamiltonian locality,
    pointer-state robustness, boundary conditions, or something else?
-7. Can the proposal identify an observable or mathematical result that is not
+9. Can the proposal identify an observable or mathematical result that is not
     already obtained by the exactly periodic model of Carroll, Diachenko, and
     Dulani?
-8. Does a proposed selector return a unique or stable physical equivalence
+10. Does a proposed selector return a unique or stable physical equivalence
     class, or only one representative among globally unitarily related
     descriptions?
-9. Does the selected clock algebra satisfy a Page-Wootters-type global
+11. Does the selected clock algebra satisfy a Page-Wootters-type global
     constraint, and how are alternative clocks excluded without selecting the
     desired history by hand?
-10. Which observational entropy and coarse-graining define the thermodynamic
+12. Which observational entropy and coarse-graining define the thermodynamic
     arrow along the conditional history?
-11. What operational criterion defines $\sim_{\mathrm{phys}}$ so that globally
+13. What operational criterion defines $\sim_{\mathrm{phys}}$ so that globally
     unitarily related embeddings can be classified as equivalent or physically
     distinct without circularity?
-12. For a finite or imperfect clock, which normalized time POVM and clock
+14. For a finite or imperfect clock, which normalized time POVM and clock
     instrument realize the intended Page-Wootters conditional states?
-13. What intrinsic relational parameter defines the regimes labeled by
+15. What intrinsic relational parameter defines the regimes labeled by
     $\infty$ and $0$? If they are genuine limits, in which topology do the
     states, algebras, or embeddings converge?
 

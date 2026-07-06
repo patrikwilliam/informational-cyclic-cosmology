@@ -6,8 +6,8 @@ authors:
     given-names: "Patrik William"
     orcid: "https://orcid.org/0009-0008-1618-6619"
 doi: "10.5281/zenodo.21115416"
-version: "0.1.1"
-date-released: "2026-07-02"
+version: "0.1.2"
+date-released: "2026-07-03"
 license: "CC-BY-4.0"
 url: "https://github.com/patrikwilliam/informational-cyclic-cosmology"
 abstract: >-
@@ -24,7 +24,7 @@ preferred-citation:
       given-names: "Patrik William"
       orcid: "https://orcid.org/0009-0008-1618-6619"
   doi: "10.5281/zenodo.21115416"
-  version: "0.1.1"
+  version: "0.1.2"
   year: 2026
   status: preprint
   url: "https://doi.org/10.5281/zenodo.21115416"

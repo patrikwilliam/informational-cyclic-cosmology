@@ -2,15 +2,21 @@
 
 Status: speculative hypothesis, not a completed physical theory.
 
-This repository contains version 0.1 of a conceptual research note on emergent
+Author: Patrik William Pustejovsky
+([ORCID 0009-0008-1618-6619](https://orcid.org/0009-0008-1618-6619)).
+
+DOI (all versions):
+[10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416).
+
+This repository contains version 0.1.2 of a conceptual research note on emergent
 time, informational conservation, entropy as local readability, and cyclic
 cosmology. It includes a minimal finite-dimensional illustration showing how the
 same global pure state can have different bipartite entanglement entropies under
 different local observable algebras.
 
-Release date: 1 July 2026.
+Release date: 3 July 2026.
 
-This is version 0.1. Its purpose is to be broken.
+This is version 0.1.2. Its purpose is to be broken.
 
 The goal is not to defend this formulation, but to expose it to serious
 criticism, identify where it fails, and use those failure modes to build a
@@ -34,6 +40,30 @@ derive an aeonic transition, demonstrate a thermodynamic entropy reset, or
 identify the correct field-theoretic or gravitational observable algebra.
 The proposal is suitable for preliminary academic discussion as a conceptual
 physical hypothesis, but not yet as a completed theory.
+
+Version 0.1.2 adds a preliminary negative result for one concrete
+Hamiltonian-only selection rule. Minimizing the Hilbert-Schmidt interaction
+term appears unable, in any finite bipartite dimension, to select a strict local
+minimum at which an isolated stationary pure eigenstate is entangled. This
+provides a preliminary no-go argument for that selector within the specified
+finite-dimensional bipartite-entanglement test. It does not rule out a contrast
+in a separately defined observational or subalgebra-relative $S_{\mathrm{eff}}$,
+the broader cosmological hypothesis, or other quantum-mereology criteria. The
+proof's purity-based quotient-separation lemma has not been independently
+reviewed and is the primary target for expert feedback.
+
+## What Changed in 0.1.2
+
+- Added an interaction-projection selector as a concrete test of the missing
+  algebra-selection mechanism.
+- Derived a preliminary arbitrary-finite-dimension no-go result for bipartite
+  entanglement of isolated stationary pure states at strict local minima of that
+  selector.
+- Added exact two-qubit analysis, explicit $2\times3$ checks, numerical search
+  scripts, and a reproducible purity-based quotient argument.
+- Narrowed the next entanglement-based research step to independent verification
+  and one genuinely different established selector, rather than further
+  searches with the same cost functional.
 
 ## Claimed Contribution
 
@@ -60,6 +90,13 @@ relation. Neither is a unitary transformation, a quantum channel, or evolution
 in external time. A physical model must supply an intrinsic and non-circular
 rule that selects a stable equivalence class of local algebras.
 
+The interaction-projection cost introduced in version 0.1.2 was one attempt to
+make this requirement concrete. It appears to fail for isolated stationary
+pure states at strict finite-dimensional minima when the target is bipartite
+entanglement entropy. It should therefore be treated as a preliminary negative
+argument for that test, not as a general result about the central proposal's
+still-unspecified cosmological $S_{\mathrm{eff}}$.
+
 The superscripts $\infty$ and $0$ are currently mnemonic labels for the proposed
 end- and start-boundary regimes. They are not values of external time or
 mathematically defined limits. A limit interpretation would require a relational
@@ -76,6 +113,12 @@ itself falsify the central aeonic boundary proposal.
 ## Main Document
 
 - [PAPER.md](./PAPER.md)
+- [Formatted PDF (v0.1.2)](./Informational-Cyclic-Cosmology-v0.1.2.pdf)
+- [Main mathematical problem](./feedback/main-mathematical-problem.md)
+- [General no-go analysis](./feedback/general-no-go-analysis.md)
+- [Preliminary two-qubit analysis](./feedback/two-qubit-preliminary-analysis.md)
+- [`2 x 3` numerical checks](./research/two_by_three_selector_analysis.py)
+- [Two-qubit reproducibility script](./research/two_qubit_selector_analysis.py)
 - [Open questions](./feedback/open-questions.md)
 - [Citation audit](./feedback/citation-audit.md)
 - [Technical-validity audit](./feedback/technical-validity-audit.md)
@@ -86,23 +129,26 @@ Strong objections are preferred over general encouragement.
 
 I am especially interested in criticism of:
 
-1. the boundary relation, missing algebra-selection rule, and missing intrinsic
-   source of relational variation between aeonic regimes,
-2. the entropy/readability distinction,
-3. the finite-dimensional illustration and whether its refactorization move has
+1. the arbitrary-dimension no-go argument, especially its reduced-state-purity
+   proof that the degenerate-block path contains arbitrarily nearby,
+   non-equivalent quotient directions,
+2. the boundary relation, missing replacement algebra-selection rule, and
+   missing intrinsic source of relational variation between aeonic regimes,
+3. the entropy/readability distinction,
+4. the finite-dimensional illustration and whether its refactorization move has
    any physically meaningful cosmological analogue beyond changing bipartite
    entanglement entropy,
-4. extension from finite-dimensional Hilbert spaces to the appropriate QFT or
+5. extension from finite-dimensional Hilbert spaces to the appropriate QFT or
    gravitational observable algebras,
-5. the optional informational dark-sector extension, especially its effective
+6. the optional informational dark-sector extension, especially its effective
    gravitational source, CMB acoustic peaks, and structure formation,
-6. compatibility with black-hole unitarity,
-7. the Page-Wootters-inspired treatment of relational time, its clock
+7. compatibility with black-hole unitarity,
+8. the Page-Wootters-inspired treatment of relational time, its clock
    ambiguity, and the separate derivation of a thermodynamic arrow,
-8. whether the hypothesis makes any testable prediction distinct from
+9. whether the hypothesis makes any testable prediction distinct from
    LambdaCDM, Penrose CCC, exactly periodic quantum cyclic cosmology, or
    emergent-gravity models,
-9. whether an intrinsic rule can generate repeatable aeonic boundaries rather
+10. whether an intrinsic rule can generate repeatable aeonic boundaries rather
    than only one selected pair.
 
 ## Conceptual Provenance and AI-Assistance Disclosure

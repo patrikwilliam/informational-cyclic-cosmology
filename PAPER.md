@@ -8,11 +8,17 @@ ORCID: [0009-0008-1618-6619](https://orcid.org/0009-0008-1618-6619)
 
 DOI (all versions): [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416)
 
-Version: 0.1.1
+Version: 0.1.2
 
-Release date: 2 July 2026
+Release date: 3 July 2026
 
 Status: speculative hypothesis, not a completed physical theory.
+
+Revision note: version 0.1.2 reports a preliminary finite-dimensional no-go
+result for one simple Hamiltonian-based algebra selector. The result narrows the
+finite-dimensional entanglement-contrast route; it is not a no-go theorem for
+the central cosmological hypothesis, its still-unspecified effective entropy,
+or other selection principles.
 
 ## Abstract
 
@@ -43,12 +49,23 @@ factorization, an aeonic transition, a thermodynamic arrow, or an extension to
 quantum field theory. The proposal therefore remains a conceptual research
 program without a distinct quantitative prediction.
 
+This revision also tests a specific Hamiltonian-only proposal: minimizing the
+Hilbert-Schmidt norm of the interaction term relative to a candidate
+factorization. A preliminary argument indicates that, in any finite bipartite
+dimension, an isolated stationary pure eigenstate cannot be entangled at a
+strict local minimum. The tested selector therefore cannot produce the
+required high-versus-low entanglement contrast. The argument is selector
+specific, depends on the stated quotient and strictness assumptions, and has
+not been independently peer reviewed.
+
 ## Scope and Claimed Contribution
 
 The mathematical ingredients used in this note are drawn from existing work on
 relational time, observable algebras, factorization-dependent entanglement,
 quantum mereology, and observational entropy. The finite-dimensional example
-later in the note is not presented as a new mathematical result.
+later in the note is not presented as a new mathematical result. The
+selector-specific no-go argument added in version 0.1.2 is presented as a
+preliminary result for independent checking, not as an established theorem.
 
 The narrower claim explored here is that these ingredients may admit a distinct
 cosmological application. In this interpretation, successive aeons are not
@@ -414,6 +431,115 @@ distinguish operationally meaningful observables from global unitary
 relabelings. The hypothesis does not yet supply such a functional or prove that
 its end-of-aeon and beginning-of-aeon solutions exist.
 
+### A tested selector and a preliminary entanglement no-go result
+
+Version 0.1.2 investigates one deliberately simple Hamiltonian-only criterion.
+This is a diagnostic test of the selection problem, not an additional
+postulate. On a finite bipartite Hilbert space
+$\mathcal{H}_A\otimes\mathcal{H}_B$, let a unitary $U$ represent a candidate
+factorization and write
+
+$$
+K_U=U^\dagger H U.
+$$
+
+Let $P_{\mathrm{loc}}$ be the Hilbert-Schmidt orthogonal projection onto
+Kronecker-sum Hamiltonians $A\otimes I_B+I_A\otimes B$. Explicitly,
+
+$$
+P_{\mathrm{loc}}(K)
+=
+\frac{1}{d_B}\operatorname{Tr}_B(K)\otimes I_B
++I_A\otimes\frac{1}{d_A}\operatorname{Tr}_A(K)
+-\frac{\operatorname{Tr}K}{d_A d_B}I.
+$$
+
+For a non-scalar $H$, define the normalized interaction cost
+
+$$
+C_H([U])
+=
+\frac{\left\|(I-P_{\mathrm{loc}})K_U\right\|_2^2}
+{\left\|H-\frac{\operatorname{Tr}H}{d_A d_B}I\right\|_2^2}.
+$$
+
+This functional asks which candidate factorizations make the fixed Hamiltonian
+as close as possible to non-interacting. It does not include the target entropy
+and is therefore non-circular in that limited sense.
+
+The preliminary result is negative. Assume that $\rho$ is a rank-one projector
+onto an isolated, nondegenerate eigenvalue of $H$, and quotient candidate
+factorizations by local basis changes, factor exchange where applicable, and
+global symmetries preserving both $H$ and $\rho$. Then the current argument
+gives
+
+> At every strict local minimum $[U]$ of $C_H$, the state
+> $U^\dagger\rho U$ is a product state, and hence its bipartite entanglement
+> entropy is zero.
+
+The key steps are short. At a smooth critical point,
+
+$$
+[K_U,P_{\mathrm{loc}}(K_U)]=0.
+$$
+
+An isolated eigenvector of $K_U$ is therefore also an eigenvector of the local
+operator $L=P_{\mathrm{loc}}(K_U)=A\otimes I+I\otimes B$. A nondegenerate
+eigenvector of such a Kronecker sum is a product vector. An entangled
+eigenvector consequently requires a degenerate eigenspace of $L$. Writing
+$K_U=L+J$, with $P_{\mathrm{loc}}(J)=0$, and rotating by any unitary $R$ inside
+that degenerate eigenspace gives
+
+$$
+\left\|(I-P_{\mathrm{loc}})(R^\dagger K_U R)\right\|_2^2
+=
+\|J\|_2^2
+-\left\|P_{\mathrm{loc}}(R^\dagger J R)\right\|_2^2
+\leq
+\|J\|_2^2.
+$$
+
+To show that this is a genuine quotient direction, define the reduced-state
+purity
+
+$$
+Q_\rho(U)
+=\operatorname{Tr}\!\left[
+\left(\operatorname{Tr}_B(U^\dagger\rho U)\right)^2
+\right].
+$$
+
+This quantity is invariant under local basis changes, factor exchange for a pure
+state, and global symmetries preserving $\rho$. It therefore descends to the
+stated quotient. The degenerate eigenspace of $L$ contains a product eigenvector
+$|\phi\rangle$. A unitary $R_1$ supported in that eigenspace can be chosen so
+that $R_1^\dagger|\psi\rangle=|\phi\rangle$, and it can be joined to the identity
+by an analytic path $R(t)$ inside the same block. Along this path the cost never
+exceeds its value at $t=0$, while $Q_\rho(UR(t))$ is a nonconstant real-analytic
+function changing from a value below one to one. Consequently every
+neighborhood of $[U]$ contains a quotient-inequivalent point of no greater cost,
+which excludes a strict local minimum. This purity-based quotient argument is
+the step for which independent mathematical review is most important.
+
+Exact two-qubit calculations, explicit degenerate and resonant examples, and
+numerical $2\times3$ searches support the argument. Degenerate examples can
+display the desired bipartite-entanglement contrast, but only along flat
+families that fail strictness and robustness. Details and reproducible scripts
+are supplied in
+[`feedback/general-no-go-analysis.md`](./feedback/general-no-go-analysis.md),
+[`feedback/two-qubit-preliminary-analysis.md`](./feedback/two-qubit-preliminary-analysis.md),
+and the [`research`](./research) directory. The numerics are supporting checks,
+not a proof.
+
+If independently confirmed, this result retires $C_H$ as a solution to the
+specified finite-dimensional type-I entanglement-contrast problem under these
+assumptions. It does not determine whether algebras selected by this or another
+criterion could exhibit a contrast in a separately defined observational or
+subalgebra-relative $S_{\mathrm{eff}}$. Nor does it apply automatically to
+minimal-scrambling or quasi-classicality criteria, selectors acting on a family
+of observables, field-theoretic algebras, mixed or nonstationary states, or the
+central cosmological proposal. Those questions require separate analysis.
+
 In compact form:
 
 ```text
@@ -758,10 +884,15 @@ for the factorization and separately connect the selected algebra to a
 thermodynamically relevant entropy. One possible route is quantum
 mereology: the preferred factorization is not arbitrary, but selected by a
 Hamiltonian, locality, robustness of pointer states, or quasi-classical
-dynamics. In the cosmological hypothesis, the missing task is to explain why
-extreme dilution, dark-energy dominance, or a boundary condition at an aeonic
-transition would naturally select the new algebra
-$\mathcal{A}_{n+1}^{0}$.
+dynamics. The interaction-projection cost tested in Section 3 is one simple
+Hamiltonian-locality proxy, and its preliminary no-go result shows that this
+particular route does not supply the bipartite-entanglement contrast used in the
+finite-dimensional illustration. It does not settle the paper's distinct,
+still-unspecified cosmological $S_{\mathrm{eff}}$. More sophisticated selectors
+still need independent, non-circular motivation. In the cosmological hypothesis,
+the missing task is to explain why extreme dilution, dark-energy dominance, or
+a boundary condition at an aeonic transition would naturally select the new
+algebra $\mathcal{A}_{n+1}^{0}$.
 
 There is also a field-theoretic limitation. The illustration uses a
 finite-dimensional type-I Hilbert-space factorization, where partial traces and
@@ -954,6 +1085,14 @@ data such as $\lambda_n^{\infty}$ and $\lambda_{n+1}^{0}$ can differ while the
 global state and constraint remain fixed; otherwise repeated evaluation selects
 the same algebra and no aeonic change occurs.
 
+The simple interaction-projection selector tested in Section 3 appears to fail
+the finite-dimensional entanglement-contrast test: under the stated assumptions,
+its strict local minima cannot support an entangled isolated stationary
+eigenstate. This result should be independently checked, especially its
+quotient-space step based on reduced-state purity. If confirmed, increasing the
+finite dimension does not rescue that test. The result does not address a
+separately specified observational or subalgebra-relative $S_{\mathrm{eff}}$.
+
 The boundary labels are also not yet mathematical limits. Any asymptotic
 interpretation of the superscripts $\infty$ and $0$ requires a relational
 parameter, topology, and convergence law; otherwise they remain labels for the
@@ -1022,7 +1161,11 @@ This is not yet a complete physical theory. It is a structured hypothesis:
 The proposed contribution is this aeonic interpretation of a change in the
 physically privileged local observable algebra. The note does not claim a new
 factorization theorem, and it does not yet derive the transition from a
-Hamiltonian, boundary condition, or other dynamical principle.
+Hamiltonian, boundary condition, or other dynamical principle. One simple
+Hamiltonian-only selector has now been tested and appears unable to produce the
+required bipartite-entanglement contrast under the stated finite-dimensional
+type-I assumptions. This does not decide whether a physically defined
+cosmological $S_{\mathrm{eff}}$ could exhibit the proposed contrast.
 
 To become a physical theory, the hypothesis needs:
 
@@ -1030,14 +1173,15 @@ To become a physical theory, the hypothesis needs:
    embeddings, including a relational definition of the boundary regimes and a
    topology if genuine limits are claimed,
 2. a precise relation $\mathcal{R}$ and a criterion selecting the candidate pair
-   $T_n$,
+   $T_n$ independently of the desired entropy conclusion,
 3. an intrinsic, non-circular rule that jointly determines the physically
    privileged algebra and the relational data $\lambda_n$ that can distinguish
    successive conditional regimes,
 4. a demonstration that the selected construction is repeatable across aeonic
    boundaries rather than specifying only one pair,
 5. a subalgebra-relative or observational definition of effective entropy
-   `S_eff`,
+   `S_eff` and a demonstration of the target contrast, rather than an inference
+   from the toy entanglement entropy,
 6. a field-theoretic version that can handle local operator algebras beyond the
    finite-dimensional illustration,
 7. a compatible relational-clock construction and a separate derivation of the
@@ -1054,15 +1198,12 @@ which dark energy supplies boundary data rather than merely cosmic dilution.
 
 - Ahmad, S. A., Galley, T. D., Hoehn, P. A., Lock, M. P. E., and Smith, A. R. H.
   (2022). [Quantum Relativity of
-  Subsystems](https://arxiv.org/abs/2103.01232). *Physical Review Letters* 128,
-  170401.
+  Subsystems](https://arxiv.org/abs/2103.01232). *Physical Review Letters* 128, 170401.
 - Albrecht, A., and Iglesias, A. (2008). [The clock ambiguity and the emergence
-  of physical laws](https://arxiv.org/abs/0708.2743). *Physical Review D* 77,
-  063506.
+  of physical laws](https://arxiv.org/abs/0708.2743). *Physical Review D* 77, 063506.
 - Almheiri, A., Mahajan, R., Maldacena, J., and Zhao, Y. (2020). [The Page curve
   of Hawking radiation from semiclassical
-  geometry](https://arxiv.org/abs/1908.10996). *Journal of High Energy Physics*
-  2020, 149.
+  geometry](https://arxiv.org/abs/1908.10996). *Journal of High Energy Physics* 2020, 149.
 - An, D., Meissner, K. A., Nurowski, P., and Penrose, R. (2018). [Apparent
   evidence for Hawking points in the CMB
   Sky](https://arxiv.org/abs/1808.01740). arXiv:1808.01740.
@@ -1071,8 +1212,7 @@ which dark energy supplies boundary data rather than merely cosmic dilution.
   Cosmology](https://arxiv.org/abs/2208.06021). arXiv:2208.06021.
 - Buscemi, F., Schindler, J., and Safranek, D. (2023). [Observational entropy,
   coarse quantum states, and Petz recovery: information-theoretic properties
-  and bounds](https://arxiv.org/abs/2209.03803). *New Journal of Physics* 25,
-  053002.
+  and bounds](https://arxiv.org/abs/2209.03803). *New Journal of Physics* 25, 053002.
 - Carroll, S. M., Diachenko, N., and Dulani, S. (2026). [Toward a
   Phenomenologically Acceptable Quantum Cyclic
   Universe](https://philsci-archive.pitt.edu/29823/). PhilSci-Archive preprint.
@@ -1081,8 +1221,7 @@ which dark energy supplies boundary data rather than merely cosmic dilution.
   Dynamics](https://arxiv.org/abs/2005.12938). *Physical Review A* 103, 022213.
 - Chandrasekaran, V., Longo, R., Penington, G., and Witten, E. (2023). [An
   Algebra of Observables for de Sitter
-  Space](https://arxiv.org/abs/2206.10780). *Journal of High Energy Physics*
-  2023(02), 082.
+  Space](https://arxiv.org/abs/2206.10780). *Journal of High Energy Physics* 2023(02), 082.
 - Chen, C.-H., and Penington, G. (2024). [A clock is just a way to tell the time:
   gravitational algebras in cosmological
   spacetimes](https://arxiv.org/abs/2406.02116). arXiv:2406.02116.
@@ -1092,8 +1231,7 @@ which dark energy supplies boundary data rather than merely cosmic dilution.
   Proceedings Supplements* 173, 28-31.
 - DESI Collaboration (2025). [DESI DR2 Results II: Measurements of Baryon
   Acoustic Oscillations and Cosmological
-  Constraints](https://arxiv.org/abs/2503.14738). *Physical Review D* 112,
-  083515.
+  Constraints](https://arxiv.org/abs/2503.14738). *Physical Review D* 112, 083515.
 - Harshman, N. L., and Ranade, K. S. (2011). [Observables can be tailored to
   change the entanglement of any pure state](https://arxiv.org/abs/1102.0955).
   *Physical Review A* 84, 012303.
@@ -1106,17 +1244,14 @@ which dark energy supplies boundary data rather than merely cosmic dilution.
   and Supergravity](https://arxiv.org/abs/hep-th/9711200). *Advances in
   Theoretical and Mathematical Physics* 2, 231-252.
 - Marletto, C., and Vedral, V. (2017). [Evolution without evolution, and without
-  ambiguities](https://arxiv.org/abs/1610.04773). *Physical Review D* 95,
-  043510.
+  ambiguities](https://arxiv.org/abs/1610.04773). *Physical Review D* 95, 043510.
 - Meissner, K. A., and Penrose, R. (2025). [The Physics of Conformal Cyclic
   Cosmology](https://arxiv.org/abs/2503.24263). arXiv:2503.24263.
 - Moreva, E., et al. (2014). [Time from quantum entanglement: an experimental
-  illustration](https://arxiv.org/abs/1310.4691). *Physical Review A* 89,
-  052122.
+  illustration](https://arxiv.org/abs/1310.4691). *Physical Review A* 89, 052122.
 - Page, D. N., and Wootters, W. K. (1983). [Evolution without evolution:
   Dynamics described by stationary
-  observables](https://doi.org/10.1103/PhysRevD.27.2885). *Physical Review D*
-  27, 2885-2892.
+  observables](https://doi.org/10.1103/PhysRevD.27.2885). *Physical Review D* 27, 2885-2892.
 - Planck Collaboration (2020). [Planck 2018 results. VI. Cosmological
   parameters](https://arxiv.org/abs/1807.06209). *Astronomy & Astrophysics* 641,
   A6.
@@ -1124,8 +1259,7 @@ which dark energy supplies boundary data rather than merely cosmic dilution.
   Paradox](https://arxiv.org/abs/2012.05770). arXiv:2012.05770.
 - Rijavec, S. (2023). [Robustness of the Page-Wootters construction across
   different pictures, states of the universe and system-clock
-  interactions](https://arxiv.org/abs/2204.11740). *Physical Review D* 108,
-  063507.
+  interactions](https://arxiv.org/abs/2204.11740). *Physical Review D* 108, 063507.
 - Ryu, S., and Takayanagi, T. (2006). [Holographic Derivation of Entanglement
   Entropy from AdS/CFT](https://arxiv.org/abs/hep-th/0603001). *Physical Review
   Letters* 96, 181602.
@@ -1148,11 +1282,9 @@ which dark energy supplies boundary data rather than merely cosmic dilution.
   entanglement](https://arxiv.org/abs/1005.3035). *General Relativity and
   Gravitation* 42, 2323-2329.
 - Witten, E. (2018). [Notes on Some Entanglement Properties of Quantum Field
-  Theory](https://arxiv.org/abs/1803.04993). *Reviews of Modern Physics* 90,
-  045003.
+  Theory](https://arxiv.org/abs/1803.04993). *Reviews of Modern Physics* 90, 045003.
 - Zanardi, P. (2001). [Virtual Quantum
-  Subsystems](https://arxiv.org/abs/quant-ph/0103030). *Physical Review Letters*
-  87, 077901.
+  Subsystems](https://arxiv.org/abs/quant-ph/0103030). *Physical Review Letters* 87, 077901.
 - Zanardi, P., Dallas, E., Andreadakis, F., and Lloyd, S. (2024). [Operational
   Quantum Mereology and Minimal Scrambling](https://arxiv.org/abs/2212.14340).
   *Quantum* 8, 1406.
