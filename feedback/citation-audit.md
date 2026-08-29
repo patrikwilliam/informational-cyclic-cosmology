@@ -1,6 +1,8 @@
 # Citation Audit
 
-Audit date: 2026-07-01
+Initial audit date: 2026-07-01
+
+Version 0.1.3 update: 2026-07-18
 
 Scope: every scholarly source linked from `PAPER.md`, plus foundational sources
 that were missing where the manuscript directly invoked a named framework. Each
@@ -99,6 +101,32 @@ made in the manuscript.
 33. **Chen and Penington (2024) - Added and correct.** Constructs clock-defined
     type-II$_\infty$ gravitational observable algebras in semiclassical
     cosmological backgrounds and relates their entropy to generalized entropy.
+34. **Diakonov, Tumanov, and Vladimirov (2011/2012) - Added and correct.**
+    Supports the limited statement that integrating out torsion can yield local
+    vector-vector, axial-vector, and axial-axial four-fermion interactions. It
+    does not derive the finite selector or its candidate manifold.
+35. **Khanapurkar et al. (2018) - Added and correct.** Derives a specific
+    non-relativistic limit of the Einstein-Cartan-Dirac equations. The
+    manuscript now presents it explicitly as a comparison with, rather than an
+    assessment of, the finite-mode truncation.
+36. **Nielsen (2005/2006) - Added and correct.** Supports geometric approaches
+    to quantum-circuit cost through geodesic length. The manuscript explicitly
+    does not attribute its candidate selector or circuit action to this work.
+37. **Hackl and Myers (2018) - Added and correct.** Develops geodesic circuit
+    complexity for fermionic Gaussian states and free fermionic field theories.
+    It is contextual support for the finite CAR metric, not a derivation of it.
+38. **Szalay et al. (2021) - Added and correct.** Supports the distinction
+    between qubit tensor products and fermionic mode subsystems, the role of
+    Jordan-Wigner representations, and the necessity of parity superselection
+    for a local-operation interpretation.
+39. **Wiseman and Vaccaro (2003) - Added and correct.** Supplies the standard
+    operational particle-entanglement construction under local particle-number
+    restrictions. The manuscript uses its probability-weighted within-sector
+    entropy only for fixed-total-number pure states.
+40. **Lucat and Prokopec (2017) - Added and correct.** Studies an
+    Einstein-Cartan cosmological bounce driven by gravitational-strength
+    four-fermion interactions. It is now cited inline only as a bounded bounce
+    example, not as a derivation of the selector.
 
 ## Corrections Made
 
@@ -111,4 +139,7 @@ made in the manuscript.
 - Moved Witten next to the type-III claim and Planck next to the CMB constraint.
 - Added direct prior art on relational subsystem algebras, cosmological algebra
   embeddings, and type-II gravitational observable algebras.
+- Added and bounded the v0.1.3 sources for torsion-induced contact terms,
+  circuit geometry, fermionic subsystems, and superselection-resolved
+  entanglement.
 - Added a complete reference list to `PAPER.md`.

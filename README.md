@@ -8,15 +8,19 @@ Author: Patrik William Pustejovsky
 DOI (all versions):
 [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416).
 
-This repository contains version 0.1.2 of a conceptual research note on emergent
+This repository contains version 0.1.3 of a conceptual research note on emergent
 time, informational conservation, entropy as local readability, and cyclic
 cosmology. It includes a minimal finite-dimensional illustration showing how the
 same global pure state can have different bipartite entanglement entropies under
-different local observable algebras.
+different local observable algebras, plus a restricted Einstein-Cartan-inspired
+CAR selector as a separate finite example. Its first three-cell robustness test
+is boundary-sensitive. At four cells, the transported residual law is shared by
+every nonzero contact in the declared translation-invariant onsite quartic
+class, so the periodic branch is not EC specific.
 
-Release date: 3 July 2026.
+Release date: 10 August 2026.
 
-This is version 0.1.2. Its purpose is to be broken.
+This is version 0.1.3. Its purpose is to be broken.
 
 The goal is not to defend this formulation, but to expose it to serious
 criticism, identify where it fails, and use those failure modes to build a
@@ -41,29 +45,57 @@ identify the correct field-theoretic or gravitational observable algebra.
 The proposal is suitable for preliminary academic discussion as a conceptual
 physical hypothesis, but not yet as a completed theory.
 
-Version 0.1.2 adds a preliminary negative result for one concrete
-Hamiltonian-only selection rule. Minimizing the Hilbert-Schmidt interaction
-term appears unable, in any finite bipartite dimension, to select a strict local
-minimum at which an isolated stationary pure eigenstate is entangled. This
-provides a preliminary no-go argument for that selector within the specified
-finite-dimensional bipartite-entanglement test. It does not rule out a contrast
-in a separately defined observational or subalgebra-relative $S_{\mathrm{eff}}$,
-the broader cosmological hypothesis, or other quantum-mereology criteria. The
-proof's purity-based quotient-separation lemma has not been independently
-reviewed and is the primary target for expert feedback.
+Version 0.1.3 retains the preliminary no-go result for the unrestricted
+Hamiltonian interaction-projection selector and adds a restricted finite
+follow-up. On the number-preserving CAR manifold that normalizes the internal
+Dirac matrix algebra, an Einstein-Cartan-inspired two-cell Hamiltonian develops
+two strict competing factorization minima and an isolated stationary ground
+state with nonzero mode-entanglement contrast. The result survives restriction
+to the fixed four-particle sector. It does not contradict the unrestricted
+argument, because the latter's descent directions are not all admissible on the
+restricted manifold. The physical derivation of that manifold, its continuum
+extension, and any cosmological interpretation remain open. A three-cell
+extension fails boundary-independent robustness: the open-chain kinetic
+endpoint is unstable, while the periodic ring passes only a restricted
+numerical gate. The periodic result is not treated as a rescue or as evidence
+for EC dynamics. A four-cell periodic follow-up passes a prescribed small-twist
+gate but fails the full phase grid. More importantly, a structurally independent
+non-axial onsite density control passes the same primary gate and obeys the same
+transported-branch cost law. A bounded analytic classification extends that law
+to every nonzero Hermitian translation-invariant onsite quartic contact in the
+declared four-cell class. This is a stop result for EC specificity, not a
+positive extension of the main ICC proposal.
 
-## What Changed in 0.1.2
+## What Changed in 0.1.3
 
-- Added an interaction-projection selector as a concrete test of the missing
-  algebra-selection mechanism.
-- Derived a preliminary arbitrary-finite-dimension no-go result for bipartite
-  entanglement of isolated stationary pure states at strict local minima of that
-  selector.
-- Added exact two-qubit analysis, explicit $2\times3$ checks, numerical search
-  scripts, and a reproducible purity-based quotient argument.
-- Narrowed the next entanglement-based research step to independent verification
-  and one genuinely different established selector, rather than further
-  searches with the same cost functional.
+- Preserved and clarified the v0.1.2 no-go argument on the unrestricted
+  factorization space.
+- Added an Einstein-Cartan-inspired two-cell CAR Hamiltonian on a structurally
+  restricted candidate manifold.
+- Derived closed full-Fock and fixed-$N=4$ selector branch diagrams with two
+  strict minima, coexistence windows, and finite barriers.
+- Added an exact spectral certificate for the full-Fock critical ground state
+  and numerical stationary-state checks at the fixed-sector transition.
+- Corrected the selector normalization to remove the scalar Hamiltonian
+  component consistently with the v0.1.2 definition; this changes normalized
+  cost values but not minima, transition couplings, states, gaps, or entropies.
+- Added all-sector, non-axial onsite-contact, and fermionic-superselection controls.
+  They show that the entropy contrast survives operational restrictions but the
+  two-minimum geometry is not specific to Einstein-Cartan dynamics.
+- Added a math-only audit of the projection, quotient argument, normalizer,
+  optimizer geometry, spectral certificate, and superselection calculation.
+- Added a three-cell finite-size stress test with an exact local-subspace rank
+  certificate, full $U(3)/(U(1)^3\rtimes S_3)$ endpoint Hessians, filling
+  controls, and separate physics and mathematics reviews. The combined result
+  fails boundary-independent robustness.
+- Added a four-cell periodic phase gate and a prospectively matched non-axial
+  density control. Both contacts pass the same three-point small-twist gate and
+  share the same transported residual law, so the EC-specificity gate fails.
+- Closed the remaining onsite-contact question analytically. The complete
+  36-real-dimensional Hermitian onsite quartic class selects the same balanced
+  periodic zero modes and satisfies the same residual law.
+- Added a companion technical note and reproducibility scripts while
+  keeping the result separate from the central cosmological postulates.
 
 ## Claimed Contribution
 
@@ -92,10 +124,19 @@ rule that selects a stable equivalence class of local algebras.
 
 The interaction-projection cost introduced in version 0.1.2 was one attempt to
 make this requirement concrete. It appears to fail for isolated stationary
-pure states at strict finite-dimensional minima when the target is bipartite
-entanglement entropy. It should therefore be treated as a preliminary negative
-argument for that test, not as a general result about the central proposal's
-still-unspecified cosmological $S_{\mathrm{eff}}$.
+pure states at strict minima on the unrestricted finite factorization space
+when the target is bipartite entanglement entropy. Version 0.1.3 shows that the
+same form of cost can support strict competing minima and stationary
+entanglement on a narrower Dirac-algebra-normalizing CAR manifold. This does
+not refute the unrestricted result. The restricted family must be derived from
+independent physical structure rather than chosen to remove the no-go
+directions. Its first three-cell extension is boundary-sensitive and therefore
+does not establish a selector that persists with system size. The four-cell
+periodic branch survives small twists, but the same result for a matched
+non-axial density control shows that this behavior is generic to the tested
+kinetic-versus-onsite construction rather than EC specific. The final onsite
+classification strengthens this conclusion from two controls to every nonzero
+contact in the declared translation-invariant quartic class.
 
 The superscripts $\infty$ and $0$ are currently mnemonic labels for the proposed
 end- and start-boundary regimes. They are not values of external time or
@@ -113,7 +154,29 @@ itself falsify the central aeonic boundary proposal.
 ## Main Document
 
 - [PAPER.md](./PAPER.md)
-- [Formatted PDF (v0.1.2)](./Informational-Cyclic-Cosmology-v0.1.2.pdf)
+- [Formatted PDF (v0.1.3)](./Informational-Cyclic-Cosmology-v0.1.3.pdf)
+- [Release notes for v0.1.3](./RELEASE_NOTES-v0.1.3.md)
+- [Adversarial review of the v0.1.3 increment](./feedback/v0.1.3-adversarial-review.md)
+- [Mathematical audit of the v0.1.3 increment](./feedback/v0.1.3-mathematical-audit.md)
+- [EC/CAR companion technical note](./research/einstein-cartan-circuit-selector.md)
+- [Full-Fock EC/CAR analysis](./research/ec_axial_selector_analysis.py)
+- [Exact critical spectral certificate](./research/ec_ground_state_certificate.py)
+- [Fixed-particle-number selector gate](./research/ec_fixed_sector_selector.py)
+- [All-sector and non-axial adversarial controls](./research/ec_selector_adversarial_controls.py)
+- [Fermionic-superselection controls](./research/ec_superselection_controls.py)
+- [Three-cell finite-size report](./research/three-cell-finite-gate.md)
+- [Three-cell reproducibility script](./research/ec_three_cell_selector.py)
+- [Three-cell physicist review](./feedback/three-cell-physics-review.md)
+- [Three-cell mathematical review](./feedback/three-cell-mathematical-review.md)
+- [Four-cell finite gate](./research/four-cell-finite-gate.md)
+- [Four-cell boundary-phase report](./research/four-cell-boundary-phase-gate.md)
+- [Four-cell matched-control report](./research/four-cell-matched-control-gate.md)
+- [Four-cell matched-control script](./research/ec_four_cell_matched_control.py)
+- [Four-cell matched-control mathematical review](./feedback/four-cell-matched-control-mathematical-review.md)
+- [Four-cell matched-control physics review](./feedback/four-cell-matched-control-physics-review.md)
+- [Four-cell full onsite-contact closure](./research/four-cell-onsite-closure.md)
+- [Four-cell onsite-contact closure script](./research/ec_four_cell_onsite_closure.py)
+- [Four-cell onsite-contact mathematical review](./feedback/four-cell-onsite-closure-mathematical-review.md)
 - [Main mathematical problem](./feedback/main-mathematical-problem.md)
 - [General no-go analysis](./feedback/general-no-go-analysis.md)
 - [Preliminary two-qubit analysis](./feedback/two-qubit-preliminary-analysis.md)
@@ -123,15 +186,40 @@ itself falsify the central aeonic boundary proposal.
 - [Citation audit](./feedback/citation-audit.md)
 - [Technical-validity audit](./feedback/technical-validity-audit.md)
 
+## Reproducing the v0.1.3 Calculation
+
+The new finite calculations require Python 3.10 or later and NumPy. From the
+repository root, run:
+
+```bash
+python3 research/ec_axial_selector_analysis.py
+python3 research/ec_ground_state_certificate.py
+python3 research/ec_fixed_sector_selector.py
+python3 research/ec_selector_adversarial_controls.py
+python3 research/ec_superselection_controls.py
+python3 research/ec_three_cell_selector.py
+python3 research/ec_four_cell_selector.py
+python3 research/ec_four_cell_boundary_phase.py --deep-validation --curvature-root --conditional
+python3 research/ec_four_cell_matched_control.py --max-index 16 --conditional
+python3 research/ec_four_cell_onsite_closure.py
+```
+
+The scripts exit with a nonzero status when a stated internal gate fails. The
+second supplies the exact rational spectral certificate described in Appendix
+A. Scientific gate failures are reported as results while the scripts exit
+successfully when implementation and reproducibility audits pass. The four-cell
+matched-control command takes several minutes on a recent laptop; the final
+onsite closure takes seconds.
+
 ## Feedback Wanted
 
 Strong objections are preferred over general encouragement.
 
 I am especially interested in criticism of:
 
-1. the arbitrary-dimension no-go argument, especially its reduced-state-purity
-   proof that the degenerate-block path contains arbitrarily nearby,
-   non-equivalent quotient directions,
+1. the unrestricted arbitrary-dimension no-go argument and whether the
+   Dirac-algebra-normalizing CAR restriction is physically defensible rather
+   than an imposed removal of its descent directions,
 2. the boundary relation, missing replacement algebra-selection rule, and
    missing intrinsic source of relational variation between aeonic regimes,
 3. the entropy/readability distinction,
@@ -168,11 +256,12 @@ speculative extension.
 Multiple large language models were used extensively during the subsequent
 development of the manuscript. Their contributions included criticism and
 counterarguments; development and revision of the operator-algebraic notation,
-the boundary ansatz, relational-time connections, and the finite-dimensional
-illustration; literature discovery and comparison; manuscript organization;
-English drafting and rewriting; and preparation of publication metadata. Much
-of the present wording and formal presentation was generated or revised with
-LLM assistance.
+the boundary ansatz, relational-time connections, the finite-dimensional
+illustrations, and the EC/CAR candidate calculation; literature discovery and
+comparison; code drafting and review; manuscript organization; English drafting
+and rewriting; and preparation of publication metadata. Much of the present
+wording, formal presentation, and exploratory code was generated or revised
+with LLM assistance.
 Some AI outputs made incorrect or overstated claims and were removed or
 qualified during revision.
 

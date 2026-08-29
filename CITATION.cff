@@ -6,14 +6,20 @@ authors:
     given-names: "Patrik William"
     orcid: "https://orcid.org/0009-0008-1618-6619"
 doi: "10.5281/zenodo.21115416"
-version: "0.1.2"
-date-released: "2026-07-03"
+version: "0.1.3"
+date-released: "2026-08-10"
 license: "CC-BY-4.0"
 url: "https://github.com/patrikwilliam/informational-cyclic-cosmology"
 abstract: >-
   A speculative hypothesis treating the universe as a globally conserved
   informational structure, where cosmological cycles correspond to changes in
-  local information readability rather than temporal restarts.
+  local information readability rather than temporal restarts. Version 0.1.3
+  tests a restricted finite Einstein-Cartan-inspired CAR selector. Its first
+  three-cell extension fails boundary-independent robustness, while a four-cell
+  matched non-axial onsite control reproduces the periodic small-twist branch.
+  A bounded classification extends its residual law to every nonzero contact in
+  the declared translation-invariant onsite quartic class. No EC-specific or
+  derived cosmological transition is claimed.
 preferred-citation:
   type: unpublished
   title: >-
@@ -24,7 +30,7 @@ preferred-citation:
       given-names: "Patrik William"
       orcid: "https://orcid.org/0009-0008-1618-6619"
   doi: "10.5281/zenodo.21115416"
-  version: "0.1.2"
+  version: "0.1.3"
   year: 2026
   status: preprint
   url: "https://doi.org/10.5281/zenodo.21115416"

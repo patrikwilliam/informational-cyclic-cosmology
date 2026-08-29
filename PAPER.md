@@ -8,17 +8,27 @@ ORCID: [0009-0008-1618-6619](https://orcid.org/0009-0008-1618-6619)
 
 DOI (all versions): [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416)
 
-Version: 0.1.2
+Version: 0.1.3
 
-Release date: 3 July 2026
+Release date: 10 August 2026
 
 Status: speculative hypothesis, not a completed physical theory.
 
-Revision note: version 0.1.2 reports a preliminary finite-dimensional no-go
-result for one simple Hamiltonian-based algebra selector. The result narrows the
-finite-dimensional entanglement-contrast route; it is not a no-go theorem for
-the central cosmological hypothesis, its still-unspecified effective entropy,
-or other selection principles.
+Revision note: version 0.1.3 retains the preliminary no-go result for the
+unrestricted Hamiltonian interaction-projection selector and tests a restricted
+finite Einstein-Cartan-inspired CAR calculation. The positive two-cell branch
+diagram survives full-Fock and fixed-particle-number weighting, but its first
+three-cell extension fails boundary-independent robustness: the open chain has
+an unstable kinetic endpoint while the periodic ring passes only a restricted
+numerical gate. A four-cell periodic follow-up has strict endpoints and survives
+the prescribed small boundary twists, but a matched non-axial onsite density
+control passes the same gate and obeys the same transported-branch cost law. A
+bounded analytic closure shows that every nonzero Hermitian,
+translation-invariant onsite quartic contact in the declared four-cell class
+obeys that law under the same periodic resolver. The finite branch is therefore
+retained as generic kinetic-versus-onsite locality competition, not an
+EC-specific mechanism. These are finite selector results, not a cosmological
+transition or a counterexample to the unrestricted result.
 
 ## Abstract
 
@@ -49,23 +59,46 @@ factorization, an aeonic transition, a thermodynamic arrow, or an extension to
 quantum field theory. The proposal therefore remains a conceptual research
 program without a distinct quantitative prediction.
 
-This revision also tests a specific Hamiltonian-only proposal: minimizing the
-Hilbert-Schmidt norm of the interaction term relative to a candidate
-factorization. A preliminary argument indicates that, in any finite bipartite
-dimension, an isolated stationary pure eigenstate cannot be entangled at a
-strict local minimum. The tested selector therefore cannot produce the
-required high-versus-low entanglement contrast. The argument is selector
-specific, depends on the stated quotient and strictness assumptions, and has
-not been independently peer reviewed.
+This revision also distinguishes two domains for a specific Hamiltonian-only
+proposal: minimizing the Hilbert-Schmidt norm of the interaction term relative
+to a candidate factorization. A preliminary argument indicates that, over the
+unrestricted finite bipartite factorization space and stated quotient, an
+isolated stationary pure eigenstate cannot be entangled at a strict local
+minimum. A separate two-cell Einstein-Cartan-inspired calculation restricts
+the admissible transformations to number-preserving CAR transformations that
+normalize the internal Dirac matrix algebra. On this restricted family the
+same type of cost develops two strict competing minima, a finite barrier, and
+an isolated stationary ground state with nonzero factorization-dependent
+entanglement; the result also survives restriction to the four-particle sector.
+The restricted result does not contradict the unrestricted argument because
+its descent directions are not all admissible. Neither result has been
+independently peer reviewed, and no cosmological selection law is derived. A
+non-axial onsite-density control reproduces the same competing-minimum
+geometry, so the finite mechanism is not an EC-specific signature. A first
+three-cell stress test is boundary-sensitive: the open-chain selector fails,
+whereas the periodic ring retains numerically strict endpoints. Because the
+finite graphs and their naive-derivative spectra differ at order one, this is a
+failure of boundary-independent robustness rather than evidence that periodic
+boundaries rescue the mechanism. A four-cell periodic calculation has strict
+endpoints and an explicitly transported branch that survives the prescribed
+small twists before losing positive curvature at $\phi=\pi/2$. However, the
+independent density control passes the same primary gate, follows the same
+residual law, and remains strict one grid point farther. A subsequent
+36-real-dimensional classification proves that this residual law is shared by
+every nonzero translation-invariant onsite quartic contact in the declared
+finite class. The four-cell result therefore fails its prospective
+EC-specificity control and is not used as support for EC dynamics or ICC.
 
 ## Scope and Claimed Contribution
 
 The mathematical ingredients used in this note are drawn from existing work on
 relational time, observable algebras, factorization-dependent entanglement,
-quantum mereology, and observational entropy. The finite-dimensional example
-later in the note is not presented as a new mathematical result. The
-selector-specific no-go argument added in version 0.1.2 is presented as a
-preliminary result for independent checking, not as an established theorem.
+quantum mereology, observational entropy, and Einstein-Cartan fermion dynamics.
+The original finite-dimensional refactorization example is not presented as a
+new mathematical result. The selector-specific no-go argument added in version
+0.1.2 and the restricted EC/CAR finite example and stress tests added in version
+0.1.3 are presented for independent checking, not as established general
+theorems or as a derived cosmological mechanism.
 
 The narrower claim explored here is that these ingredients may admit a distinct
 cosmological application. In this interpretation, successive aeons are not
@@ -483,10 +516,12 @@ $$
 [K_U,P_{\mathrm{loc}}(K_U)]=0.
 $$
 
-An isolated eigenvector of $K_U$ is therefore also an eigenvector of the local
-operator $L=P_{\mathrm{loc}}(K_U)=A\otimes I+I\otimes B$. A nondegenerate
-eigenvector of such a Kronecker sum is a product vector. An entangled
-eigenvector consequently requires a degenerate eigenspace of $L$. Writing
+The eigenvector of $K_U$ associated with the selected nondegenerate eigenvalue
+is therefore also an eigenvector of the local operator
+$L=P_{\mathrm{loc}}(K_U)=A\otimes I+I\otimes B$. If its eigenvalue as
+an eigenvector of this Kronecker sum is nondegenerate, the eigenvector is a
+product vector. An entangled eigenvector consequently requires a degenerate
+eigenspace of $L$. Writing
 $K_U=L+J$, with $P_{\mathrm{loc}}(J)=0$, and rotating by any unitary $R$ inside
 that degenerate eigenspace gives
 
@@ -539,6 +574,128 @@ subalgebra-relative $S_{\mathrm{eff}}$. Nor does it apply automatically to
 minimal-scrambling or quasi-classicality criteria, selectors acting on a family
 of observables, field-theoretic algebras, mixed or nonstationary states, or the
 central cosmological proposal. Those questions require separate analysis.
+
+### Restricted follow-up: an Einstein-Cartan-inspired CAR selector
+
+Version 0.1.3 tests whether the negative result above still blocks the same
+cost after the admissible family is restricted by specified fermionic
+structure. Consider two spatial cells with four Dirac components per
+cell. At one-particle level require candidate transformations to preserve
+fermion number and normalize the internal matrix algebra
+
+$$
+\mathfrak D=I_2\otimes M_4(\mathbb C),
+\qquad
+V\mathfrak D V^\dagger=\mathfrak D.
+$$
+
+Every such unitary has the form $V=W\otimes S$, where $S$ is a common internal
+basis change that does not alter the cell split. The induced unordered cell
+decompositions form
+
+$$
+U(2)/\left((U(1)\times U(1))\rtimes S_2\right)
+\simeq \mathbb{RP}^2
+\simeq S^2/\{\pm1\}.
+$$
+
+They are therefore represented by an unoriented Bloch axis $\mathbf n$. This
+restriction is a defining structural assumption of the finite model, not a
+consequence of the EC contact term; a completed theory would have to derive it
+independently.
+
+For a massless one-link Dirac kinetic term and the normal-ordered axial-current
+contact channel induced when non-propagating Einstein-Cartan torsion is
+eliminated, the full-Fock interaction cost becomes
+
+$$
+C(\mathbf n;r)=
+\frac{
+(1-n_y^2)+3r^2(1-n_z^2)(3+n_z^2)
+}{1+16r^2},
+\qquad r=\frac gt.
+$$
+
+It has two strict endpoint minima, at the momentum split
+$\mathbf n=\pm\hat{\mathbf y}$ and site split
+$\mathbf n=\pm\hat{\mathbf z}$, which exchange global stability at
+$|r|=1/3$. On the tested positive-coupling branch, $r=1/3$, the Hamiltonian has
+an exactly certified isolated ground state and a numerically evaluated
+$1.80367$-bit difference between its site- and momentum-factor entanglement
+entropies. The selector geometry depends only on $r^2$, but the stationary-state
+calculation is not asserted here for $r=-1/3$.
+
+As a weighting gate, the calculation was repeated in the fixed four-particle
+sector rather than using the trace on the entire Fock space. In the full-Fock
+trace, sectors contribute through their sector traces and hence in proportion
+to their dimensions when expressed as normalized sector averages. The
+restricted cost is then
+
+$$
+C_4(\mathbf n;r)=
+\frac{
+160(1-n_y^2)+24r^2(1-n_z^2)(71+25n_z^2)
+}{160+(15744/7)r^2}.
+$$
+
+The two strict selector branches and finite barrier survive, with transition
+$|r_c|=\sqrt{20/213}$. On the tested positive branch
+$r=+\sqrt{20/213}$, the numerically isolated ground state remains in the
+four-particle sector and has a $2.00732$-bit site-versus-momentum entanglement
+contrast. Appendix A states the construction,
+checks, and limitations, with reproducible code in the
+[`research`](./research) directory.
+
+This is not a counterexample to the unrestricted no-go argument: strictness is
+obtained only on a narrower candidate manifold from which the general descent
+directions have been removed. Its relevance therefore depends on whether the
+Dirac/CAR restriction follows from physical structure already present in a
+continuum theory. If it is imposed only to avoid the no-go directions, the
+escape is circular. The result establishes finite mathematical possibility
+under the stated restriction, not an aeonic transition, a cosmological entropy
+reset, or Einstein-Cartan cosmology.
+
+A null control replacing the axial-current contact by a spin-independent onsite
+density contact reproduces the same two-minimum geometry. The finite transition
+should therefore be interpreted as generic competition between a hopping term
+that is local in momentum variables and an onsite interaction that is local in
+site variables, not as evidence for Einstein-Cartan dynamics. Conversely, the
+ground-state entropy contrast remains positive after imposing local-number or
+local-parity superselection, so it is not entirely a particle-number-fluctuation
+artifact. Appendix A gives the numerical controls and their limitations.
+
+A first larger finite test replaces the two cells by three and admits the full
+restricted cell-mixing family $U(3)/(U(1)^3\rtimes S_3)$. In the half-filled
+$N=6$ sector, the open-chain kinetic endpoint has a negative Hessian direction
+and an explicit lower mixed factorization. The periodic ring retains two
+numerically strict endpoints, and a strengthened multi-start search found no
+lower candidate, but this is not a proof of global minimality. At three cells,
+changing the boundary also changes two bonds into three and changes the
+discrete-derivative spectrum at order one. The combined result therefore fails
+a boundary-independent robustness gate. The periodic branch is recorded as a
+finite numerical observation, not as support for an EC-derived selector.
+Appendix A and the
+[three-cell technical report](./research/three-cell-finite-gate.md) give the
+construction, exact rank certificate, controls, and limitations.
+
+A four-cell periodic ring then tests the full
+$U(4)/(U(1)^4\rtimes S_4)$ cell-mixing family in the half-filled $N=8$ sector.
+Both periodic endpoints are numerically strict. An explicit gauge-transported
+branch stays stationary and strict at the prescribed small twists $\pi/16$ and
+$\pi/8$, but loses positive curvature at $\pi/2$. This removes the narrow
+objection that the three-cell periodic observation was purely an odd-size
+effect, while still failing full periodic-to-antiperiodic persistence.
+
+More decisively, a prospectively fixed spinor-blind density contact
+$Q_{\mathrm{dens}}=\sum_xN_x(N_x-1)$ passes the same periodic and small-twist
+gates. The two contacts are not equivalent after fixed-sector centering, yet
+both obey the same transported residual law and retuned coexistence relation
+$g_*(\phi)=g_0\cos(\phi/4)$. The finite behavior is therefore not an
+EC-specific signature. Appendix A, the
+[matched-control report](./research/four-cell-matched-control-gate.md), and its
+separate [mathematical](./feedback/four-cell-matched-control-mathematical-review.md)
+and [physics](./feedback/four-cell-matched-control-physics-review.md) reviews
+state the result and limits.
 
 In compact form:
 
@@ -1085,13 +1242,17 @@ data such as $\lambda_n^{\infty}$ and $\lambda_{n+1}^{0}$ can differ while the
 global state and constraint remain fixed; otherwise repeated evaluation selects
 the same algebra and no aeonic change occurs.
 
-The simple interaction-projection selector tested in Section 3 appears to fail
-the finite-dimensional entanglement-contrast test: under the stated assumptions,
-its strict local minima cannot support an entangled isolated stationary
-eigenstate. This result should be independently checked, especially its
-quotient-space step based on reduced-state purity. If confirmed, increasing the
-finite dimension does not rescue that test. The result does not address a
-separately specified observational or subalgebra-relative $S_{\mathrm{eff}}$.
+Over the unrestricted finite bipartite factorization space, the simple
+interaction-projection selector tested in Section 3 appears to fail the
+entanglement-contrast test: under the stated assumptions, its strict local
+minima cannot support an entangled isolated stationary eigenstate. This result
+should be independently checked, especially its quotient-space step based on
+reduced-state purity. The restricted EC/CAR calculation does not refute it; it
+removes the relevant descent directions by limiting the admissible manifold.
+That finite construction passes the full-Fock and fixed-$N=4$ tests, but its
+physical relevance now depends on deriving the restriction independently in a
+continuum theory. Neither result addresses a separately specified
+observational or subalgebra-relative $S_{\mathrm{eff}}$.
 
 The boundary labels are also not yet mathematical limits. Any asymptotic
 interpretation of the superscripts $\infty$ and $0$ requires a relational
@@ -1160,12 +1321,22 @@ This is not yet a complete physical theory. It is a structured hypothesis:
 
 The proposed contribution is this aeonic interpretation of a change in the
 physically privileged local observable algebra. The note does not claim a new
-factorization theorem, and it does not yet derive the transition from a
-Hamiltonian, boundary condition, or other dynamical principle. One simple
-Hamiltonian-only selector has now been tested and appears unable to produce the
-required bipartite-entanglement contrast under the stated finite-dimensional
-type-I assumptions. This does not decide whether a physically defined
-cosmological $S_{\mathrm{eff}}$ could exhibit the proposed contrast.
+general factorization theorem, and it does not yet derive an aeonic transition
+from a Hamiltonian, boundary condition, or other dynamical principle. One
+simple Hamiltonian-only selector fails the stated unrestricted
+finite-dimensional entanglement test, while an Einstein-Cartan-inspired
+restriction of its admissible CAR family yields a bounded finite example with
+strict competing minima and stationary entanglement contrast at two cells. Its
+first three-cell extension fails boundary-independent robustness. A four-cell
+periodic extension has a locally robust small-twist branch, but a matched
+non-axial density contact reproduces the primary gate and the same branch-cost
+law. The final bounded classification shows that every nonzero contact in the
+declared translation-invariant onsite quartic class shares that law. The
+construction is therefore retained only as a bounded example of generic
+kinetic-versus-onsite competition rather than a scalable or EC-specific
+selector candidate. The restriction is not yet derived from continuum physics,
+and none of these results decides whether a physically defined cosmological
+$S_{\mathrm{eff}}$ could exhibit the proposed contrast.
 
 To become a physical theory, the hypothesis needs:
 
@@ -1193,6 +1364,591 @@ The optional cosmological extensions additionally require a derivation of
 $T_{\mu\nu}^{\mathrm{info}}$ or another precise gravitational modification, a
 clear statement of whether conformal scale loss is required, and a mechanism by
 which dark energy supplies boundary data rather than merely cosmic dilution.
+
+## Appendix A. Restricted Einstein-Cartan-Inspired CAR Selector
+
+This appendix summarizes a finite follow-up to the selector problem in Section
+3. It is supplementary to the central ICC hypothesis. The complete derivation,
+additional perturbation checks, and executable calculations are supplied in
+[the companion derivation](./research/einstein-cartan-circuit-selector.md),
+[the full-Fock calculation](./research/ec_axial_selector_analysis.py),
+[the exact spectral certificate](./research/ec_ground_state_certificate.py),
+[the fixed-sector gate](./research/ec_fixed_sector_selector.py),
+[the adversarial controls](./research/ec_selector_adversarial_controls.py),
+and
+[the superselection controls](./research/ec_superselection_controls.py). The
+first larger finite stress test is supplied in
+[the three-cell report](./research/three-cell-finite-gate.md) and
+[its executable calculation](./research/ec_three_cell_selector.py).
+The ranked internal critique is
+[the v0.1.3 adversarial review](./feedback/v0.1.3-adversarial-review.md).
+The proof-level follow-up is
+[the v0.1.3 mathematical audit](./feedback/v0.1.3-mathematical-audit.md). The
+three-cell increment received separate
+[physics](./feedback/three-cell-physics-review.md) and
+[mathematics](./feedback/three-cell-mathematical-review.md) reviews before
+integration. The four-cell extension is supplied in the
+[finite gate](./research/four-cell-finite-gate.md),
+[boundary-phase report](./research/four-cell-boundary-phase-gate.md), and
+[matched-control report](./research/four-cell-matched-control-gate.md), with
+separate
+[mathematical](./feedback/four-cell-matched-control-mathematical-review.md) and
+[physics](./feedback/four-cell-matched-control-physics-review.md) reviews. The
+full onsite class is treated in the
+[analytic closure](./research/four-cell-onsite-closure.md), its
+[reproducibility script](./research/ec_four_cell_onsite_closure.py), and the
+separate [mathematical review](./feedback/four-cell-onsite-closure-mathematical-review.md).
+
+### A.1 Finite fermionic model
+
+Take two spatial cells and four Dirac components per cell:
+
+$$
+\mathfrak h=\mathbb C^2_{\mathrm{cell}}\otimes
+\mathbb C^4_{\mathrm{Dirac}},
+\qquad
+\mathcal H=\mathcal F(\mathfrak h),
+\qquad
+\dim\mathcal H=2^8=256.
+$$
+
+With the link spacing absorbed into the coefficients, define
+
+$$
+H(t,g)=tK+gQ,
+$$
+
+$$
+K=-i\left(\psi_1^\dagger\alpha^1\psi_2
+-\psi_2^\dagger\alpha^1\psi_1\right),
+$$
+
+and
+
+$$
+Q=\sum_{x=1}^{2}
+\left[
+:\!\left(\psi_x^\dagger\gamma^5\psi_x\right)^2\!:
+-\sum_{i=1}^{3}
+:\!\left(\psi_x^\dagger\alpha^i\gamma^5\psi_x\right)^2\!:
+\right].
+$$
+
+The contact term is the finite-mode axial-axial channel corresponding to
+$J_5^\mu J^5_\mu$. Eliminating algebraic, non-propagating torsion in
+Einstein-Cartan fermion theory produces a local four-fermion interaction that
+includes this channel. Its sign and coefficient depend on conventions and on
+possible non-minimal couplings
+([Diakonov, Tumanov & Vladimirov](https://arxiv.org/abs/1104.2432)). Only $g^2$
+enters the selector branch diagram. For comparison,
+[Khanapurkar et al.](https://arxiv.org/abs/1804.04434) derive a
+non-relativistic limit directly from the Einstein-Cartan-Dirac field equations.
+The present finite-mode truncation is neither a discretized solution of those
+equations nor such a controlled limit.
+
+A microscopic Einstein-Cartan cosmology with torsion-induced effective
+four-fermion interactions can produce a bounce
+([Lucat & Prokopec](https://arxiv.org/abs/1512.06074)), but that construction
+does not derive the algebra selector used here.
+
+### A.2 Restricted candidate factorizations
+
+A general $U(8)$ transformation would reproduce the unrestricted setting of
+the no-go argument. Instead, require number preservation and normalization of
+the internal Dirac matrix algebra
+
+$$
+\mathfrak D=I_2\otimes M_4(\mathbb C),
+\qquad
+V\mathfrak D V^\dagger=\mathfrak D.
+$$
+
+Because every automorphism of $M_4(\mathbb C)$ is inner, every such unitary has
+the form
+
+$$
+V=W\otimes S,
+\qquad W\in U(2),\quad S\in U(4).
+$$
+
+The common $S$ acts only as an internal basis change inside each candidate
+cell, so it does not alter the factorization. The induced unordered cell
+decompositions form
+
+$$
+U(2)/\left((U(1)\times U(1))\rtimes S_2\right)
+\simeq\mathbb{RP}^2.
+$$
+
+Equivalently, the candidate split is represented by
+
+$$
+\mathbf n=(n_x,n_y,n_z)\in S^2,
+\qquad \mathbf n\sim-\mathbf n.
+$$
+
+Fermionic mode factors use a graded tensor product. The finite implementation
+fixes a Jordan-Wigner ordering and works with parity-even Hamiltonians and
+number-preserving candidate unitaries. The normalizer condition is the defining
+restriction of this proof of concept. Its physical derivation is not supplied.
+
+### A.3 Full-Fock selector and branch diagram
+
+Lift $W$ to Fock space and project the transformed Hamiltonian onto one-factor
+Kronecker-sum Hamiltonians using the Hilbert-Schmidt projection from Section 3.
+The denominator in Section 3 removes the scalar component of the Hamiltonian.
+Here $\operatorname{Tr}K=0$ and $\operatorname{Tr}Q/256=4$. Define
+$\widetilde Q=Q-4I$. Direct CAR traces give
+
+$$
+\lVert K\rVert_2^2=512,
+\qquad
+\lVert \widetilde Q\rVert_2^2=8192,
+\qquad
+\langle K,\widetilde Q\rangle_{\mathrm{HS}}=0,
+$$
+
+$$
+\lVert K_{\mathrm{int}}(\mathbf n)\rVert_2^2
+=512(1-n_y^2),
+$$
+
+$$
+\lVert Q_{\mathrm{int}}(\mathbf n)\rVert_2^2
+=1536(1-n_z^2)(3+n_z^2),
+$$
+
+and a vanishing residual cross term. Therefore, with $r=g/t$,
+
+$$
+C(\mathbf n;r)=
+\frac{
+(1-n_y^2)+3r^2(1-n_z^2)(3+n_z^2)
+}{1+16r^2}.
+$$
+
+For fixed $n_z$, minimization sets $n_x=0$. Writing $u=n_z^2$, the numerator is
+
+$$
+N(u;r)=u+3r^2(1-u)(3+u),
+$$
+
+a concave quadratic for $r\neq0$. Hence every global minimum is one of two
+strict endpoints. The momentum factorization $\mathbf n=\pm\hat{\mathbf y}$ is
+global for $|r|<1/3$, the site factorization
+$\mathbf n=\pm\hat{\mathbf z}$ is global for $|r|>1/3$, and they are co-global
+at $|r|=1/3$. Both remain locally stable in the interval
+
+$$
+\frac1{\sqrt{12}}<|r|<\frac1{\sqrt6}.
+$$
+
+At the transition,
+
+$$
+C_{\min}=\frac9{25},
+\qquad
+C_{\mathrm{barrier}}=\frac{39}{100},
+\qquad
+\Delta C=\frac3{100}.
+$$
+
+Along the shortest $yz$ path
+$\mathbf n(\alpha)=(0,\sin2\alpha,\cos2\alpha)$, four equal fermionic beam
+splitters give the finite Grassmannian line element
+
+$$
+ds_{\mathrm{CAR}}^2=4\,d\alpha^2,
+\qquad
+d_{\mathrm{CAR}}(\mathrm{site},\mathrm{momentum})=\frac\pi2.
+$$
+
+This metric and the finite barrier permit a circuit-penalized update model, but
+they do not derive a unique circuit action, transition rate, or relational
+clock law. The geometric language follows the general circuit-geometry program
+([Nielsen](https://arxiv.org/abs/quant-ph/0502070)) and its fermionic
+developments ([Hackl & Myers](https://arxiv.org/abs/1803.10638)); no complexity
+functional from those works is claimed to select this cosmological model.
+
+### A.4 Fixed-particle-number gate
+
+The full-Fock Hilbert-Schmidt inner product uses the trace on the entire Fock
+space:
+
+$$
+\operatorname{Tr}_{\mathcal H}(X)
+=\sum_{N=0}^{8}\operatorname{Tr}_{\mathcal H_N}(P_NXP_N).
+$$
+
+It therefore weights orthonormal Fock-space basis states equally, not
+particle-number sectors equally. In a normalized-trace decomposition, sector
+$N$ carries weight $\binom{8}{N}/256$. The primary weighting gate restricts
+instead to
+
+$$
+\mathcal H_{N=4}
+=\bigoplus_{k=0}^{4}
+\left(\wedge^k\mathfrak h_+\right)\otimes
+\left(\wedge^{4-k}\mathfrak h_-\right),
+\qquad
+\dim\mathcal H_{N=4}=70.
+$$
+
+Let $P_4$ be the total-number projector and let $N_\pm$ be the two local number
+operators. Fix the local Hamiltonian subspace before selecting $H$ or
+$\mathbf n$:
+
+$$
+\mathfrak L_4=
+\left\{
+P_4(A_+\widehat\otimes I+I\widehat\otimes A_-)P_4:
+[A_+,N_+]=[A_-,N_-]=0
+\right\}.
+$$
+
+It has dimension $135$. In the charge block with dimensions
+$d_k=\binom4k$ and $d_{4-k}$, the orthogonal projection is
+
+$$
+\Pi_k(X)=
+\frac{\operatorname{Tr}_{-}X}{d_{4-k}}\otimes I
++I\otimes\frac{\operatorname{Tr}_{+}X}{d_k}
+-\frac{\operatorname{Tr}X}{d_kd_{4-k}}I,
+$$
+
+and off-diagonal charge blocks project to zero. This handles the common
+particle-number center without counting its parametrization kernel as an extra
+local direction.
+
+In this sector $\operatorname{Tr}K=0$ and
+$\operatorname{Tr}Q/70=24/7$. With
+$\widetilde Q_4=Q-(24/7)I_{70}$, the centered sector traces give
+
+$$
+\lVert K\rVert_{2,4}^2=160,
+\qquad
+\lVert \widetilde Q_4\rVert_{2,4}^2=\frac{15744}{7},
+\qquad
+\langle K,\widetilde Q_4\rangle_{2,4}=0,
+$$
+
+$$
+\lVert K_{\mathrm{int}}(\mathbf n)\rVert_{2,4}^2
+=160(1-n_y^2),
+$$
+
+$$
+\lVert Q_{\mathrm{int}}(\mathbf n)\rVert_{2,4}^2
+=24(1-n_z^2)(71+25n_z^2),
+$$
+
+again with zero residual cross term. The normalized fixed-sector selector is
+
+$$
+C_4(\mathbf n;r)=
+\frac{
+160(1-n_y^2)+24r^2(1-n_z^2)(71+25n_z^2)
+}{160+(15744/7)r^2}.
+$$
+
+It retains the same two strict branches. Their exchange and coexistence window
+are
+
+$$
+|r_c|=\sqrt{\frac{20}{213}}\simeq0.3064257065,
+$$
+
+$$
+\sqrt{\frac5{72}}<|r|<\sqrt{\frac{10}{69}}.
+$$
+
+At the transition,
+
+$$
+C_{4,\min}=\frac{497}{1153},
+\qquad
+C_{4,\mathrm{barrier}}=\frac{2163}{4612},
+\qquad
+\Delta C_4=\frac{175}{4612}.
+$$
+
+Thus the two-branch result is not confined to the unrestricted full-Fock
+weighting. Gibbs and other state-weighted norms have not been tested.
+
+### A.5 Stationarity and certificate boundaries
+
+At the positive-coupling full-Fock co-global point $H_c=K+Q/3$, numerical
+diagonalization gives
+
+$$
+E_0\simeq-4.11560796875,
+\qquad
+E_1-E_0\simeq0.620514177337.
+$$
+
+The supplied exact certificate constructs $3H_c$ directly from
+Gaussian-integer CAR data. Conserved particle-number, chirality, and link-spin
+labels split it into $65$ blocks of maximum dimension $18$. Exact rational
+$LDL^\mathsf{T}$ inertia and the spectral factor
+
+$$
+p(\lambda)=
+\lambda^4-20\lambda^3-144\lambda^2+3008\lambda-1792
+$$
+
+prove that the ground state is simple and
+
+$$
+E_1-E_0>\frac{923}{1500}.
+$$
+
+Its mode-entanglement entropies are evaluated numerically:
+
+$$
+S_{\mathrm{site}}\simeq3.01251822001\ \text{bits},
+\qquad
+S_{\mathrm{mom}}\simeq1.20884898928\ \text{bits},
+$$
+
+so $\Delta S_{\mathrm{mode}}\simeq1.80366923073$ bits. At the fixed-sector
+transition $r=\sqrt{20/213}$, the numerically isolated ground state remains in
+$N=4$ and has
+
+$$
+E_1-E_0\simeq0.678109892996,
+\qquad
+\Delta S_{\mathrm{mode}}\simeq2.00731779928\ \text{bits}.
+$$
+
+Because these ground states have fixed total particle number, their reduced
+states are block diagonal in local particle number. Resolving the reduced state
+into sectors allowed by local fermionic superselection reduces but does not
+remove this contrast. The reported quantity is the probability-weighted
+within-sector entropy; it excludes the Shannon entropy of the sector label. At
+the positive-coupling full-Fock exchange point, the site-minus-momentum contrast
+is numerically $0.698734$ bits
+under local-number superselection and $0.995665$ bits under local-parity
+superselection. At the positive fixed-$N=4$ exchange point the corresponding
+values are $0.800293$ and $1.162493$ bits. These are operationally stricter
+fermionic pure-state diagnostics, not a general mixed-state entanglement
+measure or thermodynamic entropy. The local-number construction follows the
+standard particle-entanglement decomposition
+([Wiseman and Vaccaro](https://arxiv.org/abs/quant-ph/0210002)); fermionic
+subsystems and parity superselection are reviewed by
+[Szalay et al.](https://arxiv.org/abs/2006.03087).
+
+A 121-point scan across the fixed-sector bistability interval found a minimum
+sampled gap of $0.5359112$ and a minimum sampled entropy contrast of
+$1.4856425$ bits. The fixed-sector spectral and entropy claims are numerical,
+not interval-certified.
+
+### A.6 Three-cell finite-size stress test
+
+The first size extension uses three cells, four Dirac modes per cell, and the
+half-filled sector
+
+$$
+\mathcal H_{3,6}=\bigwedge^6\mathbb C^{12},
+\qquad
+\dim\mathcal H_{3,6}=\binom{12}{6}=924.
+$$
+
+The admissible cell factorizations form
+$U(3)/(U(1)^3\rtimes S_3)$ and have six continuous tangent directions. The
+fixed-sector one-cell Hamiltonian space has 210 matrix-unit generators. Two
+relations identify the three copies of the identity and a third is
+$N_1+N_2+N_3=6I$. Row reduction of the integer Gram matrix modulo the prime
+$1{,}000{,}003$ gives rank 207; together with those three exact relations, this
+certifies the local-subspace dimension over $\mathbb Q$.
+
+At each boundary condition the positive coupling is tuned to make the site and
+kinetic-eigenmode endpoint costs equal. The primary numerical result is:
+
+| Quantity | Open chain | Periodic ring |
+|---|---:|---:|
+| $g_c$ | 0.3501691221 | 0.4129483210 |
+| Normalized endpoint cost | 0.4529794648 | 0.4717832957 |
+| Minimum site Hessian eigenvalue | 0.1222247 | 0.4866812 |
+| Minimum kinetic Hessian eigenvalue | **-0.0465277** | 0.2433404 |
+| Lowest optimized cost found | **0.4413803** | 0.4717832957 |
+| Ground-space multiplicity | **3** | 1 |
+| Gap above the ground space | 0.5688714 | 0.2033920 |
+| Mode-entropy contrast | not evidential | 1.7508546 bits |
+| Local-number-SSR contrast | not evidential | 0.6380137 bits |
+| Local-parity-SSR contrast | not evidential | 0.9787055 bits |
+
+The open kinetic endpoint is not a local minimum. Direct motion along its
+negative Hessian eigenvector lowers the cost, independently of optimizer
+convergence. The periodic endpoints are numerically strict; 32 Haar samples
+and optimization from eight random starts found no lower point, but do not
+prove global minimality on the flag manifold.
+
+The normalized endpoint-Hessian pattern is the same at the tested fillings
+$N=4,5,6,7,8$: the open kinetic endpoint fails and both periodic endpoints are
+locally strict. Periodic even fillings $N=4,6,8$ have isolated positive-contrast
+ground states; the odd fillings have fourfold numerical ground-space
+degeneracy and their arbitrary eigenvector entropies are not used. A non-axial
+onsite density contact also produces strict competing endpoints, so the result
+is not specific evidence for torsion dynamics.
+
+The boundary comparison is not a bulk-limit test. At $L=3$, the open chain has
+two links while the periodic ring has three, and the periodic
+central-difference kinetic spectrum is $\{-\sqrt3,0,+\sqrt3\}$. Both the graph
+and the naive-derivative spectrum therefore change at order one. The combined
+result is classified as a boundary-independent robustness failure, with the
+periodic branch retained only as a restricted finite numerical observation. No
+conclusion about larger size follows from the three-cell comparison alone.
+
+### A.7 Four-cell phase and matched-control gate
+
+The even-size follow-up uses
+
+$$
+\mathcal H_{4,8}=\bigwedge^8\mathbb C^{16},
+\qquad
+\dim\mathcal H_{4,8}=\binom{16}{8}=12{,}870,
+$$
+
+and the 12-dimensional quotient
+$U(4)/(U(1)^4\rtimes S_4)$. Exact combinatorial partial traces evaluate the
+centered Hilbert-Schmidt selector without constructing a dense
+$12{,}870\times12{,}870$ Hamiltonian. The implementation is checked against
+dense low-filling matrices, sparse half-filled occupation-mask actions,
+projection overlaps, traces, norms, quotient invariance, and finite-difference
+step convergence.
+
+At periodic boundary conditions, the kinetic operator has a two-dimensional
+zero eigenspace. A fixed grid-plus-refinement rule resolves its basis freedom
+using the interaction selector before the endpoint coupling is set. At the
+equal-endpoint axial coupling $g_0=0.4298279139$, the site and resolved periodic
+representatives have minimum quotient-Hessian eigenvalues 0.177740 and
+0.122137. A prescribed gauge transport
+
+$$
+U_\phi=G(\phi)U_0,
+\qquad
+G_{xx}(\phi)=e^{ix\phi/4},
+$$
+
+is stationary across the 17-point grid. It remains strict at $\pi/16$ and
+$\pi/8$, then first fails the grid at $\pi/2$ with minimum Hessian
+$-0.010441$. Thus the small-twist gate passes while the complete
+periodic-to-antiperiodic gate fails.
+
+The prospectively selected comparison replaces the axial contact by the
+spinor-blind onsite density interaction
+$Q_{\mathrm{dens}}=\sum_xN_x(N_x-1)$ and changes nothing else in the gate. The
+control is reconstructed exactly on every $N=8$ occupation mask. After
+fixed-sector centering, its cosine with the axial contact is 0.2119995760 and it
+retains relative residual 0.9772697579 after the best axial rescaling, so it is
+not an affine copy under the selector.
+
+At its equal-endpoint coupling $g_0=1.2984286349$, the density control passes the
+same periodic, $\pi/16$, and $\pi/8$ tests. It remains strict at $\pi/2$ and
+first loses positive curvature at $9\pi/16$. For both interactions the audited
+residuals satisfy
+
+$$
+R_{\mathrm{site}}=(A,0,0),
+\qquad
+R_{\mathrm{branch}}=
+\left(A\sin^2\frac{\phi}{4},B,0\right),
+\qquad
+g_0^2B=A,
+$$
+
+to errors below $7.0\times10^{-10}$. The corresponding retuned equal-cost root
+is $g_*(\phi)=g_0\cos(\phi/4)$ for both contacts. Finite seeded searches at the
+first two nonzero twists find no lower candidate but do not prove global
+minimality.
+
+The remaining onsite question admits a bounded analytic closure. Write the most
+general translation-invariant, number-preserving onsite quartic contact as
+$Q_q=\sum_x Q_x(q)$, with
+$q=q^\dagger\in\operatorname{Herm}(\Lambda^2\mathbb C^4)$. This is a
+36-real-dimensional space. If $(\beta,\chi)$ parameterizes the periodic kinetic
+zero-mode basis and $x=\sin^2\beta\cos^2\chi$, exact fixed-sector contractions
+give
+
+$$
+B_q(\beta,\chi)=B_q(0,0)-p(q)x-r(q)x^2.
+$$
+
+Under
+$\operatorname{Herm}(\Lambda^2\mathbb C^4)=\mathbf1\oplus\mathbf{15}\oplus\mathbf{20}$,
+the spectra of $p$ are $231/4$, $231/2$, and $231$, while those of $r$ are
+$693/4$, $539/4$, and $231/2$ on the respective summands. Both forms are
+positive definite. Every nonzero contact therefore makes the declared periodic
+resolver choose $x=1$, including $\beta=\pi/2$. At that balanced representative,
+the symmetric-hopping residual has norm $A$, and its residual cross contraction
+with every $Q_q$ vanishes. Hence
+
+$$
+R_{\mathrm{branch}}(\phi)
+=\left(A\sin^2\frac{\phi}{4},B(q),0\right)
+$$
+
+for the complete nonzero interaction class just defined. This is a theorem only
+inside the fixed four-cell model and resolver; it does not cover disordered or
+inter-cell contacts, other fillings or norms, or a continuum limit.
+
+The prospective EC-specificity gate therefore fails. Here "non-axial" means
+only that the control is not the axial-current contraction used for the minimal
+EC-inspired channel; it does not assert that no generalized torsion effective
+theory can contain density-like interactions. The result tests one finite
+selector and does not simulate EC field dynamics.
+
+The complete artifacts are the
+[boundary-phase report](./research/four-cell-boundary-phase-gate.md),
+[matched-control report](./research/four-cell-matched-control-gate.md),
+[reproducibility script](./research/ec_four_cell_matched_control.py), and the
+separate [mathematical](./feedback/four-cell-matched-control-mathematical-review.md)
+and [physics](./feedback/four-cell-matched-control-physics-review.md) reviews.
+The full onsite classification is supplied in the
+[closure report](./research/four-cell-onsite-closure.md),
+[closure script](./research/ec_four_cell_onsite_closure.py), and its separate
+[mathematical review](./feedback/four-cell-onsite-closure-mathematical-review.md).
+
+### A.8 Interpretation and stop condition
+
+The two-cell calculation demonstrates only the following finite statement: on a
+specified Dirac-algebra-normalizing, number-preserving CAR manifold, an
+Einstein-Cartan-inspired Hamiltonian supplies a non-entropic interaction cost
+with two strict minima, a finite barrier, and an isolated stationary state with
+factorization-dependent mode entanglement. The structure survives one
+physically motivated charge-sector weighting. The three-cell result shows that
+this statement is not boundary-independent at the first change in lattice size.
+The four-cell result supplies a locally robust periodic branch but shows that
+its mechanism is reproduced by an independent non-axial onsite control. The
+final bounded classification strengthens this from a two-contact observation to
+every nonzero interaction in the declared translation-invariant onsite quartic
+class.
+
+Two adversarial controls narrow that statement. Direct traces in all fixed
+number sectors retain the two-minimum geometry for $2\leq N\leq6$, but the
+sector ground state at the equal-endpoint coupling is numerically degenerate for
+$N=2,3,5,6$; only $N=4$ passes the isolated-state gate. More importantly, the
+non-axial contact $Q_{\mathrm{dens}}=\sum_xN_x(N_x-1)$ produces the same qualitative
+selector geometry and a positive stationary contrast. Hence the finite geometry
+is generic kinetic-versus-onsite locality competition. The axial-current
+channel supplies one realization but no EC-specific explanatory evidence. The
+two-cell controls are reproduced by
+[the adversarial-control calculation](./research/ec_selector_adversarial_controls.py)
+and
+[the superselection calculation](./research/ec_superselection_controls.py).
+The four-cell matched comparison strengthens this stop condition by applying
+the same branch and phase protocol to both interactions. The onsite closure
+shows that testing additional contacts from that same finite class cannot
+restore specificity.
+
+It does not derive the admissible manifold from continuum field equations,
+establish validity at the Planckian coupling where the contact term competes
+with the kinetic term, extend the construction to type-III local QFT algebras,
+define cosmological observational entropy, produce a Page-Wootters boundary
+transition, demonstrate repeatable aeons, or predict a cosmological observable.
+It also does not show persistence at arbitrary cell count or that
+Einstein-Cartan dynamics selects this factorization family. These are required
+before the finite result can support the central ICC proposal.
 
 ## References
 
@@ -1232,14 +1988,26 @@ which dark energy supplies boundary data rather than merely cosmic dilution.
 - DESI Collaboration (2025). [DESI DR2 Results II: Measurements of Baryon
   Acoustic Oscillations and Cosmological
   Constraints](https://arxiv.org/abs/2503.14738). *Physical Review D* 112, 083515.
+- Diakonov, D., Tumanov, A. G., and Vladimirov, A. A. (2011). [Low-energy
+  general relativity with torsion: a systematic derivative
+  expansion](https://arxiv.org/abs/1104.2432). *Physical Review D* 84, 124042.
+- Hackl, L., and Myers, R. C. (2018). [Circuit complexity for free
+  fermions](https://arxiv.org/abs/1803.10638). *Journal of High Energy Physics*
+  2018(07), 139.
 - Harshman, N. L., and Ranade, K. S. (2011). [Observables can be tailored to
   change the entanglement of any pure state](https://arxiv.org/abs/1102.0955).
   *Physical Review A* 84, 012303.
 - Jow, D. L., and Scott, D. (2020). [Re-evaluating evidence for Hawking points in
   the CMB](https://arxiv.org/abs/1909.09672). *Journal of Cosmology and
   Astroparticle Physics* 2020(03), 021.
+- Khanapurkar, S., Pradhan, A., Dhruv, A., and Singh, T. P. (2018).
+  [Non-relativistic limit of Einstein-Cartan-Dirac
+  equations](https://arxiv.org/abs/1804.04434). *Physical Review D* 98, 104027.
 - Koslowski, T. A. (2007). [A Cosmological Sector in Loop Quantum
   Gravity](https://arxiv.org/abs/0711.1098). arXiv:0711.1098.
+- Lucat, S., and Prokopec, T. (2017). [Cosmological singularities and bounce in
+  Cartan-Einstein theory](https://arxiv.org/abs/1512.06074). *Journal of
+  Cosmology and Astroparticle Physics* 2017(10), 047.
 - Maldacena, J. M. (1998). [The Large N Limit of Superconformal Field Theories
   and Supergravity](https://arxiv.org/abs/hep-th/9711200). *Advances in
   Theoretical and Mathematical Physics* 2, 231-252.
@@ -1249,6 +2017,9 @@ which dark energy supplies boundary data rather than merely cosmic dilution.
   Cosmology](https://arxiv.org/abs/2503.24263). arXiv:2503.24263.
 - Moreva, E., et al. (2014). [Time from quantum entanglement: an experimental
   illustration](https://arxiv.org/abs/1310.4691). *Physical Review A* 89, 052122.
+- Nielsen, M. A. (2006). [A geometric approach to quantum circuit lower
+  bounds](https://arxiv.org/abs/quant-ph/0502070). *Quantum Information &
+  Computation* 6, 213-262.
 - Page, D. N., and Wootters, W. K. (1983). [Evolution without evolution:
   Dynamics described by stationary
   observables](https://doi.org/10.1103/PhysRevD.27.2885). *Physical Review D* 27, 2885-2892.
@@ -1274,6 +2045,10 @@ which dark energy supplies boundary data rather than merely cosmic dilution.
   Energy Physics* 2023, 82.
 - Stoica, O. C. (2026). [The clock ambiguity problem: extended or
   extinguished?](https://arxiv.org/abs/2604.21805). arXiv:2604.21805.
+- Szalay, S., Zimboras, Z., Mate, M., Barcza, G., Schilling, C., and Legeza, O.
+  (2021). [Fermionic systems for quantum information
+  people](https://arxiv.org/abs/2006.03087). *Journal of Physics A: Mathematical
+  and Theoretical* 54, 393001.
 - Thirring, W., Bertlmann, R. A., Kohler, P., and Narnhofer, H. (2011).
   [Entanglement or separability: The choice of how to factorize the algebra of a
   density matrix](https://arxiv.org/abs/1106.3047). *European Physical Journal
@@ -1281,6 +2056,10 @@ which dark energy supplies boundary data rather than merely cosmic dilution.
 - Van Raamsdonk, M. (2010). [Building up spacetime with quantum
   entanglement](https://arxiv.org/abs/1005.3035). *General Relativity and
   Gravitation* 42, 2323-2329.
+- Wiseman, H. M., and Vaccaro, J. A. (2003). [The entanglement of
+  indistinguishable particles shared between two
+  parties](https://arxiv.org/abs/quant-ph/0210002). *Physical Review Letters*
+  91, 097902.
 - Witten, E. (2018). [Notes on Some Entanglement Properties of Quantum Field
   Theory](https://arxiv.org/abs/1803.04993). *Reviews of Modern Physics* 90, 045003.
 - Zanardi, P. (2001). [Virtual Quantum
@@ -1306,11 +2085,12 @@ speculative extension.
 Multiple large language models were used extensively during the subsequent
 development of the manuscript. Their contributions included criticism and
 counterarguments; development and revision of the operator-algebraic notation,
-the boundary ansatz, relational-time connections, and the finite-dimensional
-illustration; literature discovery and comparison; manuscript organization;
-English drafting and rewriting; and preparation of publication metadata. Much
-of the present wording and formal presentation was generated or revised with
-LLM assistance.
+the boundary ansatz, relational-time connections, the finite-dimensional
+illustrations, and the EC/CAR candidate calculation; literature discovery and
+comparison; code drafting and review; manuscript organization; English drafting
+and rewriting; and preparation of publication metadata. Much of the present
+wording, formal presentation, and exploratory code was generated or revised
+with LLM assistance.
 Some AI outputs made incorrect or overstated claims and were removed or
 qualified during revision.
 

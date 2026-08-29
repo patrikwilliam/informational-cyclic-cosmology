@@ -21,9 +21,9 @@ pure state is entangled, in **any finite bipartite dimension**.
 
 More precisely, under the assumptions below:
 
-> At every strict local minimum of the interaction cost, every isolated
-> rank-one eigenprojector of the Hamiltonian is a product state relative to the
-> selected factorization.
+> At every strict local minimum of the interaction cost, every rank-one
+> spectral projector associated with a nondegenerate Hamiltonian eigenvalue is
+> a product state relative to the selected factorization.
 
 Therefore two strict minima with a positive bipartite-entanglement-entropy
 contrast cannot exist for this selector when the chosen stationary state is an
@@ -163,8 +163,8 @@ $$
 
 with eigenvalues $\alpha_i+\beta_j$.
 
-If the eigenvalue $\ell$ of $|\psi\rangle$ is nondegenerate, its eigenvector is
-one product vector and $|\psi\rangle$ is separable.
+If the eigenvalue $\ell$ is nondegenerate, its eigenspace is spanned by one
+product vector and $|\psi\rangle$ is separable.
 
 Therefore an entangled $|\psi\rangle$ requires a degenerate eigenspace
 
@@ -302,9 +302,10 @@ $$
 ### Proof summary
 
 1. A local minimum is critical, so $[K,P(K)]=0$.
-2. Isolation of the selected eigenvalue makes $|\psi\rangle$ an eigenvector of
-   $P(K)$.
-3. A nondegenerate eigenvector of a Kronecker-sum operator is a product vector.
+2. Nondegeneracy of the selected eigenvalue makes $|\psi\rangle$ an eigenvector
+   of $P(K)$.
+3. A one-dimensional eigenspace of a Kronecker-sum operator is spanned by a
+   product vector.
 4. If the relevant eigenvalue of $P(K)$ is degenerate and $|\psi\rangle$ is
    entangled, the reduced-state-purity lemma supplies arbitrarily nearby,
    quotient-inequivalent rotations inside that eigenspace along which the cost
