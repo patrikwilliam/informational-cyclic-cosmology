@@ -136,10 +136,19 @@ $$
 C_{\min}(H)=\min_{[U]} C_H([U]).
 $$
 
-The functional is only a simple test selector. It may later be replaced by a
-better-motivated Hamiltonian criterion based on minimal scrambling,
-quasi-classicality, or pointer-state stability. The important restriction is
-that the selector must not contain the entropy target below.
+The functional is a test selector with direct minimal-scrambling prior art.
+For the finite bipartite factor algebras used here, the Gaussian criterion of
+[Zanardi et al.](https://arxiv.org/abs/2212.14340), equations (14) and (16), obeys
+$\tau_s^{-2}=\lVert K_{\mathrm{int}}\rVert_2^2/d$ in units $\hbar=1$.
+Thus $C_H=d\tau_s^{-2}/\lVert H-cI\rVert_2^2$: the positive normalization
+does not change minima or local stability for fixed non-scalar $H$ on the same
+candidate family. Gaussian minimal scrambling is not a new way around this
+selector's obstruction. An alternative must change the criterion or justify a
+different domain independently; a finite-time scrambling criterion would need
+a specified time window and its own tests. Quasi-classicality or pointer-state
+stability also require a concrete functional. No alternative may contain the
+target entropy below. This equivalence is not assumed for charge-sector
+algebras or continuum QFT, and no finite-time follow-up result is reported.
 
 ## Entropy relative to a candidate factorization
 

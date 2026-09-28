@@ -4,6 +4,14 @@ Initial audit date: 2026-07-01
 
 Version 0.1.3 update: 2026-07-18
 
+Version 0.1.4 targeted check: 2026-09-14. Equations (14) and (16) of
+[Zanardi et al. (2024)](https://arxiv.org/html/2212.14340) were checked against
+the Gaussian-rate normalization now displayed alongside $C_H$. On the declared
+finite bipartite factor-algebra domain, the squared rate and cost differ by a
+positive, candidate-independent multiplier. The updated discussion credits
+direct prior art and does not describe this criterion as a new selector. This
+targeted check is not a new exhaustive citation audit.
+
 Scope: every scholarly source linked from `PAPER.md`, plus foundational sources
 that were missing where the manuscript directly invoked a named framework. Each
 source was checked against its abstract or full text and against the exact claim

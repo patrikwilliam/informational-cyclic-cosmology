@@ -6,11 +6,11 @@ Author: Patrik William Pustejovsky
 
 ORCID: [0009-0008-1618-6619](https://orcid.org/0009-0008-1618-6619)
 
-Version: 0.1
+Version: 0.1.1
 
-Date: 10 August 2026
+Date: 14 September 2026
 
-Status: companion technical note to ICC v0.1.3; exploratory finite-dimensional
+Status: companion technical note to ICC v0.1.4; exploratory finite-dimensional
 result, not peer reviewed. It develops one possible effective realization of
 the algebra-selection problem and states its limitations.
 
@@ -377,7 +377,8 @@ $$
 }{1+16r^2}.
 $$
 
-This suggests a dynamical extension rather than a new static entropy selector:
+One possible extension is a positive trajectory-penalty functional, of
+Euclidean form, with $\mu,\Lambda>0$:
 
 $$
 I[\alpha]=\int d\tau\,
@@ -387,19 +388,31 @@ I[\alpha]=\int d\tau\,
 \right],
 $$
 
-or an overdamped relational update law
+This is not a real-time action. With the displayed plus sign, interpreting its
+stationary paths as real-time mechanics would give
+$4\mu\ddot\alpha=+\Lambda\partial_\alpha C$ at fixed $r$, with unstable
+motion near a cost minimum. A real-time potential would instead require the
+kinetic-minus-potential sign. The positive functional above only assigns a
+penalty to paths; neither its parameter $\tau$ nor its stationary paths have
+been identified with physical evolution.
+
+A separate phenomenological option is an overdamped downhill law, with
+$\Gamma,\Lambda>0$,
 
 $$
 4\Gamma\dot\alpha
 =-\Lambda\,\partial_\alpha C.
 $$
 
-Here $\chi$ must be an intrinsic clock variable, such as a relational density;
-it cannot be an external aeon label. The circuit term penalizes rapid changes
-of factorization and allows the finite barrier to carry branch memory. It does
-not by itself determine $\mu$, $\Gamma$, $\Lambda$, quantum tunnelling rates, or
-the correct complexity metric. Calling it a derived law would therefore be
-premature.
+This law assumes dissipation; it does not follow from the positive functional.
+For a physical relational interpretation, $\chi$ would have to be derived as a
+suitable intrinsic clock variable, with an associated meaning for $\tau$; a
+density is only a candidate and need not be monotonic. Neither an external
+aeon label nor the desired branch ordering supplies that derivation. The
+circuit term penalizes rapid changes of factorization, and a barrier could
+support metastability in a specified dynamics, but branch memory is not
+established here. No derivation determines $\mu$, $\Gamma$, $\Lambda$,
+quantum tunnelling rates, or the correct complexity metric.
 
 ## 7. EC scaling and the cutoff problem
 
@@ -415,8 +428,14 @@ g\sim\kappa\ell^{-3},
 r=\frac gt\sim\frac{\kappa}{\ell^2},
 $$
 
-up to discretization and convention-dependent constants. Thus the contact term
-becomes relatively important as the relational density increases.
+up to discretization and convention-dependent constants. This is cell-scale
+or cutoff scaling, not by itself an evolution law for density. Only if $\ell$
+is a physical cell size with fixed nonzero mean occupation $\bar N$ does
+$n_{\mathrm{phys}}=\bar N/\ell^3$ imply
+$r\sim\kappa(n_{\mathrm{phys}}/\bar N)^{2/3}$, so that the contact becomes
+relatively stronger with increasing number density. Changing a regulator at
+fixed physical state is not such density evolution, and identifying that
+density as a relational clock requires a further argument.
 
 The same scaling is also the main warning. Reaching $r=O(1)$ generally means
 approaching a Planckian regime, where a low-energy EC derivative expansion and

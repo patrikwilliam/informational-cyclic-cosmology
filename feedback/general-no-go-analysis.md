@@ -2,6 +2,8 @@
 
 Date: 3 July 2026
 
+M2 correction: 14 September 2026 (v0.1.4).
+
 Status: preliminary mathematical argument with numerical checks, not peer
 reviewed. The purity-based quotient-separation lemma below and all claimed
 implications should be independently checked by a mathematical physicist before
@@ -30,14 +32,20 @@ contrast cannot exist for this selector when the chosen stationary state is an
 isolated eigenstate.
 
 The proof does not exclude bipartite-entanglement contrast in degenerate
-eigenspaces. However, the Hamiltonian-only cost is then flat along rotations
-that change the chosen state inside the degenerate space. Such examples fail
-strictness and cannot select the state without additional physical data.
+eigenspaces. Energy-degeneracy rotations preserve the Hamiltonian-only cost,
+but changing the chosen state does not by itself separate classes under the
+full factorization quotient. Such rotations obstruct strictness only when
+arbitrarily nearby representatives are quotient-inequivalent. The explicit
+entangled degenerate examples below have such flat directions; energy degeneracy
+alone does not universally preclude a strict minimum. Selecting a particular
+state inside a degenerate eigenspace still requires additional physical data.
 
 This is a no-go result for one deliberately simple selector in the specified
 finite-dimensional type-I entanglement test. It is not a no-go result for a
-separately defined observational or subalgebra-relative entropy, minimal
-scrambling, quantum mereology generally, or the cosmological hypothesis.
+separately defined observational or subalgebra-relative entropy, quantum
+mereology generally, or the cosmological hypothesis. The proportional Gaussian
+scrambling cost inherits the same obstruction on this domain; a genuinely
+different finite-time criterion would require separate analysis.
 
 ## 1. General finite-dimensional setup
 
@@ -318,18 +326,73 @@ minimum.
 ## 6. What happens when the energy is degenerate
 
 If $\rho$ lies in a degenerate energy eigenspace, a Hamiltonian-only selector
-does not identify that particular rank-one state. Unitaries acting inside the
-energy eigenspace preserve $H$ and therefore leave $C_H$ unchanged, while they
-can change $\rho$ and its factorization-relative entropy.
+does not identify that particular rank-one state. A unitary $R$ acting inside
+the energy eigenspace commutes with $H$, so $U\mapsto RU$ leaves $C_H$
+unchanged, although $R^\dagger\rho R$ can differ from $\rho$.
 
-Since the problem's equivalence relation quotients only symmetries preserving
-both $H$ and the chosen $\rho$, rotations that change $\rho$ remain genuine
-flat directions. The minimum is not strict.
+Changing $\rho$ rules out treating $R$ itself as a left symmetry preserving
+both $H$ and $\rho$. It does not rule out a right local-basis equivalence,
+factor exchange, or a combination with an allowed left symmetry. Failure of
+strictness requires arbitrarily nearby, distinct classes under this **full
+quotient**, not merely different selected-state representatives. A nonconstant
+reduced-state purity along a real-analytic constant-cost path supplies the
+needed separation, by the argument in Section 4; a state change alone does not.
 
-This is exactly what happens in the explicit $2\times2$ and $2\times3$
-degenerate examples. Additional data, such as another conserved operator or a
-specified relational algebra, would be needed to select a state inside the
-degenerate eigenspace.
+### Counterexample to the degenerate-energy inference
+
+Let $X,Z$ be Pauli matrices and set
+
+$$
+H=Z\otimes I_2,\qquad
+\rho=|00\rangle\langle00|,\qquad
+P_j=|j\rangle\langle j|,\qquad B_\theta=e^{-i\theta X}.
+$$
+
+Even a local rotation $I_2\otimes B_\theta$ preserves $H$ and changes $\rho$
+for generic small nonzero $\theta$, yet represents $[I]$. More strongly, define
+
+$$
+\begin{aligned}
+R_\theta&=P_0\otimes B_\theta+P_1\otimes I_2,\\
+W_\theta&=P_0\otimes I_2+P_1\otimes B_\theta^\dagger,\\
+V_\theta&=I_2\otimes B_\theta.
+\end{aligned}
+$$
+
+Here $R_\theta$ is generically nonlocal, commutes with $H$, and changes
+$\rho$. Nevertheless $R_\theta=W_\theta V_\theta$, with $W_\theta$
+preserving both $H$ and $\rho$ and $V_\theta$ local. Thus
+$[R_\theta]=[I]$ under the full quotient. Along this path $C_H=0$ and
+$Q_\rho=1$: the state stays product and no quotient flat direction is produced.
+
+In fact, $[I]$ is a strict global minimum for this pair when factor exchange
+is included. To see this, any zero-cost $K=U^\dagger H U$ has the form
+$K=A\otimes I_2+I_2\otimes B$ with traceless Hermitian qubit operators $A,B$.
+Writing $A^2=a^2I_2$ and $B^2=b^2I_2$, the identity $K^2=I_4$ gives
+
+$$
+(a^2+b^2)I_4+2A\otimes B=I_4.
+$$
+
+Taking the trace yields $a^2+b^2=1$, hence $A\otimes B=0$. Thus $K$ acts on
+only one factor and its selected $+1$ eigenvector is product. Local bases and,
+if needed, factor exchange can simultaneously bring $K$ and $U^\dagger\rho U$
+to $H$ and $\rho$: the unused factor's basis can align the selected vector.
+Explicitly, choose such a right equivalence $V$; then $W=UV$ preserves both
+$H$ and $\rho$, so $U=WV^\dagger$ represents $[I]$. Every zero-cost
+representative is therefore in that single class; all other classes have
+positive cost. Degenerate energy does not universally preclude strictness.
+
+### Scope of the remaining flat-direction conclusions
+
+The explicit entangled $2\times2$ and $2\times3$ degenerate examples retain
+their individually verified conclusions. Their constant-cost rotations connect
+an entangled state to a product state, changing reduced-state purity; the
+analytic-path argument supplies arbitrarily nearby inequivalent classes.
+Additional data, such as another conserved operator or a specified relational
+algebra, would still be needed to select a state inside a degenerate eigenspace.
+This qualification does not change the nondegenerate-energy proposition in
+Section 5 or its separate purity-based argument for degeneracy of $P(K)$.
 
 ## 7. Explicit `2 x 3` checks
 
@@ -435,8 +498,12 @@ is a separate question not answered by this analysis.
 The remaining scientifically defensible directions for this proof-of-principle
 are not further entanglement searches with the same cost. They are:
 
-1. ask whether a minimal-scrambling or quasi-classicality selector has the same
-   obstruction;
+1. distinguish genuinely different protocols: in the finite bipartite setting,
+   the squared Gaussian scrambling rate $\tau_s^{-2}$ is proportional to $C_H$
+   for fixed $H$ and dimensions ([Eqs. (14), (16)](https://arxiv.org/html/2212.14340)),
+   so it inherits the same obstruction on the same quotient, not a new escape;
+   finite-time scrambling or quasi-classicality needs a separately specified
+   physical protocol before its selector can be assessed;
 2. determine whether a selector acting on an algebra or a family of operators,
    rather than one Hamiltonian, can be non-circular;
 3. specify intrinsic relational data $\lambda$ before attempting to select

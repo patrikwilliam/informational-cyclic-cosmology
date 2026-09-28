@@ -8,27 +8,21 @@ ORCID: [0009-0008-1618-6619](https://orcid.org/0009-0008-1618-6619)
 
 DOI (all versions): [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416)
 
-Version: 0.1.3
+Version: 0.1.4
 
-Release date: 10 August 2026
+Release date: 14 September 2026
 
 Status: speculative hypothesis, not a completed physical theory.
 
-Revision note: version 0.1.3 retains the preliminary no-go result for the
-unrestricted Hamiltonian interaction-projection selector and tests a restricted
-finite Einstein-Cartan-inspired CAR calculation. The positive two-cell branch
-diagram survives full-Fock and fixed-particle-number weighting, but its first
-three-cell extension fails boundary-independent robustness: the open chain has
-an unstable kinetic endpoint while the periodic ring passes only a restricted
-numerical gate. A four-cell periodic follow-up has strict endpoints and survives
-the prescribed small boundary twists, but a matched non-axial onsite density
-control passes the same gate and obeys the same transported-branch cost law. A
-bounded analytic closure shows that every nonzero Hermitian,
-translation-invariant onsite quartic contact in the declared four-cell class
-obeys that law under the same periodic resolver. The finite branch is therefore
-retained as generic kinetic-versus-onsite locality competition, not an
-EC-specific mechanism. These are finite selector results, not a cosmological
-transition or a counterexample to the unrestricted result.
+Revision note: version 0.1.4 applies the final mathematical and physical review
+corrections to v0.1.3. It distinguishes one-particle from unrestricted Fock-space
+transformations, qualifies the degenerate-state quotient argument and endpoint
+stability, and makes the equivalence to the established Gaussian
+minimal-scrambling criterion explicit. The companion note clarifies its
+trajectory-penalty interpretation and conditional density scaling. No finite
+numerical result changes: the three-cell boundary-independent robustness gate
+and four-cell EC-specificity gate still fail. No cosmological transition is
+derived, and the central proposal remains open.
 
 ## Abstract
 
@@ -59,7 +53,7 @@ factorization, an aeonic transition, a thermodynamic arrow, or an extension to
 quantum field theory. The proposal therefore remains a conceptual research
 program without a distinct quantitative prediction.
 
-This revision also distinguishes two domains for a specific Hamiltonian-only
+The finite analysis distinguishes two domains for a specific Hamiltonian-only
 proposal: minimizing the Hilbert-Schmidt norm of the interaction term relative
 to a candidate factorization. A preliminary argument indicates that, over the
 unrestricted finite bipartite factorization space and stated quotient, an
@@ -500,6 +494,32 @@ This functional asks which candidate factorizations make the fixed Hamiltonian
 as close as possible to non-interacting. It does not include the target entropy
 and is therefore non-circular in that limited sense.
 
+This is also the finite factor-algebra Gaussian minimal-scrambling criterion,
+up to normalization. Set $d=d_A d_B$ and
+$\mathcal A_U=U(\mathcal B(\mathcal H_A)\otimes I_B)U^\dagger$,
+with commutant $\mathcal A_U'$. In units $\hbar=1$, equations (14) and (16) of
+[Zanardi et al. (2024)](https://arxiv.org/abs/2212.14340) give
+
+$$
+\begin{aligned}
+\tau_s^{-2}(H,\mathcal A_U)
+&=\frac{\|(I-P_{\mathcal A_U+\mathcal A_U'})H\|_2^2}{d},\\
+C_H([U])&=
+\frac{d\,\tau_s^{-2}(H,\mathcal A_U)}
+{\|H-(\operatorname{Tr}H/d)I\|_2^2}.
+\end{aligned}
+$$
+
+where $P_{\mathcal A_U+\mathcal A_U'}$ projects onto the sum of the two
+operator subspaces, not their generated algebra. For fixed non-scalar $H$, the
+positive multiplier is independent of $U$: minimizing the squared Gaussian
+rate gives the same minima and local stability on the same candidate domain.
+This is direct prior art and operational motivation for the cost, not a
+different selector that evades the argument below. A finite-time algebraic
+out-of-time-order correlator would require a separately justified time-window
+protocol and new tests; no such result is reported here. The displayed
+identification is not assumed for charge-sector algebras or continuum QFT.
+
 The preliminary result is negative. Assume that $\rho$ is a rank-one projector
 onto an isolated, nondegenerate eigenvalue of $H$, and quotient candidate
 factorizations by local basis changes, factor exchange where applicable, and
@@ -557,9 +577,11 @@ which excludes a strict local minimum. This purity-based quotient argument is
 the step for which independent mathematical review is most important.
 
 Exact two-qubit calculations, explicit degenerate and resonant examples, and
-numerical $2\times3$ searches support the argument. Degenerate examples can
-display the desired bipartite-entanglement contrast, but only along flat
-families that fail strictness and robustness. Details and reproducible scripts
+numerical $2\times3$ searches support the argument. The tested degenerate
+examples display bipartite-entanglement contrast along flat families that fail
+strictness and robustness. This is not a general exclusion of strict minima
+for degenerate energies: state-changing rotations must also be shown
+inequivalent under the full quotient. Details and reproducible scripts
 are supplied in
 [`feedback/general-no-go-analysis.md`](./feedback/general-no-go-analysis.md),
 [`feedback/two-qubit-preliminary-analysis.md`](./feedback/two-qubit-preliminary-analysis.md),
@@ -570,10 +592,12 @@ If independently confirmed, this result retires $C_H$ as a solution to the
 specified finite-dimensional type-I entanglement-contrast problem under these
 assumptions. It does not determine whether algebras selected by this or another
 criterion could exhibit a contrast in a separately defined observational or
-subalgebra-relative $S_{\mathrm{eff}}$. Nor does it apply automatically to
-minimal-scrambling or quasi-classicality criteria, selectors acting on a family
-of observables, field-theoretic algebras, mixed or nonstationary states, or the
-central cosmological proposal. Those questions require separate analysis.
+subalgebra-relative $S_{\mathrm{eff}}$. The Gaussian scrambling criterion
+inherits the same obstruction on this domain by the identity above. Genuinely
+different criteria, such as a specified finite-time scrambling or
+quasi-classicality functional, selectors acting on a family of observables,
+field-theoretic algebras, mixed or nonstationary states, and the central
+cosmological proposal require separate analysis.
 
 ### Restricted follow-up: an Einstein-Cartan-inspired CAR selector
 
@@ -616,7 +640,8 @@ C(\mathbf n;r)=
 \qquad r=\frac gt.
 $$
 
-It has two strict endpoint minima, at the momentum split
+For $1/\sqrt{12}<|r|<1/\sqrt6$, it has two strict local endpoint minima,
+at the momentum split
 $\mathbf n=\pm\hat{\mathbf y}$ and site split
 $\mathbf n=\pm\hat{\mathbf z}$, which exchange global stability at
 $|r|=1/3$. On the tested positive-coupling branch, $r=1/3$, the Hamiltonian has
@@ -1199,7 +1224,10 @@ spreading:
 mereology instead represents generalized subsystem structures by an observable
 algebra and its commutant, and uses minimal algebraic scrambling as a dynamical
 criterion:
-[Zanardi et al.](https://arxiv.org/abs/2212.14340). A related toy-universe model
+[Zanardi et al.](https://arxiv.org/abs/2212.14340). Its Gaussian criterion is
+equivalent to the interaction-projection cost on the finite bipartite
+factor-algebra domain, as shown above; it is not an independent replacement
+for that tested selector. A related toy-universe model
 jointly selects Hamiltonian structure, subsystem decomposition, and a
 low-entropy state through a variational principle:
 [Shokrian Zini, Brown & Freedman](https://arxiv.org/abs/2208.00944).
@@ -1453,9 +1481,12 @@ does not derive the algebra selector used here.
 
 ### A.2 Restricted candidate factorizations
 
-A general $U(8)$ transformation would reproduce the unrestricted setting of
-the no-go argument. Instead, require number preservation and normalization of
-the internal Dirac matrix algebra
+Arbitrary factorizations of the 256-dimensional Fock space belong to the
+unrestricted setting of the no-go argument. The number-preserving Fock-space
+lifts $\Gamma(V)$ of one-particle $U(8)$ transformations form a proper subgroup
+of $U(256)$, not the unrestricted domain. We restrict to these
+one-particle transformations and further require normalization of the internal
+Dirac matrix algebra
 
 $$
 \mathfrak D=I_2\otimes M_4(\mathbb C),
@@ -1533,8 +1564,8 @@ $$
 N(u;r)=u+3r^2(1-u)(3+u),
 $$
 
-a concave quadratic for $r\neq0$. Hence every global minimum is one of two
-strict endpoints. The momentum factorization $\mathbf n=\pm\hat{\mathbf y}$ is
+a concave quadratic for $r\neq0$. Hence every global minimum is an endpoint
+class. The momentum factorization $\mathbf n=\pm\hat{\mathbf y}$ is
 global for $|r|<1/3$, the site factorization
 $\mathbf n=\pm\hat{\mathbf z}$ is global for $|r|>1/3$, and they are co-global
 at $|r|=1/3$. Both remain locally stable in the interval
@@ -1880,7 +1911,8 @@ the spectra of $p$ are $231/4$, $231/2$, and $231$, while those of $r$ are
 $693/4$, $539/4$, and $231/2$ on the respective summands. Both forms are
 positive definite. Every nonzero contact therefore makes the declared periodic
 resolver choose $x=1$, including $\beta=\pi/2$. At that balanced representative,
-the symmetric-hopping residual has norm $A$, and its residual cross contraction
+the symmetric-hopping residual has squared Hilbert-Schmidt norm $A$, and its
+residual cross contraction
 with every $Q_q$ vanishes. Hence
 
 $$

@@ -5,6 +5,16 @@ Date: 20 July 2026
 Status: exploratory v0.1.3 finite-size stress test; numerical and not
 independently peer reviewed.
 
+Release-status note (14 September 2026, ICC v0.1.4): the dated three-cell
+calculation below is retained as a historical gate. Subsequent
+[four-cell](./four-cell-finite-gate.md),
+[boundary-phase](./four-cell-boundary-phase-gate.md),
+[matched-control](./four-cell-matched-control-gate.md), and
+[onsite-closure](./four-cell-onsite-closure.md) work is now included in the
+package. It does not establish boundary-independent robustness or a continuum
+selector, and the matched-control and closure results remove EC specificity
+from the declared residual law.
+
 Reproducible calculation:
 [`ec_three_cell_selector.py`](./ec_three_cell_selector.py)
 
@@ -33,8 +43,8 @@ preregistered:
 The decision rule was also fixed in advance. Failure under both boundary
 conditions is a stop condition. If exactly one boundary condition passes, the
 result is boundary-sensitive; a four-cell or analytic large-size calculation
-would be required before making a boundary-independent claim. Neither is
-performed in this work.
+would be required before making a boundary-independent claim. Neither was part
+of this three-cell calculation; later four-cell work is linked above.
 
 ## 2. Model and projection
 
@@ -228,9 +238,10 @@ remaining boundary-sensitive rather than a complete algebraic no-go result:
 4. A non-EC density interaction also produces strict competing branches.
 
 A four-cell or analytic large-size calculation would be needed to adjudicate
-the open-versus-periodic and odd-lattice dependence. Neither is performed, so
-the finite selector is not promoted beyond this side branch. No change to the
-main ICC hypothesis follows.
+the open-versus-periodic and odd-lattice dependence. That was beyond this
+three-cell calculation. The later four-cell gates linked above do not establish
+a boundary-independent or large-size result, so the finite selector is not
+promoted beyond this side branch. No change to the main ICC hypothesis follows.
 
 ## 9. Remaining limits
 

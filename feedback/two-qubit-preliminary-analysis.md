@@ -2,6 +2,8 @@
 
 Date: 3 July 2026
 
+Selector-scope clarification: 14 September 2026 (v0.1.4); calculations unchanged.
+
 Status: preliminary derivation and numerical exploration, not peer reviewed.
 The proof sketches and code should be independently checked before any result
 is presented as a theorem.
@@ -36,8 +38,11 @@ and robustness conditions for exactly the reasons those conditions were
 included.
 
 This two-qubit derivation was subsequently extended by a preliminary
-arbitrary-dimension argument for the same selector. Neither result rules out a
-minimal-scrambling selector, a selector using more than one distinguished
+arbitrary-dimension argument for the same selector. The Gaussian
+minimal-scrambling cost is proportional to this interaction cost on the same
+finite factor-algebra domain and inherits its obstruction; see the updated
+main mathematical problem. Neither result automatically rules out a genuinely
+different finite-time criterion, a selector using more than one distinguished
 operator, or the broader cosmological proposal.
 
 ## 1. Notation
@@ -381,8 +386,9 @@ mathematically useful questions are:
 
 1. Is the arbitrary-dimension degenerate-block argument, including its
    purity-based quotient-separation lemma, correct on the stated quotient space?
-2. Does the minimal-scrambling functional of operational quantum mereology
-   evade this no-go result?
+2. Can a separately specified finite-time scrambling criterion evade this
+   no-go result? The proportional Gaussian criterion cannot do so on the same
+   domain under the same assumptions.
 3. Would a selector based on a distinguished algebra or a jointly specified
    family of operators $(H,Q_1,\ldots,Q_k)$ be mathematically better posed than
    one based on $H$ alone?

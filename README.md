@@ -8,7 +8,7 @@ Author: Patrik William Pustejovsky
 DOI (all versions):
 [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416).
 
-This repository contains version 0.1.3 of a conceptual research note on emergent
+This repository contains version 0.1.4 of a conceptual research note on emergent
 time, informational conservation, entropy as local readability, and cyclic
 cosmology. It includes a minimal finite-dimensional illustration showing how the
 same global pure state can have different bipartite entanglement entropies under
@@ -18,9 +18,9 @@ is boundary-sensitive. At four cells, the transported residual law is shared by
 every nonzero contact in the declared translation-invariant onsite quartic
 class, so the periodic branch is not EC specific.
 
-Release date: 10 August 2026.
+Release date: 14 September 2026.
 
-This is version 0.1.3. Its purpose is to be broken.
+This is version 0.1.4. Its purpose is to be broken.
 
 The goal is not to defend this formulation, but to expose it to serious
 criticism, identify where it fails, and use those failure modes to build a
@@ -45,12 +45,13 @@ identify the correct field-theoretic or gravitational observable algebra.
 The proposal is suitable for preliminary academic discussion as a conceptual
 physical hypothesis, but not yet as a completed theory.
 
-Version 0.1.3 retains the preliminary no-go result for the unrestricted
-Hamiltonian interaction-projection selector and adds a restricted finite
-follow-up. On the number-preserving CAR manifold that normalizes the internal
-Dirac matrix algebra, an Einstein-Cartan-inspired two-cell Hamiltonian develops
-two strict competing factorization minima and an isolated stationary ground
-state with nonzero mode-entanglement contrast. The result survives restriction
+Version 0.1.4 retains the preliminary no-go result for the unrestricted
+Hamiltonian interaction-projection selector and the restricted finite
+follow-up introduced in v0.1.3. On the number-preserving CAR manifold that
+normalizes the internal Dirac matrix algebra, an Einstein-Cartan-inspired
+two-cell Hamiltonian develops two strict competing factorization minima in its
+coexistence window and an isolated stationary ground state with nonzero
+mode-entanglement contrast. The result survives restriction
 to the fixed four-particle sector. It does not contradict the unrestricted
 argument, because the latter's descent directions are not all admissible on the
 restricted manifold. The physical derivation of that manifold, its continuum
@@ -66,7 +67,28 @@ to every nonzero Hermitian translation-invariant onsite quartic contact in the
 declared four-cell class. This is a stop result for EC specificity, not a
 positive extension of the main ICC proposal.
 
-## What Changed in 0.1.3
+## What Changed in 0.1.4
+
+- Corrected the distinction between one-particle $U(8)$ transformations and
+  arbitrary transformations of the 256-dimensional Fock space.
+- Qualified the energy-degeneracy discussion: state-changing rotations need
+  not be distinct in the full factorization quotient. The nondegenerate
+  strict-minimum proposition is unchanged.
+- Made the two-cell coexistence window explicit and corrected a squared-norm
+  label in the four-cell closure.
+- Identified Gaussian minimal scrambling as the same optimization criterion
+  on the finite bipartite factor-algebra domain, not a separate escape from the
+  tested selector's limitations. No finite-time follow-up result is included.
+- Distinguished the companion note's positive trajectory penalty from a
+  real-time action and its separately assumed dissipative law. Made the density
+  scaling conditional on a physical cell and occupation prescription.
+- Updated the supplementary status, PDF, citation metadata, and release
+  package. No finite calculation or central cosmological postulate changes.
+
+See the [release notes](./RELEASE_NOTES-v0.1.4.md) and
+[correction verification](./feedback/v0.1.4-correction-verification.md).
+
+## Finite Results Added in 0.1.3
 
 - Preserved and clarified the v0.1.2 no-go argument on the unrestricted
   factorization space.
@@ -154,8 +176,12 @@ itself falsify the central aeonic boundary proposal.
 ## Main Document
 
 - [PAPER.md](./PAPER.md)
-- [Formatted PDF (v0.1.3)](./Informational-Cyclic-Cosmology-v0.1.3.pdf)
-- [Release notes for v0.1.3](./RELEASE_NOTES-v0.1.3.md)
+- [Formatted PDF (v0.1.4)](./Informational-Cyclic-Cosmology-v0.1.4.pdf)
+- [Release notes for v0.1.4](./RELEASE_NOTES-v0.1.4.md)
+- [Correction verification for v0.1.4](./feedback/v0.1.4-correction-verification.md)
+- [Final v0.1.3 mathematical review](./feedback/v0.1.3-final-mathematical-review-2026-09-10.md)
+- [Final v0.1.3 physics review](./feedback/v0.1.3-final-physics-review-2026-09-10.md)
+- [Historical release notes for v0.1.3](./RELEASE_NOTES-v0.1.3.md)
 - [Adversarial review of the v0.1.3 increment](./feedback/v0.1.3-adversarial-review.md)
 - [Mathematical audit of the v0.1.3 increment](./feedback/v0.1.3-mathematical-audit.md)
 - [EC/CAR companion technical note](./research/einstein-cartan-circuit-selector.md)
@@ -186,9 +212,10 @@ itself falsify the central aeonic boundary proposal.
 - [Citation audit](./feedback/citation-audit.md)
 - [Technical-validity audit](./feedback/technical-validity-audit.md)
 
-## Reproducing the v0.1.3 Calculation
+## Reproducing the Finite Calculations
 
-The new finite calculations require Python 3.10 or later and NumPy. From the
+The finite calculations introduced in v0.1.3 are unchanged in v0.1.4. They
+require Python 3.10 or later and NumPy. From the
 repository root, run:
 
 ```bash

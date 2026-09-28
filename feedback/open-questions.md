@@ -1,6 +1,7 @@
 # Open Questions
 
-This is version 0.1.2. Its purpose is to be broken.
+This document accompanies version 0.1.4 (14 September 2026). Its purpose is to
+identify what remains unresolved.
 
 The first selection-rule issue is isolated as a finite-dimensional
 construction-or-no-go question in the
@@ -8,8 +9,17 @@ construction-or-no-go question in the
 interaction-projection selector now has a preliminary negative answer in
 [the general no-go analysis](./general-no-go-analysis.md). Independent checking
 of that argument, especially its purity-based quotient-separation lemma, is the
-immediate question; a confirmed result would require a genuinely different
-selector.
+immediate question; a confirmed result would obstruct the stated
+entanglement-contrast target on the same unrestricted domain.
+
+The subsequent restricted EC/CAR calculation has now been tested at two,
+three, and four cells. The three-cell boundary-independent robustness gate
+and four-cell EC-specificity gate fail; the bounded onsite classification
+identifies generic locality competition, not an EC-derived transition. See
+the [three-cell report](../research/three-cell-finite-gate.md),
+[four-cell matched control](../research/four-cell-matched-control-gate.md), and
+[onsite closure](../research/four-cell-onsite-closure.md). No scalable,
+continuum, or cosmological selector has been established.
 
 ## Main failure points
 
@@ -51,8 +61,13 @@ selector.
    selector correct, including the reduced-state-purity proof that an entangled
    isolated eigenstate supplies arbitrarily nearby, non-equivalent
    degenerate-block directions in the quotient?
-2. Does an established minimal-scrambling or quasi-classicality selector evade
-   that obstruction without encoding the target entropy?
+2. Can a genuinely different selector evade that obstruction without encoding
+   the target entropy? On the finite bipartite factor-algebra domain, the
+   Gaussian minimal-scrambling criterion is already proportional to the tested
+   interaction cost (see the main mathematical problem), so it does not evade
+   the obstruction under the same assumptions. Finite-time scrambling or
+   quasi-classicality would need independently justified protocols and tests;
+   that follow-up remains open, not a result of this release.
 3. What exactly is the observable algebra `A_n` in a cosmological setting?
 4. Which intrinsic data define the admissible family of embeddings
    `E_lambda`: relational clock data, asymptotic observables, boundary
