@@ -12,7 +12,63 @@ positive, candidate-independent multiplier. The updated discussion credits
 direct prior art and does not describe this criterion as a new selector. This
 targeted check is not a new exhaustive citation audit.
 
-Scope: every scholarly source linked from `PAPER.md`, plus foundational sources
+## Version 0.1.5 Targeted Addition
+
+Date: 2026-10-01. This checks the added citations and the existing source reused
+for the measurement-entropy definition; it is not a repeat of the full audit.
+
+| Source | Use and limit in v0.1.5 |
+|---|---|
+| [Styliaris, Anand, and Zanardi (2021)](https://arxiv.org/abs/2007.08570), *Physical Review Letters* 126, 030601 | Channel/operator-entanglement interpretation of bipartite scrambling. This does not identify that quantity with ground-state or cosmological entropy. |
+| [Andreadakis, Dallas, and Zanardi (2024)](https://arxiv.org/abs/2312.13386), *Physical Review A* 109, 052424 | Long-time results with spectral assumptions. These are distinguished from the finite-window local-minimum calculation; the latter is not a refutation of the cited result. |
+| [Barnum and Knill (2002)](https://arxiv.org/abs/quant-ph/0004088v2), *Journal of Mathematical Physics* 43, 2097-2106 | Recovery bounds under the stated channel/input task. The revised arXiv proof is dated 2026; the journal article remains a 2002 citation. |
+| [Chitambar et al. (2014)](https://arxiv.org/abs/1210.4583), *Communications in Mathematical Physics* 328, 303-326 | LOCC resource classes and the statistics/instrument distinction. The concrete protocols and witness are worked out in the supplement. |
+| [Buscemi, Schindler, and Safranek (2023)](https://arxiv.org/abs/2209.03803), *New Journal of Physics* 25, 053002 | Existing POVM observational-entropy definition, classical postprocessing and Petz comparison. The fixed-protocol calculation is not a new entropy definition or a cosmological application established by this source. |
+
+Author lists, publication metadata and claim scope were checked against primary
+arXiv records and the source-based derivations used for the finite supplements.
+No citation is used as evidence for an ICC cosmological transition.
+
+## Version 0.1.5 Pre-publication Source Additions
+
+Date: 2026-10-02. Two scoped additions to the manuscript and references are
+included in the final v0.1.5 source, PDF and archive. The version number and
+release metadata are unchanged. The earlier document-only snapshot is
+superseded by this pre-publication package.
+This is a targeted source-use check, not a new exhaustive audit or external
+peer review.
+
+| Source | Verified use and boundary |
+|---|---|
+| [Rignon-Bret and Elouard (2026), v1](https://arxiv.org/abs/2607.09242v1) | Section 2.2, Eqs. (2.19)-(2.22), defines algebra-dependent maximum-entropy completion; Section 5 conditions entropy accounting on specified dynamics and includes nonequilibrium corrections. Cited as a recent preprint and conditional thermodynamic context, not as an ICC selector or a derivation of a cosmological reset. Its algebra-completion entropy is explicitly distinguished from Section 5.2's general-POVM entropy. |
+| [Teixido-Bonfill, Schindler, and Safranek (2025), v3](https://arxiv.org/abs/2310.14086v3) | The published-version text establishes inequivalent postprocessing, measured-relative-entropy and observational-entropy orderings for general POVMs. It supports distinguishing Section 5.2's state-specific comparison from universal measurement superiority. No all-ensemble mutual-information theorem, ICC-specific counterexample or cosmological mechanism is attributed to this source. |
+
+The primary arXiv records and relevant full-text statements were checked.
+The Rignon-Bret/Elouard record lists v1 only and no journal reference as checked
+on this date. The Teixido-Bonfill et al. record labels v3 the published version
+and links [the journal DOI](https://doi.org/10.1088/1402-4896/ad977c); the
+publisher page was not retrievable in this check. Its arXiv v3 PDF identifies
+the authors and March 2025 text. The reference retains the journal DOI without
+adding volume or page metadata not verified from the accessible primary record.
+The relevant definitions, source locations and claim boundaries are summarized
+in the table above; this audit does not require unpublished working notes.
+Neither citation is presented as external validation of ICC itself.
+
+Initial PDF-only rebuild check on 2026-10-02: 33 pages, 93 rendered display equations, four tables,
+and 197 HTTPS link annotations. The new boundary appears on page 17, the
+algebraic-thermodynamics paragraph on page 20, and both reference entries on
+page 32. All pages were inspected as contact sheets, with detailed inspection
+of the changed pages and page 8's norm symbols. The latter retain the known
+extracted-font-metric anomaly but render correctly. MathJax reported no errors
+or unresolved placeholders. The root PDF and `output/pdf/` copy match; no ZIP
+was rebuilt at that stage and no upload was performed. No mathematical
+computation or complete release test suite was rerun for that document-only
+update. The subsequent final package checks are recorded in the
+[integration verification](./v0.1.5-integration-verification.md).
+
+## Earlier Audits
+
+Initial audit scope: every scholarly source then linked from `PAPER.md`, plus foundational sources
 that were missing where the manuscript directly invoked a named framework. Each
 source was checked against its abstract or full text and against the exact claim
 made in the manuscript.

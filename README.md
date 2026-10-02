@@ -8,7 +8,7 @@ Author: Patrik William Pustejovsky
 DOI (all versions):
 [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416).
 
-This repository contains version 0.1.4 of a conceptual research note on emergent
+This repository contains version 0.1.5 of a conceptual research note on emergent
 time, informational conservation, entropy as local readability, and cyclic
 cosmology. It includes a minimal finite-dimensional illustration showing how the
 same global pure state can have different bipartite entanglement entropies under
@@ -16,11 +16,14 @@ different local observable algebras, plus a restricted Einstein-Cartan-inspired
 CAR selector as a separate finite example. Its first three-cell robustness test
 is boundary-sensitive. At four cells, the transported residual law is shared by
 every nonzero contact in the declared translation-invariant onsite quartic
-class, so the periodic branch is not EC specific.
+class, so the periodic branch is not EC specific. The current update adds a
+separate bounded finite-time selector study and a fixed measurement-relative
+entropy example with explicit access requirements. These are not a derived
+cosmological mechanism.
 
-Release date: 14 September 2026.
+Release date: 1 October 2026.
 
-This is version 0.1.4. Its purpose is to be broken.
+This is version 0.1.5. Its purpose is to be broken.
 
 The goal is not to defend this formulation, but to expose it to serious
 criticism, identify where it fails, and use those failure modes to build a
@@ -45,7 +48,7 @@ identify the correct field-theoretic or gravitational observable algebra.
 The proposal is suitable for preliminary academic discussion as a conceptual
 physical hypothesis, but not yet as a completed theory.
 
-Version 0.1.4 retains the preliminary no-go result for the unrestricted
+The current version retains the preliminary no-go result for the unrestricted
 Hamiltonian interaction-projection selector and the restricted finite
 follow-up introduced in v0.1.3. On the number-preserving CAR manifold that
 normalizes the internal Dirac matrix algebra, an Einstein-Cartan-inspired
@@ -67,7 +70,30 @@ to every nonzero Hermitian translation-invariant onsite quartic contact in the
 declared four-cell class. This is a stop result for EC specificity, not a
 positive extension of the main ICC proposal.
 
-## What Changed in 0.1.4
+## What Changed in 0.1.5
+
+- A bounded finite-time scrambling study supplies an internally certified
+  entangled strict local minimum. It is not globally preferred: a product
+  competitor has lower cost and better recovery in the specified operational
+  task. This is not a counterexample to the interaction-cost-specific argument.
+- A separate fixed Bell-state measurement example has observational entropies
+  of 2 and 5/3 bits, with explicit white-noise and measurement-sharpness formulas.
+  Reduced-state entropy, measurement entropy and cosmological S_eff remain
+  distinct; the last is still not supplied.
+- The complete new measurement statistics have an exact local implementation
+  on both original qubits with classical communication. First-qubit-only
+  access cannot implement the informative POVM on arbitrary inputs. Matching
+  statistics does not provide coherent control of the new subsystem.
+- The abstract, results-and-limits table, conclusions, source attribution and
+  AI-assistance disclosure now reflect these distinct studies. No physical
+  entropy reset, cosmological selection law or transition is derived.
+- The [reproducibility supplement](./research/v015/README.md) supplies the
+  derivations, six checked scripts, recorded outputs and one-command runner.
+  The finite-example sequence is closed; the earlier EC/CAR results are unchanged.
+
+See the [v0.1.5 release notes](./RELEASE_NOTES-v0.1.5.md).
+
+## Historical Changes in 0.1.4
 
 - Corrected the distinction between one-particle $U(8)$ transformations and
   arbitrary transformations of the 256-dimensional Fock space.
@@ -78,7 +104,8 @@ positive extension of the main ICC proposal.
   label in the four-cell closure.
 - Identified Gaussian minimal scrambling as the same optimization criterion
   on the finite bipartite factor-algebra domain, not a separate escape from the
-  tested selector's limitations. No finite-time follow-up result is included.
+  tested selector's limitations. No finite-time follow-up result was included
+  in v0.1.4.
 - Distinguished the companion note's positive trajectory penalty from a
   real-time action and its separately assumed dissipative law. Made the density
   scaling conditional on a physical cell and occupation prescription.
@@ -176,8 +203,11 @@ itself falsify the central aeonic boundary proposal.
 ## Main Document
 
 - [PAPER.md](./PAPER.md)
-- [Formatted PDF (v0.1.4)](./Informational-Cyclic-Cosmology-v0.1.4.pdf)
-- [Release notes for v0.1.4](./RELEASE_NOTES-v0.1.4.md)
+- [Formatted PDF (v0.1.5)](./Informational-Cyclic-Cosmology-v0.1.5.pdf)
+- [Release notes for v0.1.5](./RELEASE_NOTES-v0.1.5.md)
+- [v0.1.5 reproducibility supplement](./research/v015/README.md)
+- [v0.1.5 integration verification](./feedback/v0.1.5-integration-verification.md)
+- [Historical release notes for v0.1.4](./RELEASE_NOTES-v0.1.4.md)
 - [Correction verification for v0.1.4](./feedback/v0.1.4-correction-verification.md)
 - [Final v0.1.3 mathematical review](./feedback/v0.1.3-final-mathematical-review-2026-09-10.md)
 - [Final v0.1.3 physics review](./feedback/v0.1.3-final-physics-review-2026-09-10.md)
@@ -214,7 +244,17 @@ itself falsify the central aeonic boundary proposal.
 
 ## Reproducing the Finite Calculations
 
-The finite calculations introduced in v0.1.3 are unchanged in v0.1.4. They
+For the bounded v0.1.5 additions, use Python 3.10 or later with NumPy and run:
+
+```bash
+python3 research/v015/run_checks.py
+```
+
+This checks the declared finite examples, not a physical selection mechanism.
+The supplement explains the exact-arithmetic certificate, numerical tolerances,
+recorded outputs and limits. It does not rerun the older lattice campaign.
+
+The finite calculations introduced in v0.1.3 are unchanged in v0.1.5. They
 require Python 3.10 or later and NumPy. From the
 repository root, run:
 
@@ -250,9 +290,9 @@ I am especially interested in criticism of:
 2. the boundary relation, missing replacement algebra-selection rule, and
    missing intrinsic source of relational variation between aeonic regimes,
 3. the entropy/readability distinction,
-4. the finite-dimensional illustration and whether its refactorization move has
-   any physically meaningful cosmological analogue beyond changing bipartite
-   entanglement entropy,
+4. whether the finite measurement-relative comparison has any cosmological
+   analogue once its assumed access and the absence of transition dynamics
+   are made explicit,
 5. extension from finite-dimensional Hilbert spaces to the appropriate QFT or
    gravitational observable algebras,
 6. the optional informational dark-sector extension, especially its effective
@@ -284,7 +324,8 @@ Multiple large language models were used extensively during the subsequent
 development of the manuscript. Their contributions included criticism and
 counterarguments; development and revision of the operator-algebraic notation,
 the boundary ansatz, relational-time connections, the finite-dimensional
-illustrations, and the EC/CAR candidate calculation; literature discovery and
+illustrations, the EC/CAR candidate calculation, the finite-time selector
+follow-up, and the measurement-entropy and access analyses; literature discovery and
 comparison; code drafting and review; manuscript organization; English drafting
 and rewriting; and preparation of publication metadata. Much of the present
 wording, formal presentation, and exploratory code was generated or revised

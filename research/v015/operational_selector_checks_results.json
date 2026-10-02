@@ -1,0 +1,147 @@
+{
+  "status": "bounded numerical checks and reused exact scalar bounds; not a physical selector",
+  "seed": 20260929,
+  "numpy_version": "2.3.5",
+  "tolerance": 1e-11,
+  "residuals": {
+    "choi_identity": 5.664476480668373e-17,
+    "commutator_identity": 4.440892098500626e-16,
+    "trace_preserving": 1.6653345369377348e-16,
+    "unital": 1.6653345369377348e-16,
+    "trace_one": 2.229584728193206e-16,
+    "hermitian": 3.1031676915590914e-17,
+    "negative_eigenvalue": 7.238960778884618e-17,
+    "control_value": 0.0,
+    "unitary": 9.992007221626409e-16
+  },
+  "identity_cases": [
+    {
+      "case": "identity",
+      "d_a": 2,
+      "d_b": 2,
+      "score": 0.0
+    },
+    {
+      "case": "cnot",
+      "d_a": 2,
+      "d_b": 2,
+      "score": 0.5
+    },
+    {
+      "case": "swap",
+      "d_a": 2,
+      "d_b": 2,
+      "score": 0.75
+    },
+    {
+      "case": "seeded_2x2_0",
+      "d_a": 2,
+      "d_b": 2,
+      "score": 0.5821519316254415
+    },
+    {
+      "case": "seeded_2x2_1",
+      "d_a": 2,
+      "d_b": 2,
+      "score": 0.6182649814872281
+    },
+    {
+      "case": "seeded_2x2_2",
+      "d_a": 2,
+      "d_b": 2,
+      "score": 0.5920159599025246
+    },
+    {
+      "case": "seeded_2x3_0",
+      "d_a": 2,
+      "d_b": 3,
+      "score": 0.7042763575400408
+    },
+    {
+      "case": "seeded_2x3_1",
+      "d_a": 2,
+      "d_b": 3,
+      "score": 0.6021366788727452
+    },
+    {
+      "case": "seeded_2x3_2",
+      "d_a": 2,
+      "d_b": 3,
+      "score": 0.6766355157878697
+    },
+    {
+      "case": "seeded_3x2_0",
+      "d_a": 3,
+      "d_b": 2,
+      "score": 0.6878026349556294
+    },
+    {
+      "case": "seeded_3x2_1",
+      "d_a": 3,
+      "d_b": 2,
+      "score": 0.6931349556828011
+    },
+    {
+      "case": "seeded_3x2_2",
+      "d_a": 3,
+      "d_b": 2,
+      "score": 0.6827329315018057
+    }
+  ],
+  "known_vs_unknown_time": {
+    "recorded_time_average_score": 0.0,
+    "unrecorded_time_channel_score": 0.5,
+    "unrecorded_time_choi_eigenvalues": [
+      0.0,
+      0.0,
+      0.5,
+      0.5
+    ]
+  },
+  "existing_competitor_costs": {
+    "bell": {
+      "cost": 0.5520317539568702,
+      "unrecorded_time_choi_entropy": 0.7454954573679331,
+      "timing_variance": 0.19346370341106273,
+      "jensen_residual": 1.6653345369377348e-16
+    },
+    "product_competitor": {
+      "cost": 0.22761185052885358,
+      "unrecorded_time_choi_entropy": 0.4913769827635762,
+      "timing_variance": 0.26376513223472253,
+      "jensen_residual": 1.1102230246251565e-16
+    }
+  },
+  "quadrature_residual": 3.191891195797325e-15,
+  "recovery_supplement": {
+    "adjoint_decoder_identity_residual": 2.220446049250313e-16,
+    "same_H_equal_purity_cases": [
+      {
+        "embedding": "reference",
+        "choi_purity": 0.49999999999999967,
+        "optimal_fidelity_attained": 0.683012701892219,
+        "choi_eigenvalues": [
+          0.10566243270259347,
+          0.1056624327025935,
+          0.10566243270259364,
+          0.6830127018922191
+        ]
+      },
+      {
+        "embedding": "energy_product",
+        "choi_purity": 0.5,
+        "optimal_fidelity_attained": 0.4999999999999999,
+        "choi_eigenvalues": [
+          -1.2325951644078312e-32,
+          0.0,
+          0.4999999999999999,
+          0.5
+        ]
+      }
+    ],
+    "certified_known_time_bell_optimum_less_than": "670/1000",
+    "certified_known_time_product_optimum_greater_than": "772/1000",
+    "certificate_dependency": "existing Bell Fourier coefficients and rational sinc enclosures",
+    "scope": "Derived-claim supplement; no new horizon, optimizer or minimum claim"
+  }
+}

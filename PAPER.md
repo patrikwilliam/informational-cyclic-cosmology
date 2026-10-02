@@ -8,80 +8,55 @@ ORCID: [0009-0008-1618-6619](https://orcid.org/0009-0008-1618-6619)
 
 DOI (all versions): [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416)
 
-Version: 0.1.4
+Version: 0.1.5
 
-Release date: 14 September 2026
+Release date: 1 October 2026
 
 Status: speculative hypothesis, not a completed physical theory.
 
-Revision note: version 0.1.4 applies the final mathematical and physical review
-corrections to v0.1.3. It distinguishes one-particle from unrestricted Fock-space
-transformations, qualifies the degenerate-state quotient argument and endpoint
-stability, and makes the equivalence to the established Gaussian
-minimal-scrambling criterion explicit. The companion note clarifies its
-trajectory-penalty interpretation and conditional density scaling. No finite
-numerical result changes: the three-cell boundary-independent robustness gate
-and four-cell EC-specificity gate still fail. No cosmological transition is
-derived, and the central proposal remains open.
+Revision note: version 0.1.5 consolidates a bounded finite-time selector study,
+an explicit measurement-relative entropy calculation, and its local measurement
+implementation. It distinguishes local from global optimization, outcome
+statistics from coherent subsystem control, and laboratory assumptions from
+cosmological inputs. Earlier EC/CAR results are unchanged. The finite-example
+sequence is closed; no physical algebra selector or cosmological transition is
+derived.
 
 ## Abstract
 
-This note proposes a speculative cosmological hypothesis: fundamental reality
-may not be spacetime evolving inside an external time parameter, but rather a
-global informational structure whose internal correlations are locally
-experienced as time, causality, entropy, matter, and cosmic history. Within this
-proposal, a cosmic cycle is interpreted not primarily as a temporal restart
-after the end of the universe, but as a change in the local readability of one
-globally conserved informational state.
+This note explores a speculative cosmological interpretation in which an
+aeonic boundary changes the physically privileged local observable algebra of
+one globally conserved informational state, rather than restarting evolution
+in external time. The mechanism selecting that algebra is not provided. The
+proposal remains a conceptual research program without a distinct quantitative
+cosmological prediction; no new general theorem about factorization or
+observational entropy is claimed.
 
-The hypothesis combines ideas from quantum unitarity, black-hole information,
-holography, thermodynamic coarse-graining, emergent spacetime, relational time,
-and cyclic cosmology.
+Finite studies delimit the proposal. A preliminary obstruction concerns a
+specific unrestricted Hamiltonian interaction-projection selector. Restricted
+Einstein-Cartan-inspired CAR examples do not evade the missing physical input:
+their three-cell robustness and four-cell EC-specificity tests fail. A distinct
+finite-time scrambling functional admits an internally certified entangled
+strict local minimum, but a product-state competitor has lower cost and better
+recovery in the stipulated operational task. This is not successful physical
+selection and does not contradict the interaction-cost obstruction.
 
-No new theorem about Hilbert-space factorization, entanglement relativity, or
-observational entropy is claimed. The proposed contribution is a speculative
-cosmological interpretation: an aeonic boundary may correspond to a change in
-the physically privileged local observable algebra of a stationary global
-informational state, rather than to a new global state or an externally timed
-restart. The mechanism selecting such an algebra is not yet provided.
+A separate two-qubit illustration compares measurements on a fixed Bell state.
+The original reduced-state entropies are one and zero bits. A specified
+randomized Pauli protocol instead gives observational entropies of two and
+five-thirds bits, with an explicit white-noise and measurement-sharpness
+dependence. Its new measurement statistics are reproducible by local operations
+on both original qubits and classical communication, but not first-qubit-only
+access for arbitrary inputs at nonzero sharpness. Matching these statistics
+does not implement coherent control of the
+new subsystem. The comparison is not a temporal entropy decrease or a
+thermodynamic, gravitational, or cosmological reset.
 
-A two-qubit example verifies only a narrower kinematic fact: one fixed pure
-state can have different bipartite entanglement entropies under different
-subsystem factorizations. It does not demonstrate a decrease in thermodynamic,
-observational, or gravitational entropy, nor does it derive a preferred
-factorization, an aeonic transition, a thermodynamic arrow, or an extension to
-quantum field theory. The proposal therefore remains a conceptual research
-program without a distinct quantitative prediction.
-
-The finite analysis distinguishes two domains for a specific Hamiltonian-only
-proposal: minimizing the Hilbert-Schmidt norm of the interaction term relative
-to a candidate factorization. A preliminary argument indicates that, over the
-unrestricted finite bipartite factorization space and stated quotient, an
-isolated stationary pure eigenstate cannot be entangled at a strict local
-minimum. A separate two-cell Einstein-Cartan-inspired calculation restricts
-the admissible transformations to number-preserving CAR transformations that
-normalize the internal Dirac matrix algebra. On this restricted family the
-same type of cost develops two strict competing minima, a finite barrier, and
-an isolated stationary ground state with nonzero factorization-dependent
-entanglement; the result also survives restriction to the four-particle sector.
-The restricted result does not contradict the unrestricted argument because
-its descent directions are not all admissible. Neither result has been
-independently peer reviewed, and no cosmological selection law is derived. A
-non-axial onsite-density control reproduces the same competing-minimum
-geometry, so the finite mechanism is not an EC-specific signature. A first
-three-cell stress test is boundary-sensitive: the open-chain selector fails,
-whereas the periodic ring retains numerically strict endpoints. Because the
-finite graphs and their naive-derivative spectra differ at order one, this is a
-failure of boundary-independent robustness rather than evidence that periodic
-boundaries rescue the mechanism. A four-cell periodic calculation has strict
-endpoints and an explicitly transported branch that survives the prescribed
-small twists before losing positive curvature at $\phi=\pi/2$. However, the
-independent density control passes the same primary gate, follows the same
-residual law, and remains strict one grid point farther. A subsequent
-36-real-dimensional classification proves that this residual law is shared by
-every nonzero translation-invariant onsite quartic contact in the declared
-finite class. The four-cell result therefore fails its prospective
-EC-specificity control and is not used as support for EC dynamics or ICC.
+The finite examples are closed with reproducible calculations and explicit
+limits. Physical algebra selection, a justified cosmological entropy
+functional, relational transition dynamics, repeatability, and observational
+tests remain open. All mathematical and physical checks reported here are
+internal and LLM-assisted, not independent expert peer review.
 
 ## Scope and Claimed Contribution
 
@@ -92,7 +67,10 @@ The original finite-dimensional refactorization example is not presented as a
 new mathematical result. The selector-specific no-go argument added in version
 0.1.2 and the restricted EC/CAR finite example and stress tests added in version
 0.1.3 are presented for independent checking, not as established general
-theorems or as a derived cosmological mechanism.
+theorems or as a derived cosmological mechanism. Version 0.1.5 adds a bounded
+finite-time counterexample and an operational elaboration of the original
+two-qubit illustration. These are different tasks with different inputs, not
+components already joined into a cosmological mechanism.
 
 The narrower claim explored here is that these ingredients may admit a distinct
 cosmological application. In this interpretation, successive aeons are not
@@ -111,6 +89,20 @@ ingredients, cosmological observable-algebra embeddings, and relationally
 induced subsystem algebras. It did not identify the same aeonic interpretation,
 but that does not establish priority. The claimed contribution is therefore
 limited to the proposed synthesis and research question.
+
+### Results and Limits
+
+| Study | Result within its stated domain | What does not follow |
+|---|---|---|
+| Interaction-projection selector | Preliminary unrestricted strict-minimum obstruction | A no-go theorem for all selectors or ICC |
+| Restricted EC/CAR examples | Finite competing minima; robustness and specificity failures | An EC-specific or scalable selector |
+| Finite-time scrambling | Entangled strict local minimum, outperformed by a product competitor | Global preference or physical selection |
+| Fixed measurement entropy | 2 versus 5/3 bits under declared measurements | Thermodynamic or cosmological entropy reset |
+| Measurement access | Exact local implementation with classical communication | Coherent subsystem control or a derived change of access |
+
+The [v0.1.5 reproducibility supplement](./research/v015/README.md) separates
+analytic identities, exact-arithmetic certificates, numerical checks and
+assumed physical resources. None is presented as external peer review.
 
 ## 1. Core Postulates
 
@@ -515,10 +507,11 @@ operator subspaces, not their generated algebra. For fixed non-scalar $H$, the
 positive multiplier is independent of $U$: minimizing the squared Gaussian
 rate gives the same minima and local stability on the same candidate domain.
 This is direct prior art and operational motivation for the cost, not a
-different selector that evades the argument below. A finite-time algebraic
-out-of-time-order correlator would require a separately justified time-window
-protocol and new tests; no such result is reported here. The displayed
-identification is not assumed for charge-sector algebras or continuum QFT.
+different selector that evades the argument below. The bounded finite-time
+follow-up later in this section uses a different functional and a declared
+time-window protocol; its physical timing justification remains absent.
+The displayed Gaussian identification is not assumed for charge-sector
+algebras or continuum QFT.
 
 The preliminary result is negative. Assume that $\rho$ is a rank-one projector
 onto an isolated, nondegenerate eigenvalue of $H$, and quotient candidate
@@ -598,6 +591,75 @@ different criteria, such as a specified finite-time scrambling or
 quasi-classicality functional, selectors acting on a family of observables,
 field-theoretic algebras, mixed or nonstationary states, and the central
 cosmological proposal require separate analysis.
+
+### Bounded finite-time follow-up
+
+Version 0.1.5 tests a genuinely different finite-horizon functional. For a
+candidate embedding U, let $W_{U,t}=e^{-itU^\dagger HU}$, set $\hbar=1$, and
+define the channel
+
+$$
+\mathcal E_{U,t}(X)=\operatorname{Tr}_B\left[
+W_{U,t}(X\otimes I_B/d_B)W_{U,t}^\dagger\right].
+$$
+
+Let $J_{U,t}$ be its trace-one Choi state, ordered as output tensor reference.
+The algebraic scrambling quantity and its finite-time average are
+
+$$
+G_U(t)=1-\operatorname{Tr}(J_{U,t}^2),\qquad
+F_T([U])=\frac1T\int_0^T G_U(t)\,dt.
+$$
+
+This channel interpretation is established prior art
+([Styliaris, Anand & Zanardi](https://arxiv.org/abs/2007.08570)), not a new
+entropy definition. Its operational use presupposes preparation of arbitrary
+A probes, a reset maximally mixed B, and specified timing. The Choi purity is
+not the reduced-state entropy of the selected stationary ground state. T is
+fixed independently of the candidate algebra and the desired entropy.
+
+For $H=(XX+2YY+3ZZ)/\sqrt{14}$ and T = 8, the reference algebra has a
+quotient-strict local minimum with the nondegenerate singlet ground state
+$|\Psi^-\rangle$. Here $PQ$ denotes $P\otimes Q$. Exact stationarity and
+rational enclosures of all six normal-slice Hessian eigenvalues give
+$\kappa_i>7/100$ in the normalization of the
+[technical derivation](./research/v015/finite-time-analysis.md).
+This internally checked counterexample excludes a universal product-state
+strict-local-minimum claim for this finite-time functional. It is not a
+counterexample to the original cost-specific argument.
+
+Crucially, the entangled local minimum is not a global minimizer. A
+product-eigenbasis embedding of the same H and selected state gives
+
+$$
+F_8(\mathcal A_{\mathrm{Bell}})\simeq0.552031754,\qquad
+F_8(\mathcal A_{\mathrm{prod}})\simeq0.227611851.
+$$
+
+The exact-arithmetic certificate bounds their difference strictly above 3/10.
+This particular branch therefore fails any near-global tolerance at most 0.3;
+neither a global optimizer nor a physically metastable algebra has been found.
+Its simple energies have repeated gaps. Finite-time local strictness does not
+contradict infinite-time global-minimizer results under nonresonance assumptions
+([Andreadakis, Dallas & Zanardi](https://arxiv.org/abs/2312.13386)).
+
+The operational comparison is also unfavorable to this Bell candidate. For
+the stated unital channel, put $P=\operatorname{Tr}J^2$ and let $f_*$ denote
+optimal entanglement fidelity with an A-only CPTP decoder and maximally mixed
+input. The adjoint decoder and a spectral bound give $P\leq f_*\leq\sqrt P$,
+a specialization of transpose recovery
+([Barnum & Knill](https://arxiv.org/abs/quant-ph/0004088)). For uniformly sampled,
+recorded time and a decoder allowed to depend on that time, the supplement
+certifies average optimal fidelities below 0.670 for the Bell candidate and
+above 0.772 for its product competitor. Unrecorded time defines a different
+channel and task; these bounds do not supply a cosmological clock or window.
+
+This bounded follow-up is closed without promoting the branch to an ICC
+selector. Unitary transport generated by the same H stays in its centralizer
+orbit and thus in the same stipulated factorization class. A physical
+preference principle, timing prescription and transition between inequivalent
+classes remain additional inputs. The argument does not exclude other
+physically motivated selectors, and no such replacement is proposed here.
 
 ### Restricted follow-up: an Einstein-Cartan-inspired CAR selector
 
@@ -860,10 +922,11 @@ but it does not by itself define a new thermodynamic arrow.
 
 ## 5. Finite-Dimensional Illustration
 
-This section illustrates an established kinematic fact: the entanglement and
+This section first illustrates an established kinematic fact: the entanglement and
 reduced-state entropy assigned to a pure state depend on the chosen subsystem
-factorization or observable algebra. It does not model cosmology, derive an
-aeonic transition, or establish a new mathematical result.
+factorization or observable algebra. Sections 5.2 and 5.3 then specify an
+observational-entropy comparison and the measurements that realize it. None
+models cosmology, derives an aeonic transition, or claims a new general theorem.
 
 The operational role of observable algebras in selecting quantum subsystems was
 developed by [Zanardi](https://arxiv.org/abs/quant-ph/0103030). Explicit
@@ -875,6 +938,8 @@ algebra
 ([Thirring et al.](https://arxiv.org/abs/1106.3047)). The calculation below is
 a two-qubit specialization of this known factorization dependence, included to
 make the proposed cosmological interpretation concrete.
+
+### 5.1 Factorization-relative entanglement
 
 For this illustration only, define the bipartite entanglement entropy
 $S_{\mathrm{ent}}$ as the von Neumann entropy of the reduced state obtained from
@@ -1091,6 +1156,128 @@ algebras in semiclassical cosmological spacetimes can be type-II$_\infty$
 therefore identify the physically relevant algebraic class and define locality,
 entropy, and restriction without relying on naive partial tracing.
 
+### 5.2 A fixed measurement-relative entropy
+
+Keep the state $\rho=|\Phi^+\rangle\langle\Phi^+|$ and the original U above,
+whose columns are $(\Phi^+,\Phi^-,01,10)$. This is a separate example from
+Section 3's singlet/Hamiltonian calculation. Neither the state nor its two
+embeddings is selected by that finite-time criterion.
+
+For a specified POVM $\mathcal C=\{E_i\}$, use the established observational
+entropy, in bits,
+
+$$
+S_{\mathcal C}(\rho)=-\sum_i p_i\log_2(p_i/V_i),\qquad
+p_i=\operatorname{Tr}(\rho E_i),\quad V_i=\operatorname{Tr}E_i.
+$$
+
+All traces defining volume use the same global four-dimensional space;
+zero-probability terms vanish. This applies the definition of
+[Buscemi, Schindler & Safranek](https://arxiv.org/abs/2209.03803).
+The protocol chooses one of X,Y,Z uniformly, measures its binary outcome
+$s=\pm1$, and retains both axis and sign. It is not a serial measurement of
+three incompatible observables. With $W=I_4$ or U for the two embeddings,
+
+$$
+E_{j,s}^{W,\eta}=\frac16W[(I_2+s\eta\sigma_j)\otimes I_2]W^\dagger,
+\qquad 0\leq\eta\leq1.
+$$
+
+Each effect has volume 2/3. The axis weights, frame, retained records and
+volume convention are fixed before the comparison. For the stipulated
+white-noise family $\rho_p=(1-p)\rho+pI_4/4$, $0\leq p\leq1$, put
+$x=\eta(1-p)$ and let $h_2$ be the binary Shannon entropy. Direct evaluation gives
+
+$$
+S_{\mathcal C_I}(\rho_p)=2,\qquad
+S_{\mathcal C_U}(\rho_p)=\frac53+\frac13h_2\left(\frac{1+x}{2}\right).
+$$
+
+At ideal purity and sharpness the contrast is 1/3 bit. It stays positive for
+$p<1$ and $\eta>0$ in this family, tending to zero at complete mixing or zero
+sharpness. This is not a general apparatus-noise or finite-sample robustness
+claim. X or Y alone yields two bits in both descriptions; Z alone yields two
+versus one at the ideal point. The definition is therefore explicitly
+measurement-relative, not fixed by the algebra alone.
+
+This state-specific contrast does not establish a measurement ordering valid
+for every input, or superior performance on every information-processing task.
+For general POVMs, classical-postprocessing, measured-relative-entropy and
+observational-entropy orderings are inequivalent:
+[Teixido-Bonfill, Schindler & Safranek (2025)](https://arxiv.org/abs/2310.14086v3).
+Accordingly, "readability" here refers only to the declared state family and
+measurement protocol, not universal information access or a physical selection
+principle.
+
+| Quantity at the ideal point | Old description | New description |
+|---|---|---|
+| Global von Neumann entropy | 0 bits | 0 bits |
+| Reduced-state entropy, equal to entanglement entropy for this pure input | 1 bit | 0 bits |
+| Fixed XYZ observational entropy | 2 bits | 5/3 bits |
+| Cosmological $S_{\mathrm{eff}}$ | Not supplied | Not supplied |
+
+The inaccessible factor contributes one bit through global trace volumes;
+subtracting it would change the defined quantity. The six effects span the
+embedded qubit algebra for $\eta>0$, but tomography of its marginal is not
+the same entropy calculation. For mixed inputs reduced-state entropy is not
+an entanglement measure. A generic POVM's observational entropy is also not
+the von Neumann entropy of its Petz reconstruction or postmeasurement state.
+
+Simultaneous conjugation of state and effects preserves all probabilities and
+volumes. Here the effects change relative to a fixed state. Consequently the
+lower value is a comparison of measurement descriptions, not a trajectory
+of decreasing entropy. The detailed formulas, controls and fixed-grid checks
+are in the [operational supplement](./research/v015/operational-entropy.md).
+
+### 5.3 Physical access and closure
+
+The new observables have the explicit original-factor form
+
+$$
+X'=\frac{X\otimes I+Z\otimes X}{\sqrt2},\quad
+Y'=\frac{I\otimes Y+Y\otimes Z}{\sqrt2},\quad Z'=Z\otimes Z.
+$$
+
+Their outcome statistics can be implemented by local operations and classical
+communication (LOCC), assuming both original qubits are addressable:
+
+| Setting | Local implementation |
+|---|---|
+| $X'$ | Measure X on B, send result b to A, then measure $(X+bZ)/\sqrt2$ on A. |
+| $Y'$ | Measure Y on A, send result a to B, then measure $(Y+aZ)/\sqrt2$ on B. |
+| $Z'$ | Measure Z on both and report the product of signs. |
+
+Retain only the chosen axis and final sign. The branch effects in the supplement
+sum to the target POVM effects, including the axis probability 1/3. This operator
+identity holds for every input, not only the Bell state. An independent sign
+flip of probability $(1-\eta)/2$ realizes
+the same unsharp effects. No inter-qubit gate, quantum communication between
+the original subsystems or additional shared entangled ancilla is needed for
+these statistics. This is a sufficient
+protocol, not an optimum in communication, time, energy or apparatus cost.
+
+A-only access is insufficient for $\eta>0$: $|00\rangle$ and $|01\rangle$ have the same A
+marginal but different parity statistics. At $\eta=0$ the outputs are
+state-independent. The construction thus exposes an added access assumption;
+ICC has not derived why both-factor access becomes available. Equal outcome
+counts and trace volumes do not establish equal physical resources.
+
+These measurements do not implement arbitrary coherent operations on the new
+subsystem. On $|++\rangle$, ideal coherence-preserving parity measurement has a Bell
+state as its normalized even-parity output, whereas separate local Z readouts
+give $(|00\rangle\langle00|+|11\rangle\langle11|)/2$. The outcome probabilities
+agree, but the instruments differ. Unassisted LOCC cannot realize the ideal
+instrument with its quantum outputs on the original A and B, because that
+would create entanglement from a product input; see
+[Chitambar et al.](https://arxiv.org/abs/1210.4583) for the operational classes.
+
+Intermediate local results also exist even when omitted from the final
+record. Retaining them defines a refined POVM, whose entropy need not equal
+the six-outcome value. Omitting a record is not a modeled thermodynamic
+erasure or restoration of coherence. No physical entropy reset, selected
+algebra, field-theoretic extension or cosmological transition follows.
+The finite-example sequence is closed at this operational boundary.
+
 ## 6. Relation to Existing Frameworks
 
 ### LambdaCDM
@@ -1234,10 +1421,23 @@ low-entropy state through a variational principle:
 
 None of these results supplies the aeonic boundary relation proposed here, but
 they constrain what a non-arbitrary selector $\mathcal{F}$ could mean. The
-entropy used in this note is closer in spirit to observational entropy than to
-global von Neumann entropy:
+proposed cosmological entropy remains unspecified. Section 5.2 uses an explicit
+POVM-relative instance of established observational entropy, without identifying
+it with that cosmological quantity or with global von Neumann entropy:
 [Safranek, Deutsch & Aguirre](https://arxiv.org/abs/1803.00665),
 [Buscemi, Schindler & Safranek](https://arxiv.org/abs/2209.03803).
+
+For specified accessible algebras, the recent preprint by
+[Rignon-Bret & Elouard (2026)](https://arxiv.org/abs/2607.09242v1)
+develops entropy accounting based on maximum-entropy completions and specified
+microscopic dynamics. This algebra-dependent construction is not automatically
+the general-POVM entropy used in Section 5.2. It provides conditional
+thermodynamic context, not a derivation of ICC's proposed boundary relation.
+Changing an algebraic description alone does not establish a physical
+transition, thermodynamic entropy reduction, or cosmological cycle; the
+selection mechanism, operational dynamics and cosmological entropy remain
+unresolved here.
+
 In quantum field theory, entanglement is more naturally treated as a property
 of local observable algebras rather than only as a property of states on
 tensor-product factors:
@@ -1281,6 +1481,14 @@ That finite construction passes the full-Fock and fixed-$N=4$ tests, but its
 physical relevance now depends on deriving the restriction independently in a
 continuum theory. Neither result addresses a separately specified
 observational or subalgebra-relative $S_{\mathrm{eff}}$.
+
+The separate finite-time example shows why the cost-specific obstruction
+cannot simply be generalized to every finite-time strict local minimum. It
+does not supply physical selection: its entangled branch is outperformed by
+the stated product competitor. Likewise, Section 5 supplies a concrete
+measurement-relative entropy and an all-input measurement implementation, not
+an independently motivated selection or change of access. These tasks remain
+separate; their partial results do not jointly constitute a transition law.
 
 The boundary labels are also not yet mathematical limits. Any asymptotic
 interpretation of the superscripts $\infty$ and $0$ requires a relational
@@ -1366,6 +1574,16 @@ selector candidate. The restriction is not yet derived from continuum physics,
 and none of these results decides whether a physically defined cosmological
 $S_{\mathrm{eff}}$ could exhibit the proposed contrast.
 
+The finite-time follow-up admits an entangled strict local minimum but does
+not make it globally preferred, operationally superior in the specified
+recovery task, or physically selected. Independently, the two-qubit
+measurement protocol gives a fixed-state observational-entropy contrast of
+1/3 bit and an explicit local implementation with classical communication.
+Neither comparison is a physical entropy-reducing process. The finite studies
+clarify operational meaning and limitations; they do not derive algebra
+selection, relational transition dynamics, or cosmological cycling. This
+version closes these finite examples rather than extending their scope.
+
 To become a physical theory, the hypothesis needs:
 
 1. a rigorous definition of the admissible observable algebras and their
@@ -1378,9 +1596,9 @@ To become a physical theory, the hypothesis needs:
    successive conditional regimes,
 4. a demonstration that the selected construction is repeatable across aeonic
    boundaries rather than specifying only one pair,
-5. a subalgebra-relative or observational definition of effective entropy
-   `S_eff` and a demonstration of the target contrast, rather than an inference
-   from the toy entanglement entropy,
+5. a physically justified cosmological definition of effective entropy
+   `S_eff` and its target contrast, rather than an inference from either toy
+   entanglement entropy or the stipulated finite measurement protocol,
 6. a field-theoretic version that can handle local operator algebras beyond the
    finite-dimensional illustration,
 7. a compatible relational-clock construction and a separate derivation of the
@@ -1995,6 +2213,12 @@ before the finite result can support the central ICC proposal.
 - An, D., Meissner, K. A., Nurowski, P., and Penrose, R. (2018). [Apparent
   evidence for Hawking points in the CMB
   Sky](https://arxiv.org/abs/1808.01740). arXiv:1808.01740.
+- Andreadakis, F., Dallas, E., and Zanardi, P. (2024). [Long-time Quantum
+  Scrambling and Generalized Tensor Product
+  Structures](https://arxiv.org/abs/2312.13386). *Physical Review A* 109, 052424.
+- Barnum, H., and Knill, E. (2002). [Reversing quantum dynamics with near-optimal
+  quantum and classical fidelity](https://arxiv.org/abs/quant-ph/0004088v2).
+  *Journal of Mathematical Physics* 43, 2097-2106. Revised arXiv version, 2026.
 - Bodnia, E., Isenbaev, V., Colburn, K., Swearngin, J., and Bouwmeester, D.
   (2022). [The quest for CMB signatures of Conformal Cyclic
   Cosmology](https://arxiv.org/abs/2208.06021). arXiv:2208.06021.
@@ -2013,6 +2237,10 @@ before the finite result can support the central ICC proposal.
 - Chen, C.-H., and Penington, G. (2024). [A clock is just a way to tell the time:
   gravitational algebras in cosmological
   spacetimes](https://arxiv.org/abs/2406.02116). arXiv:2406.02116.
+- Chitambar, E., Leung, D., Mancinska, L., Ozols, M., and Winter, A. (2014).
+  [Everything You Always Wanted to Know About LOCC (But Were Afraid to
+  Ask)](https://arxiv.org/abs/1210.4583). *Communications in Mathematical
+  Physics* 328, 303-326.
 - Clowe, D., Randall, S. W., and Markevitch, M. (2007). [Catching a bullet:
   direct evidence for the existence of dark
   matter](https://arxiv.org/abs/astro-ph/0611496). *Nuclear Physics B -
@@ -2063,6 +2291,9 @@ before the finite result can support the central ICC proposal.
 - Rijavec, S. (2023). [Robustness of the Page-Wootters construction across
   different pictures, states of the universe and system-clock
   interactions](https://arxiv.org/abs/2204.11740). *Physical Review D* 108, 063507.
+- Rignon-Bret, A., and Elouard, C. (2026). [Quantum stochastic thermodynamics of
+  macroscopic systems: an algebraic approach](https://arxiv.org/abs/2607.09242v1).
+  arXiv:2607.09242v1, preprint.
 - Ryu, S., and Takayanagi, T. (2006). [Holographic Derivation of Entanglement
   Entropy from AdS/CFT](https://arxiv.org/abs/hep-th/0603001). *Physical Review
   Letters* 96, 181602.
@@ -2077,10 +2308,16 @@ before the finite result can support the central ICC proposal.
   Energy Physics* 2023, 82.
 - Stoica, O. C. (2026). [The clock ambiguity problem: extended or
   extinguished?](https://arxiv.org/abs/2604.21805). arXiv:2604.21805.
+- Styliaris, G., Anand, N., and Zanardi, P. (2021). [Information Scrambling over
+  Bipartitions: Equilibration, Entropy Production, and
+  Typicality](https://arxiv.org/abs/2007.08570). *Physical Review Letters* 126, 030601.
 - Szalay, S., Zimboras, Z., Mate, M., Barcza, G., Schilling, C., and Legeza, O.
   (2021). [Fermionic systems for quantum information
   people](https://arxiv.org/abs/2006.03087). *Journal of Physics A: Mathematical
   and Theoretical* 54, 393001.
+- Teixido-Bonfill, A., Schindler, J., and Safranek, D. (2025). [Entropic partial
+  orderings of quantum measurements](https://arxiv.org/abs/2310.14086v3).
+  *Physica Scripta*. [DOI: 10.1088/1402-4896/ad977c](https://doi.org/10.1088/1402-4896/ad977c).
 - Thirring, W., Bertlmann, R. A., Kohler, P., and Narnhofer, H. (2011).
   [Entanglement or separability: The choice of how to factorize the algebra of a
   density matrix](https://arxiv.org/abs/1106.3047). *European Physical Journal
@@ -2118,7 +2355,8 @@ Multiple large language models were used extensively during the subsequent
 development of the manuscript. Their contributions included criticism and
 counterarguments; development and revision of the operator-algebraic notation,
 the boundary ansatz, relational-time connections, the finite-dimensional
-illustrations, and the EC/CAR candidate calculation; literature discovery and
+illustrations, the EC/CAR candidate calculation, the finite-time selector
+study, and the measurement-entropy and access analyses; literature discovery and
 comparison; code drafting and review; manuscript organization; English drafting
 and rewriting; and preparation of publication metadata. Much of the present
 wording, formal presentation, and exploratory code was generated or revised

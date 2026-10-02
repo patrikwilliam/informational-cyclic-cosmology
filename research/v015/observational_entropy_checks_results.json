@@ -1,0 +1,2865 @@
+{
+  "status": "fixed protocol identity checks, not a physical entropy reset",
+  "numpy_version": "2.3.5",
+  "tolerance": 1e-11,
+  "units": "bits, global trace volumes on dimension four",
+  "state_embedding_cases": 24,
+  "povm_cases": 168,
+  "max_residuals": {
+    "povm_completeness": 2.220446049250313e-16,
+    "probability_sum": 4.440892098500626e-16,
+    "volume_sum": 8.881784197001252e-16,
+    "negative_effect_eigenvalue": 8.340139953130292e-17,
+    "analytic_entropy": 6.661338147750939e-16,
+    "global_entropy": 4.440892098500626e-16,
+    "reduced_entropy": 4.805139755722375e-16,
+    "petz_state_formula": 5.551115123125783e-17,
+    "covariance_probability": 5.551115123125783e-16,
+    "covariance_volume": 8.881784197001252e-16,
+    "covariance_entropy": 8.881784197001252e-16
+  },
+  "minimum_inequality_margins": {
+    "observational_above_global": -4.440892098500626e-16,
+    "petz_entropy_above_observational": -2.220446049250313e-16,
+    "observational_above_algebra_completion": -7.025585804972688e-16,
+    "postprocessing_entropy_increase": -2.220446049250313e-16
+  },
+  "ideal_cases": {
+    "old": {
+      "noise_p": 0.0,
+      "sharpness_eta": 1.0,
+      "embedding": "old",
+      "global_entropy_bits": 3.2034265038149176e-16,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999998
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 3.2034265038149176e-16,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    "new": {
+      "noise_p": 0.0,
+      "sharpness_eta": 1.0,
+      "embedding": "new",
+      "global_entropy_bits": 3.2034265038149176e-16,
+      "reduced_state_entropy_bits": 4.805139755722375e-16,
+      "algebra_completion_entropy_bits": 1.0000000000000004,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.3333333333333332,
+            0.0
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.6666666666666663,
+          "outcome_shannon_entropy_bits": 2.2516291673878226,
+          "petz_coarse_state_entropy_bits": 1.9182958340544896
+        },
+        "X": {
+          "probabilities": [
+            0.4999999999999998,
+            0.4999999999999998
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0000000000000002,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.4999999999999998,
+            0.4999999999999998
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0000000000000002,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.9999999999999996,
+            0.0
+          ],
+          "volumes": [
+            1.9999999999999996,
+            2.0
+          ],
+          "observational_entropy_bits": 0.9999999999999998,
+          "outcome_shannon_entropy_bits": 6.406853007629834e-16,
+          "petz_coarse_state_entropy_bits": 1.0000000000000002
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999998
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 3.2034265038149176e-16,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.6666666666666664,
+            0.3333333333333332
+          ],
+          "volumes": [
+            1.9999999999999996,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9182958340544891,
+          "outcome_shannon_entropy_bits": 0.9182958340544898,
+          "petz_coarse_state_entropy_bits": 1.9731160152007474
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.3333333333333332,
+            0.3333333333333332,
+            0.3333333333333332
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "noise_p": 0.0,
+      "sharpness_eta": 0.0,
+      "embedding": "old",
+      "global_entropy_bits": 3.2034265038149176e-16,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999998
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 3.2034265038149176e-16,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.0,
+      "sharpness_eta": 0.5,
+      "embedding": "old",
+      "global_entropy_bits": 3.2034265038149176e-16,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999998
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 3.2034265038149176e-16,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.49999999999999983,
+            0.49999999999999983
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.0,
+      "sharpness_eta": 1.0,
+      "embedding": "old",
+      "global_entropy_bits": 3.2034265038149176e-16,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999998
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 3.2034265038149176e-16,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.0,
+      "sharpness_eta": 0.0,
+      "embedding": "new",
+      "global_entropy_bits": 3.2034265038149176e-16,
+      "reduced_state_entropy_bits": 4.805139755722375e-16,
+      "algebra_completion_entropy_bits": 1.0000000000000004,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "X": {
+          "probabilities": [
+            0.4999999999999998,
+            0.4999999999999998
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0000000000000002,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.4999999999999998,
+            0.4999999999999998
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0000000000000002,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.4999999999999998,
+            0.4999999999999998
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0000000000000002,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999998
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 3.2034265038149176e-16,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.4999999999999998,
+            0.4999999999999998
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0000000000000002,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.3333333333333332,
+            0.3333333333333332,
+            0.3333333333333332
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.0,
+      "sharpness_eta": 0.5,
+      "embedding": "new",
+      "global_entropy_bits": 3.2034265038149176e-16,
+      "reduced_state_entropy_bits": 4.805139755722375e-16,
+      "algebra_completion_entropy_bits": 1.0000000000000004,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.2499999999999999,
+            0.0833333333333333
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.937092708153044,
+          "outcome_shannon_entropy_bits": 2.5220552088742,
+          "petz_coarse_state_entropy_bits": 1.9949848281859697
+        },
+        "X": {
+          "probabilities": [
+            0.4999999999999998,
+            0.4999999999999998
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0000000000000002,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.4999999999999998,
+            0.4999999999999998
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0000000000000002,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.7499999999999998,
+            0.2499999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            2.0
+          ],
+          "observational_entropy_bits": 1.8112781244591325,
+          "outcome_shannon_entropy_bits": 0.8112781244591329,
+          "petz_coarse_state_entropy_bits": 1.954434002924965
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999998
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 3.2034265038149176e-16,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.5833333333333331,
+            0.41666666666666646
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999996
+          ],
+          "observational_entropy_bits": 1.9798687566511526,
+          "outcome_shannon_entropy_bits": 0.979868756651153,
+          "petz_coarse_state_entropy_bits": 1.9983295692682823
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.3333333333333332,
+            0.3333333333333332,
+            0.3333333333333332
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.0,
+      "sharpness_eta": 1.0,
+      "embedding": "new",
+      "global_entropy_bits": 3.2034265038149176e-16,
+      "reduced_state_entropy_bits": 4.805139755722375e-16,
+      "algebra_completion_entropy_bits": 1.0000000000000004,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.3333333333333332,
+            0.0
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.6666666666666663,
+          "outcome_shannon_entropy_bits": 2.2516291673878226,
+          "petz_coarse_state_entropy_bits": 1.9182958340544896
+        },
+        "X": {
+          "probabilities": [
+            0.4999999999999998,
+            0.4999999999999998
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0000000000000002,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.4999999999999998,
+            0.4999999999999998
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0000000000000002,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.9999999999999996,
+            0.0
+          ],
+          "volumes": [
+            1.9999999999999996,
+            2.0
+          ],
+          "observational_entropy_bits": 0.9999999999999998,
+          "outcome_shannon_entropy_bits": 6.406853007629834e-16,
+          "petz_coarse_state_entropy_bits": 1.0000000000000002
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999998
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 3.2034265038149176e-16,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.6666666666666664,
+            0.3333333333333332
+          ],
+          "volumes": [
+            1.9999999999999996,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9182958340544891,
+          "outcome_shannon_entropy_bits": 0.9182958340544898,
+          "petz_coarse_state_entropy_bits": 1.9731160152007474
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.3333333333333332,
+            0.3333333333333332,
+            0.3333333333333332
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.1,
+      "sharpness_eta": 0.0,
+      "embedding": "old",
+      "global_entropy_bits": 0.5031837316805843,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.1,
+      "sharpness_eta": 0.5,
+      "embedding": "old",
+      "global_entropy_bits": 0.5031837316805843,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.1,
+      "sharpness_eta": 1.0,
+      "embedding": "old",
+      "global_entropy_bits": 0.5031837316805843,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.1,
+      "sharpness_eta": 0.0,
+      "embedding": "new",
+      "global_entropy_bits": 0.5031837316805843,
+      "reduced_state_entropy_bits": 0.28639695711595653,
+      "algebra_completion_entropy_bits": 1.2863969571159566,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999983,
+            0.49999999999999983
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999983,
+            0.49999999999999983
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.49999999999999983,
+            0.49999999999999983
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.49999999999999983,
+            0.49999999999999983
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.3333333333333332,
+            0.3333333333333332,
+            0.3333333333333332
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.1,
+      "sharpness_eta": 0.5,
+      "embedding": "new",
+      "global_entropy_bits": 0.5031837316805843,
+      "reduced_state_entropy_bits": 0.28639695711595653,
+      "algebra_completion_entropy_bits": 1.2863969571159566,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.24166666666666659,
+            0.09166666666666663
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9495160594315382,
+          "outcome_shannon_entropy_bits": 2.5344785601526945,
+          "petz_coarse_state_entropy_bits": 1.9959386076315953
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999983,
+            0.49999999999999983
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999983,
+            0.49999999999999983
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.7249999999999998,
+            0.2749999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            2.0
+          ],
+          "observational_entropy_bits": 1.8485481782946156,
+          "outcome_shannon_entropy_bits": 0.848548178294616,
+          "petz_coarse_state_entropy_bits": 1.9631672450918831
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.5749999999999998,
+            0.4249999999999998
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999996
+          ],
+          "observational_entropy_bits": 1.9837082626231852,
+          "outcome_shannon_entropy_bits": 0.9837082626231858,
+          "petz_coarse_state_entropy_bits": 1.9986470504172864
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.3333333333333332,
+            0.3333333333333332,
+            0.3333333333333332
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.1,
+      "sharpness_eta": 1.0,
+      "embedding": "new",
+      "global_entropy_bits": 0.5031837316805843,
+      "reduced_state_entropy_bits": 0.28639695711595653,
+      "algebra_completion_entropy_bits": 1.2863969571159566,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.1666666666666666,
+            0.31666666666666654,
+            0.016666666666666666
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.7621323190386518,
+          "outcome_shannon_entropy_bits": 2.347094819759808,
+          "petz_coarse_state_entropy_bits": 1.934068055375491
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999983,
+            0.49999999999999983
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999983,
+            0.49999999999999983
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.9499999999999996,
+            0.05
+          ],
+          "volumes": [
+            1.9999999999999996,
+            2.0
+          ],
+          "observational_entropy_bits": 1.2863969571159561,
+          "outcome_shannon_entropy_bits": 0.2863969571159567,
+          "petz_coarse_state_entropy_bits": 1.2863969571159564
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.6499999999999998,
+            0.34999999999999987
+          ],
+          "volumes": [
+            1.9999999999999996,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9340680553754908,
+          "outcome_shannon_entropy_bits": 0.9340680553754912,
+          "petz_coarse_state_entropy_bits": 1.9782500525678361
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.3333333333333332,
+            0.3333333333333332,
+            0.3333333333333332
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.5,
+      "sharpness_eta": 0.0,
+      "embedding": "old",
+      "global_entropy_bits": 1.5487949406953987,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.5,
+      "sharpness_eta": 0.5,
+      "embedding": "old",
+      "global_entropy_bits": 1.5487949406953987,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.5,
+      "sharpness_eta": 1.0,
+      "embedding": "old",
+      "global_entropy_bits": 1.5487949406953987,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "Z": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.5,
+      "sharpness_eta": 0.0,
+      "embedding": "new",
+      "global_entropy_bits": 1.5487949406953987,
+      "reduced_state_entropy_bits": 0.8112781244591332,
+      "algebra_completion_entropy_bits": 1.8112781244591332,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "X": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.5,
+      "sharpness_eta": 0.5,
+      "embedding": "new",
+      "global_entropy_bits": 1.5487949406953987,
+      "reduced_state_entropy_bits": 0.8112781244591332,
+      "algebra_completion_entropy_bits": 1.8112781244591332,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.2083333333333333,
+            0.12499999999999997
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9848113343083214,
+          "outcome_shannon_entropy_bits": 2.5697738350294776,
+          "petz_coarse_state_entropy_bits": 1.9987472979361685
+        },
+        "X": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.6249999999999999,
+            0.3749999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9544340029249647,
+          "outcome_shannon_entropy_bits": 0.9544340029249649,
+          "petz_coarse_state_entropy_bits": 1.9886994082884974
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.5416666666666665,
+            0.4583333333333332
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999996
+          ],
+          "observational_entropy_bits": 1.9949848281859692,
+          "outcome_shannon_entropy_bits": 0.9949848281859701,
+          "petz_coarse_state_entropy_bits": 1.9995825132459673
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 0.5,
+      "sharpness_eta": 1.0,
+      "embedding": "new",
+      "global_entropy_bits": 1.5487949406953987,
+      "reduced_state_entropy_bits": 0.8112781244591332,
+      "algebra_completion_entropy_bits": 1.8112781244591332,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.24999999999999992,
+            0.08333333333333333
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.937092708153044,
+          "outcome_shannon_entropy_bits": 2.5220552088742,
+          "petz_coarse_state_entropy_bits": 1.9798687566511526
+        },
+        "X": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.7499999999999998,
+            0.25
+          ],
+          "volumes": [
+            1.9999999999999996,
+            2.0
+          ],
+          "observational_entropy_bits": 1.8112781244591327,
+          "outcome_shannon_entropy_bits": 0.8112781244591332,
+          "petz_coarse_state_entropy_bits": 1.8112781244591325
+        },
+        "uninformative": {
+          "probabilities": [
+            0.9999999999999999
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.6017132519074586e-16,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.5833333333333331,
+            0.4166666666666666
+          ],
+          "volumes": [
+            1.9999999999999996,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9798687566511526,
+          "outcome_shannon_entropy_bits": 0.9798687566511529,
+          "petz_coarse_state_entropy_bits": 1.9933105106059235
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 1.0,
+      "sharpness_eta": 0.0,
+      "embedding": "old",
+      "global_entropy_bits": 2.0,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "X": {
+          "probabilities": [
+            0.5,
+            0.5
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.5,
+            0.5
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.5,
+            0.5
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "uninformative": {
+          "probabilities": [
+            1.0
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": -0.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.5,
+            0.5
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 1.0,
+      "sharpness_eta": 0.5,
+      "embedding": "old",
+      "global_entropy_bits": 2.0,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.5,
+            0.5
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.5,
+            0.5
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.5,
+            0.5
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "uninformative": {
+          "probabilities": [
+            1.0
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": -0.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 1.0,
+      "sharpness_eta": 1.0,
+      "embedding": "old",
+      "global_entropy_bits": 2.0,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666
+          ],
+          "volumes": [
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.5,
+            0.5
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.5,
+            0.5
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.5,
+            0.5
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "uninformative": {
+          "probabilities": [
+            1.0
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": -0.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.5,
+            0.5
+          ],
+          "volumes": [
+            2.0,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "volumes": [
+            1.3333333333333333,
+            1.3333333333333333,
+            1.3333333333333333
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 1.0,
+      "sharpness_eta": 0.0,
+      "embedding": "new",
+      "global_entropy_bits": 2.0,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "uninformative": {
+          "probabilities": [
+            1.0
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": -0.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 1.0,
+      "sharpness_eta": 0.5,
+      "embedding": "new",
+      "global_entropy_bits": 2.0,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666666
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.49999999999999994,
+            0.5
+          ],
+          "volumes": [
+            1.9999999999999998,
+            2.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "uninformative": {
+          "probabilities": [
+            1.0
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": -0.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.49999999999999994,
+            0.4999999999999999
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999996
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    },
+    {
+      "noise_p": 1.0,
+      "sharpness_eta": 1.0,
+      "embedding": "new",
+      "global_entropy_bits": 2.0,
+      "reduced_state_entropy_bits": 1.0,
+      "algebra_completion_entropy_bits": 2.0,
+      "protocols": {
+        "random_axes_recorded": {
+          "probabilities": [
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.16666666666666666
+          ],
+          "volumes": [
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666665,
+            0.6666666666666666
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 2.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "X": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Y": {
+          "probabilities": [
+            0.49999999999999994,
+            0.49999999999999994
+          ],
+          "volumes": [
+            1.9999999999999998,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "Z": {
+          "probabilities": [
+            0.4999999999999999,
+            0.5
+          ],
+          "volumes": [
+            1.9999999999999996,
+            2.0
+          ],
+          "observational_entropy_bits": 1.9999999999999998,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "uninformative": {
+          "probabilities": [
+            1.0
+          ],
+          "volumes": [
+            4.0
+          ],
+          "observational_entropy_bits": 2.0,
+          "outcome_shannon_entropy_bits": -0.0,
+          "petz_coarse_state_entropy_bits": 2.0
+        },
+        "axis_forgotten": {
+          "probabilities": [
+            0.4999999999999999,
+            0.49999999999999994
+          ],
+          "volumes": [
+            1.9999999999999996,
+            1.9999999999999998
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.0,
+          "petz_coarse_state_entropy_bits": 1.9999999999999998
+        },
+        "sign_forgotten": {
+          "probabilities": [
+            0.33333333333333326,
+            0.33333333333333326,
+            0.33333333333333326
+          ],
+          "volumes": [
+            1.333333333333333,
+            1.333333333333333,
+            1.333333333333333
+          ],
+          "observational_entropy_bits": 1.9999999999999996,
+          "outcome_shannon_entropy_bits": 1.584962500721156,
+          "petz_coarse_state_entropy_bits": 2.0
+        }
+      }
+    }
+  ]
+}

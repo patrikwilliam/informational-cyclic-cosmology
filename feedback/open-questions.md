@@ -1,6 +1,6 @@
 # Open Questions
 
-This document accompanies version 0.1.4 (14 September 2026). Its purpose is to
+This document accompanies version 0.1.5 (1 October 2026). Its purpose is to
 identify what remains unresolved.
 
 The first selection-rule issue is isolated as a finite-dimensional
@@ -21,23 +21,31 @@ the [three-cell report](../research/three-cell-finite-gate.md),
 [onsite closure](../research/four-cell-onsite-closure.md). No scalable,
 continuum, or cosmological selector has been established.
 
+The v0.1.5 [finite-time follow-up](../research/v015/finite-time-analysis.md)
+has an entangled strict local minimum, but a product competitor has lower
+cost and better recovery in the stated task. It does not select the entangled
+branch physically. Separately, the [measurement example](../research/v015/operational-entropy.md)
+now has a fixed POVM-relative entropy, a declared noise family and an exact
+local measurement implementation. These finite tasks are closed. They do not
+supply cosmological S_eff or explain a change in physical access.
+
 ## Main failure points
 
 1. Can the placeholder relation $\mathcal{R}$ be replaced by an intrinsic and
    non-circular rule that selects a candidate pair $T_n$ of relevant
    local-algebra embeddings?
-2. Can `S_eff` be made mathematically meaningful as an observational or
-   subalgebra-relative entropy, rather than ordinary global von Neumann entropy?
+2. Which physically justified observational or subalgebra-relative entropy
+   defines cosmological `S_eff`? The finite POVM entropy is now explicit, but
+   its chosen measurements are not cosmologically derived.
 3. Can the selected clock/rest decomposition satisfy a suitable global
    constraint and recover conditional dynamics without arbitrary clock choice?
 4. What observation would falsify the central hypothesis fastest?
 5. Can a physically selected change of embedding yield the required lower
    effective entropy without confusing refactorization with mere restriction or
    coarse-graining, neither of which guarantees an entropy decrease?
-6. Does the finite-dimensional illustration contribute anything beyond the
-   established relativity of entanglement and entropy to subsystem
-   factorization, and can any physically selected extension connect its
-   entanglement entropy to observational or thermodynamic entropy?
+6. What would connect the finite measurement-entropy comparison to physical
+   algebra selection and thermodynamics, rather than merely to its stipulated
+   laboratory measurements and records?
 7. Can the mechanism survive extension from finite-dimensional type-I systems
    to the type-III local algebras of QFT or type-II gravitational algebras that
    arise after observer or clock dressing?
@@ -65,9 +73,11 @@ continuum, or cosmological selector has been established.
    the target entropy? On the finite bipartite factor-algebra domain, the
    Gaussian minimal-scrambling criterion is already proportional to the tested
    interaction cost (see the main mathematical problem), so it does not evade
-   the obstruction under the same assumptions. Finite-time scrambling or
-   quasi-classicality would need independently justified protocols and tests;
-   that follow-up remains open, not a result of this release.
+   the obstruction under the same assumptions. The tested finite-time
+   functional permits an entangled strict local minimum but does not prefer
+   the displayed branch globally or in the specified recovery task. A new
+   candidate would need independent physical inputs, not a favorable time
+   window or a desired entropy chosen afterward.
 3. What exactly is the observable algebra `A_n` in a cosmological setting?
 4. Which intrinsic data define the admissible family of embeddings
    `E_lambda`: relational clock data, asymptotic observables, boundary

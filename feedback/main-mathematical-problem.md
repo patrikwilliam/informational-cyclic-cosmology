@@ -7,6 +7,13 @@
 > [general no-go analysis](./general-no-go-analysis.md) and the earlier
 > [two-qubit analysis](./two-qubit-preliminary-analysis.md).
 
+Version 0.1.5 status: this cost-specific argument is unchanged. A
+[different finite-time functional](../research/v015/finite-time-analysis.md)
+admits an entangled strict local minimum, but that branch is not a global
+minimum and does not solve the two-structure physical-selection problem below.
+The [measurement-entropy example](../research/v015/operational-entropy.md) is
+a separate fixed-access task, not a solution to this selector problem.
+
 ## Hamiltonian-selected factorizations with a bipartite-entanglement contrast
 
 ### One-sentence question
@@ -148,7 +155,8 @@ different domain independently; a finite-time scrambling criterion would need
 a specified time window and its own tests. Quasi-classicality or pointer-state
 stability also require a concrete functional. No alternative may contain the
 target entropy below. This equivalence is not assumed for charge-sector
-algebras or continuum QFT, and no finite-time follow-up result is reported.
+algebras or continuum QFT. The v0.1.5 finite-time follow-up is separately
+defined and does not contradict this Gaussian identity.
 
 ## Entropy relative to a candidate factorization
 
