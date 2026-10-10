@@ -8,19 +8,18 @@ ORCID: [0009-0008-1618-6619](https://orcid.org/0009-0008-1618-6619)
 
 DOI (all versions): [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416)
 
-Version: 0.1.5
+Version: 0.1.6
 
-Release date: 1 October 2026
+Release date: 9 October 2026
 
 Status: speculative hypothesis, not a completed physical theory.
 
-Revision note: version 0.1.5 consolidates a bounded finite-time selector study,
-an explicit measurement-relative entropy calculation, and its local measurement
-implementation. It distinguishes local from global optimization, outcome
-statistics from coherent subsystem control, and laboratory assumptions from
-cosmological inputs. Earlier EC/CAR results are unchanged. The finite-example
-sequence is closed; no physical algebra selector or cosmological transition is
-derived.
+Revision note: version 0.1.6 adds a finite restricted-entropy stability bound
+and a bounded applicability review of prescribed observable-algebra transport.
+It also clarifies the limits of mass inaccessibility and cross-algebra
+gravitational entropy comparisons. Earlier selector and measurement results
+are unchanged. No physical algebra selector, cosmological entropy functional,
+or aeonic transition is derived.
 
 ## Abstract
 
@@ -52,8 +51,10 @@ does not implement coherent control of the
 new subsystem. The comparison is not a temporal entropy decrease or a
 thermodynamic, gravitational, or cosmological reset.
 
-The finite examples are closed with reproducible calculations and explicit
-limits. Physical algebra selection, a justified cosmological entropy
+At fixed finite factor dimension, a continuity bound controls restricted-state
+entropy changes under operator-norm algebra perturbations. Prescribed algebra
+transport supplies geometric comparison, not physical selection. Physical
+algebra selection, a justified cosmological entropy
 functional, relational transition dynamics, repeatability, and observational
 tests remain open. All mathematical and physical checks reported here are
 internal and LLM-assisted, not independent expert peer review.
@@ -71,6 +72,9 @@ theorems or as a derived cosmological mechanism. Version 0.1.5 adds a bounded
 finite-time counterexample and an operational elaboration of the original
 two-qubit illustration. These are different tasks with different inputs, not
 components already joined into a cosmological mechanism.
+
+Version 0.1.6 adds finite stability and prescribed-transport comparisons using
+established tools; no novelty or independent expert certification is claimed.
 
 The narrower claim explored here is that these ingredients may admit a distinct
 cosmological application. In this interpretation, successive aeons are not
@@ -99,10 +103,14 @@ limited to the proposed synthesis and research question.
 | Finite-time scrambling | Entangled strict local minimum, outperformed by a product competitor | Global preference or physical selection |
 | Fixed measurement entropy | 2 versus 5/3 bits under declared measurements | Thermodynamic or cosmological entropy reset |
 | Measurement access | Exact local implementation with classical communication | Coherent subsystem control or a derived change of access |
+| Finite algebra perturbations | Fixed-dimension restricted-entropy continuity bound | POVM or cosmological entropy stability without further assumptions |
+| Prescribed algebra transport | Horizontal paths can realize a fixed-state entropy contrast | A selected path, physical transition, or thermodynamic arrow |
 
 The [v0.1.5 reproducibility supplement](./research/v015/README.md) separates
 analytic identities, exact-arithmetic certificates, numerical checks and
 assumed physical resources. None is presented as external peer review.
+The [v0.1.6 supplement](./research/v016/README.md) adds the bounded stability
+and transport analyses without reopening the closed selector searches.
 
 ## 1. Core Postulates
 
@@ -229,6 +237,10 @@ identification also requires conformal scale invariance, as in conformal cyclic
 constructions. In that case, the extension must specify whether massive degrees
 of freedom disappear dynamically or become locally inaccessible under the
 selected new algebra while their information remains global.
+Local inaccessibility alone does not establish conformal scale invariance:
+mass scales may remain in the effective dynamics or gravitational backreaction.
+A conformal extension must show that those scales become irrelevant to the
+effective equations and observables used in the aeonic identification.
 
 ### 2.3 Dark energy as possible boundary data
 
@@ -1156,6 +1168,22 @@ algebras in semiclassical cosmological spacetimes can be type-II$_\infty$
 therefore identify the physically relevant algebraic class and define locality,
 entropy, and restriction without relying on naive partial tracing.
 
+Comparing entropies of different gravitational algebras also requires a common,
+physically justified reference and compatible normalization and renormalization
+conventions. A type-II$_1$ factor has a canonical normalized trace, whereas a
+type-II$_\infty$ factor's semifinite trace is defined only up to a positive
+rescaling, which shifts its state entropy by an additive constant
+([Chen & Penington](https://arxiv.org/abs/2406.02116)). Where algebra entropy
+represents generalized entropy, the comparison must consistently include the
+horizon contribution and matter entropy. In the cited de Sitter static-patch
+construction, empty de Sitter space is the maximum-entropy state, not a
+low-entropy initial state
+([Chandrasekaran et al.](https://arxiv.org/abs/2206.10780)). Thus dilution alone
+does not establish the proposed entropy contrast, and independently chosen
+entropy offsets cannot establish it either. This additional continuum
+requirement does not change the declared conventions or results of the finite
+examples.
+
 ### 5.2 A fixed measurement-relative entropy
 
 Keep the state $\rho=|\Phi^+\rangle\langle\Phi^+|$ and the original U above,
@@ -1277,6 +1305,65 @@ the six-outcome value. Omitting a record is not a modeled thermodynamic
 erasure or restoration of coherence. No physical entropy reset, selected
 algebra, field-theoretic extension or cosmological transition follows.
 The finite-example sequence is closed at this operational boundary.
+
+### 5.4 Stability under finite algebra perturbations
+
+A separate robustness question concerns the restricted von Neumann entropy
+used in Section 5.1, not the POVM entropy in Section 5.2. Let
+$\mathcal H=\mathbb C^d\otimes\mathbb C^m$, $d\ge2$, and let
+$A,B\subset\mathcal B(\mathcal H)$ be unital factors of the same type $M_d$
+and multiplicity $m$. For any fixed density matrix $\rho$, choose embeddings
+$\iota_A(a)=W_A(a\otimes I_m)W_A^\dagger$ and define
+
+$$
+\sigma_A=\operatorname{Tr}_m(W_A^\dagger\rho W_A),\qquad
+S_\rho(A)=-\operatorname{Tr}_d(\sigma_A\log_2\sigma_A),
+$$
+
+with the analogous definition for $B$. This uses ordinary local matrix trace
+and bits and is independent of local basis. For mixed global states it is not
+an entanglement measure.
+
+Let $\delta=d_{\rm KK}(A,B)$ be the two-sided operator-norm Hausdorff distance
+between their entire closed unit balls, following
+[Kadison and Kastler (1972)](https://doi.org/10.2307/2373592). Define
+
+$$
+\omega_d(x)=h_2(t)+t\log_2(d-1),\qquad
+t=\min\{x,1-1/d\},
+$$
+
+where $h_2$ is binary entropy. Then the direct finite-factor bound is
+
+$$
+|S_\rho(A)-S_\rho(B)|\le\omega_d(\delta).
+$$
+
+To see this, the trace-preserving conditional expectation $E_B$ obeys
+$\|a-E_B(a)\|\le2\delta$ on $A$'s unit ball. The pulled-back map
+$\Phi=\iota_B^{-1}E_B\iota_A$ is completely positive, unital and
+trace-preserving because the multiplicities agree. Its trace adjoint has
+the same properties. For $\tau_A=\Phi^*(\sigma_B)$, trace-norm duality gives
+$\tfrac12\|\sigma_A-\tau_A\|_1\le\delta$, while bistochasticity gives
+$S(\tau_A)\ge S(\sigma_B)$. Applying
+[Audenaert's continuity inequality](https://arxiv.org/abs/quant-ph/0610146)
+and then interchanging $A$ and $B$ proves the bound. The cap in $\omega_d$
+is essential when substituting an upper bound on trace distance.
+
+For example, $d=2$ and $\delta\le0.01$ limit the change to approximately
+0.080793 bits. A two-endpoint comparison has the sum of the two corresponding
+error bounds. These are conditional guarantees: a finite sample of observables
+does not certify the required unit-ball distance. The proof does not select
+an algebra, require a pure or stationary state, or construct a physical
+operation changing access.
+
+The [full derivation and checks](./research/v016/entropy-stability.md) also
+give an explicit growing-dimension sequence whose algebra distances tend to
+zero while its entropy gaps tend to one bit. Thus this estimate cannot become
+dimension-independent without additional restrictions. It is not a type-III,
+gravitational, or continuum entropy theorem, and it does not control the
+entropy of an unspecified measurement protocol. No new universal
+Kadison-Kastler stability theorem is assumed or certified here.
 
 ## 6. Relation to Existing Frameworks
 
@@ -1400,6 +1487,20 @@ is developed in [Zanardi](https://arxiv.org/abs/quant-ph/0103030),
 [Thirring et al.](https://arxiv.org/abs/1106.3047). The present note does not
 extend those mathematical results; it asks whether they admit a physically
 selected aeonic interpretation.
+
+### Transport of observable algebras
+
+[Zanardi (2026)](https://arxiv.org/html/2609.28662v1) develops a canonical
+connection and holonomic transport on finite observable-algebra orbits of
+fixed block structure. This supplies transport along a specified path, not
+the path itself. The [bounded applicability review](./research/v016/transport-applicability.md)
+exhibits a horizontal two-qubit path with a one-to-zero-bit restricted-entropy
+contrast for a fixed Bell state. Co-transporting the state and algebra instead
+preserves that entropy. The path and stopping point are prescribed, not
+selected by independent physical data. Geometric reparameterization invariance
+does not supply a relational clock or remove the control and gap requirements
+of an adiabatic implementation. This is conditional geometric prior art, not
+an ICC selector, cosmological transition, or extension to continuum algebras.
 
 ### Quantum mereology and observational entropy
 
@@ -2216,6 +2317,9 @@ before the finite result can support the central ICC proposal.
 - Andreadakis, F., Dallas, E., and Zanardi, P. (2024). [Long-time Quantum
   Scrambling and Generalized Tensor Product
   Structures](https://arxiv.org/abs/2312.13386). *Physical Review A* 109, 052424.
+- Audenaert, K. M. R. (2007). [A sharp continuity estimate for the von Neumann
+  entropy](https://doi.org/10.1088/1751-8113/40/28/S18). *Journal of Physics A:
+  Mathematical and Theoretical* 40, 8127-8136.
 - Barnum, H., and Knill, E. (2002). [Reversing quantum dynamics with near-optimal
   quantum and classical fidelity](https://arxiv.org/abs/quant-ph/0004088v2).
   *Journal of Mathematical Physics* 43, 2097-2106. Revised arXiv version, 2026.
@@ -2260,6 +2364,9 @@ before the finite result can support the central ICC proposal.
 - Jow, D. L., and Scott, D. (2020). [Re-evaluating evidence for Hawking points in
   the CMB](https://arxiv.org/abs/1909.09672). *Journal of Cosmology and
   Astroparticle Physics* 2020(03), 021.
+- Kadison, R. V., and Kastler, D. (1972). [Perturbations of von Neumann
+  Algebras. I. Stability of Type](https://doi.org/10.2307/2373592).
+  *American Journal of Mathematics* 94, 38-54.
 - Khanapurkar, S., Pradhan, A., Dhruv, A., and Singh, T. P. (2018).
   [Non-relativistic limit of Einstein-Cartan-Dirac
   equations](https://arxiv.org/abs/1804.04434). *Physical Review D* 98, 104027.
@@ -2333,6 +2440,8 @@ before the finite result can support the central ICC proposal.
   Theory](https://arxiv.org/abs/1803.04993). *Reviews of Modern Physics* 90, 045003.
 - Zanardi, P. (2001). [Virtual Quantum
   Subsystems](https://arxiv.org/abs/quant-ph/0103030). *Physical Review Letters* 87, 077901.
+- Zanardi, P. (2026). [Universal holonomic control of algebras of
+  observables](https://arxiv.org/abs/2609.28662v1). arXiv:2609.28662v1, preprint.
 - Zanardi, P., Dallas, E., Andreadakis, F., and Lloyd, S. (2024). [Operational
   Quantum Mereology and Minimal Scrambling](https://arxiv.org/abs/2212.14340).
   *Quantum* 8, 1406.
@@ -2356,7 +2465,8 @@ development of the manuscript. Their contributions included criticism and
 counterarguments; development and revision of the operator-algebraic notation,
 the boundary ansatz, relational-time connections, the finite-dimensional
 illustrations, the EC/CAR candidate calculation, the finite-time selector
-study, and the measurement-entropy and access analyses; literature discovery and
+study, the measurement-entropy and access analyses, and the finite
+entropy-stability and transport analyses; literature discovery and
 comparison; code drafting and review; manuscript organization; English drafting
 and rewriting; and preparation of publication metadata. Much of the present
 wording, formal presentation, and exploratory code was generated or revised

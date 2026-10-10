@@ -8,7 +8,7 @@ Author: Patrik William Pustejovsky
 DOI (all versions):
 [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416).
 
-This repository contains version 0.1.5 of a conceptual research note on emergent
+This repository contains version 0.1.6 of a conceptual research note on emergent
 time, informational conservation, entropy as local readability, and cyclic
 cosmology. It includes a minimal finite-dimensional illustration showing how the
 same global pure state can have different bipartite entanglement entropies under
@@ -17,13 +17,13 @@ CAR selector as a separate finite example. Its first three-cell robustness test
 is boundary-sensitive. At four cells, the transported residual law is shared by
 every nonzero contact in the declared translation-invariant onsite quartic
 class, so the periodic branch is not EC specific. The current update adds a
-separate bounded finite-time selector study and a fixed measurement-relative
-entropy example with explicit access requirements. These are not a derived
-cosmological mechanism.
+finite restricted-entropy stability bound and a bounded review of prescribed
+algebra transport, while retaining the earlier finite-time selector and
+measurement-access results. These are not a derived cosmological mechanism.
 
-Release date: 1 October 2026.
+Release date: 9 October 2026.
 
-This is version 0.1.5. Its purpose is to be broken.
+This is version 0.1.6. Its purpose is to be broken.
 
 The goal is not to defend this formulation, but to expose it to serious
 criticism, identify where it fails, and use those failure modes to build a
@@ -70,7 +70,30 @@ to every nonzero Hermitian translation-invariant onsite quartic contact in the
 declared four-cell class. This is a stop result for EC specificity, not a
 positive extension of the main ICC proposal.
 
-## What Changed in 0.1.5
+## What Changed in 0.1.6
+
+- A direct finite-dimensional bound controls restricted von Neumann entropy
+  under small Kadison-Kastler algebra perturbations at fixed factor dimension.
+  It applies to pure or mixed global states, not to unspecified POVMs or
+  cosmological entropy. A growing-dimension example explains the limit.
+- A bounded review of Zanardi's transport framework shows geometric
+  compatibility along a prescribed path, not a physical path-selection rule.
+  Co-transporting state and algebra preserves their restricted entropy.
+- The manuscript now explicitly separates mass inaccessibility from conformal
+  invariance and requires common calibration and horizon accounting for
+  cross-algebra gravitational entropy comparisons.
+- The [v0.1.6 supplement](./research/v016/README.md) contains the full bounded
+  arguments, two scripts with 13 diagnostic groups and a one-command runner.
+  The proof does not depend on the new universal stability theorem reported
+  in the OpenAI mathematics collection, whose Lean build was not audited here.
+- Earlier selector failures, the physical-selection gap, the operational
+  measurement boundaries and the closed status of the finite searches remain
+  unchanged. No new cosmological postulate or prediction is introduced.
+
+See the [release notes](./RELEASE_NOTES-v0.1.6.md) and
+[integration verification](./feedback/v0.1.6-integration-verification.md).
+
+## Historical Changes in 0.1.5
 
 - A bounded finite-time scrambling study supplies an internally certified
   entangled strict local minimum. It is not globally preferred: a product
@@ -203,8 +226,11 @@ itself falsify the central aeonic boundary proposal.
 ## Main Document
 
 - [PAPER.md](./PAPER.md)
-- [Formatted PDF (v0.1.5)](./Informational-Cyclic-Cosmology-v0.1.5.pdf)
-- [Release notes for v0.1.5](./RELEASE_NOTES-v0.1.5.md)
+- [Formatted PDF (v0.1.6)](./Informational-Cyclic-Cosmology-v0.1.6.pdf)
+- [Release notes for v0.1.6](./RELEASE_NOTES-v0.1.6.md)
+- [v0.1.6 reproducibility supplement](./research/v016/README.md)
+- [v0.1.6 integration verification](./feedback/v0.1.6-integration-verification.md)
+- [Historical release notes for v0.1.5](./RELEASE_NOTES-v0.1.5.md)
 - [v0.1.5 reproducibility supplement](./research/v015/README.md)
 - [v0.1.5 integration verification](./feedback/v0.1.5-integration-verification.md)
 - [Historical release notes for v0.1.4](./RELEASE_NOTES-v0.1.4.md)
@@ -244,6 +270,18 @@ itself falsify the central aeonic boundary proposal.
 
 ## Reproducing the Finite Calculations
 
+For the bounded v0.1.6 stability and transport checks, use Python 3.10 or later
+with NumPy and run:
+
+```bash
+python3 research/v016/run_checks.py
+```
+
+The runner checks 13 finite diagnostic groups without changing bundled output.
+It does not compute the exact Kadison-Kastler distance, compile Lean, rerun a
+selector search, or certify the full source theorems. The analytic arguments
+and their assumptions are in the supplement.
+
 For the bounded v0.1.5 additions, use Python 3.10 or later with NumPy and run:
 
 ```bash
@@ -254,7 +292,7 @@ This checks the declared finite examples, not a physical selection mechanism.
 The supplement explains the exact-arithmetic certificate, numerical tolerances,
 recorded outputs and limits. It does not rerun the older lattice campaign.
 
-The finite calculations introduced in v0.1.3 are unchanged in v0.1.5. They
+The finite calculations introduced in v0.1.3 are unchanged in v0.1.6. They
 require Python 3.10 or later and NumPy. From the
 repository root, run:
 
@@ -325,7 +363,8 @@ development of the manuscript. Their contributions included criticism and
 counterarguments; development and revision of the operator-algebraic notation,
 the boundary ansatz, relational-time connections, the finite-dimensional
 illustrations, the EC/CAR candidate calculation, the finite-time selector
-follow-up, and the measurement-entropy and access analyses; literature discovery and
+follow-up, the measurement-entropy and access analyses, and the finite
+entropy-stability and transport analyses; literature discovery and
 comparison; code drafting and review; manuscript organization; English drafting
 and rewriting; and preparation of publication metadata. Much of the present
 wording, formal presentation, and exploratory code was generated or revised

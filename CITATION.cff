@@ -6,22 +6,21 @@ authors:
     given-names: "Patrik William"
     orcid: "https://orcid.org/0009-0008-1618-6619"
 doi: "10.5281/zenodo.21115416"
-version: "0.1.5"
-date-released: "2026-10-01"
+version: "0.1.6"
+date-released: "2026-10-09"
 license: "CC-BY-4.0"
 url: "https://github.com/patrikwilliam/informational-cyclic-cosmology"
 abstract: >-
   A speculative hypothesis treating the universe as a globally conserved
   informational structure, where cosmological cycles correspond to changes in
-  local information readability rather than temporal restarts. Version 0.1.5
-  consolidates a bounded finite-time selector counterexample, a fixed-protocol
-  observational-entropy comparison, and its local measurement implementation.
-  The entangled strict local minimum is not globally preferred and is
-  outperformed in the stipulated recovery task. Measurement statistics do not
-  establish coherent subsystem control, a physical entropy reset, or algebra
-  selection. Earlier EC/CAR robustness and specificity failures are unchanged.
-  The finite-example sequence is closed; cosmological selection, effective
-  entropy, transition dynamics, and observational predictions remain open.
+  local information readability rather than temporal restarts. Version 0.1.6
+  adds a fixed-dimension restricted-entropy stability bound and a bounded
+  review of prescribed observable-algebra transport. It clarifies why mass
+  inaccessibility does not establish conformal invariance and why gravitational
+  entropy comparisons require consistent calibration and horizon accounting.
+  Earlier selector and measurement results are unchanged. Neither the bound
+  nor the transport construction supplies a physical algebra selector, a
+  cosmological entropy functional, transition dynamics, or predictions.
 preferred-citation:
   type: unpublished
   title: >-
@@ -32,7 +31,7 @@ preferred-citation:
       given-names: "Patrik William"
       orcid: "https://orcid.org/0009-0008-1618-6619"
   doi: "10.5281/zenodo.21115416"
-  version: "0.1.5"
+  version: "0.1.6"
   year: 2026
   status: preprint
   url: "https://doi.org/10.5281/zenodo.21115416"

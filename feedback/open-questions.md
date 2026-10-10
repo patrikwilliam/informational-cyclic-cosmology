@@ -1,6 +1,6 @@
 # Open Questions
 
-This document accompanies version 0.1.5 (1 October 2026). Its purpose is to
+This document accompanies version 0.1.6 (9 October 2026). Its purpose is to
 identify what remains unresolved.
 
 The first selection-rule issue is isolated as a finite-dimensional
@@ -29,6 +29,14 @@ now has a fixed POVM-relative entropy, a declared noise family and an exact
 local measurement implementation. These finite tasks are closed. They do not
 supply cosmological S_eff or explain a change in physical access.
 
+The v0.1.6 [stability bound](../research/v016/entropy-stability.md) controls
+restricted-state entropy at fixed finite factor dimension, conditional on an
+independently justified operator-norm algebra-error bound. It does not control
+an unspecified POVM or pass to the continuum without further assumptions.
+The [transport review](../research/v016/transport-applicability.md) supplies
+geometry along a prescribed path, not a physical path or selector. Neither
+closes the main failure points below or reopens the closed selector searches.
+
 ## Main failure points
 
 1. Can the placeholder relation $\mathcal{R}$ be replaced by an intrinsic and
@@ -37,6 +45,9 @@ supply cosmological S_eff or explain a change in physical access.
 2. Which physically justified observational or subalgebra-relative entropy
    defines cosmological `S_eff`? The finite POVM entropy is now explicit, but
    its chosen measurements are not cosmologically derived.
+   What common physical reference, trace normalization, renormalization and
+   horizon accounting make entropies of different gravitational algebras
+   comparable?
 3. Can the selected clock/rest decomposition satisfy a suitable global
    constraint and recover conditional dynamics without arbitrary clock choice?
 4. What observation would falsify the central hypothesis fastest?
@@ -124,7 +135,9 @@ supply cosmological S_eff or explain a change in physical access.
    temporally previous universe?
 4. Is loss of a rest-mass scale required only for a conformal version of the
    boundary relation, and if so, does it occur dynamically or through local
-   inaccessibility?
+   inaccessibility? If local access is lost, what establishes that mass scales
+   also become irrelevant to the effective equations and gravitational
+   backreaction used in the identification?
 5. Can dark energy provide intrinsic boundary data $\lambda$ or a genuine
    algebra-selection mechanism rather than only extreme dilution?
 

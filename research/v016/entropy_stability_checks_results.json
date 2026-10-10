@@ -1,0 +1,77 @@
+{
+  "seed": 20261009,
+  "absolute_tolerance": 2e-11,
+  "numpy_version": "2.3.5",
+  "scope": "Finite diagnostics; no exact KK-distance computation, selector search, or Lean audit",
+  "checks": [
+    {
+      "name": "check_finite_comparisons",
+      "passed": true,
+      "detail": {
+        "cases": 60,
+        "largest_tested_entropy_gap_bits": 0.26611935676401133
+      }
+    },
+    {
+      "name": "check_normalizer_and_cotransport",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "check_bell_path",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "check_monotone_cap",
+      "passed": true,
+      "detail": {
+        "qubit_bound_at_kk_upper_0_01_bits": 0.08079313589591118
+      }
+    },
+    {
+      "name": "check_endpoint_error_budget",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "check_dimension_dependence",
+      "passed": true,
+      "detail": {
+        "analytic_growing_dimension_sequence": [
+          {
+            "log2_d_minus_one": 4,
+            "kk_upper": 1.0,
+            "entropy_gap_bits": 1.811278124459133
+          },
+          {
+            "log2_d_minus_one": 16,
+            "kk_upper": 0.5040171699309124,
+            "entropy_gap_bits": 1.337290066617014
+          },
+          {
+            "log2_d_minus_one": 64,
+            "kk_upper": 0.2504916501726719,
+            "entropy_gap_bits": 1.1161150753047697
+          },
+          {
+            "log2_d_minus_one": 256,
+            "kk_upper": 0.12506113970512184,
+            "entropy_gap_bits": 1.036874506253872
+          },
+          {
+            "log2_d_minus_one": 1024,
+            "kk_upper": 0.06250763265603733,
+            "entropy_gap_bits": 1.0111738187212196
+          }
+        ]
+      }
+    },
+    {
+      "name": "check_protocol_not_algebra_entropy",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 7
+}

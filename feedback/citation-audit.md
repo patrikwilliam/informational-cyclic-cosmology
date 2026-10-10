@@ -66,6 +66,27 @@ computation or complete release test suite was rerun for that document-only
 update. The subsequent final package checks are recorded in the
 [integration verification](./v0.1.5-integration-verification.md).
 
+## Version 0.1.6 Targeted Addition
+
+Date: 2026-10-09. This is a bounded source-use check for the added stability
+and transport discussion, not a renewed audit of every historical citation.
+
+| Source | Verified use and boundary |
+|---|---|
+| [Kadison and Kastler (1972)](https://doi.org/10.2307/2373592), *American Journal of Mathematics* 94, 38-54 | Provenance of the operator-norm unit-ball distance for represented algebras. Section 5.4's entropy bound is a separate finite argument, not attributed to the original perturbation paper. |
+| [Audenaert (2007)](https://arxiv.org/abs/quant-ph/0610146), *Journal of Physics A* 40, 8127-8136 | Theorem 1 supplies the entropy continuity inequality with trace distance defined as half the trace norm. The manuscript uses its monotone envelope when only an upper bound on distance is known. The arXiv title differs from the published title used in the reference list; the linked record supplies the journal metadata and DOI. |
+| [Zanardi (2026), v1](https://arxiv.org/html/2609.28662v1) | Conditional transport on finite fixed-block algebra orbits, not path selection. The source separates intrinsic transport from adiabatic band-refinement implementation and requires compatible control access. The explicit Bell path is a bounded calculation in the supplement, not an ICC mechanism attributed to this source. |
+
+The primary source texts and relevant metadata were checked. The original
+mass/conformal and gravitational-calibration clarifications use the existing
+CCC and gravitational-algebra references, not new citations.
+
+The [full stability note](../research/v016/entropy-stability.md) separately
+preserves Christensen's 1975 type-I prior art and the pinned OpenAI family-289
+provenance. The latter is a reported formalization, not a locally compiled or
+independently audited theorem. No part of the finite bound depends on it, and
+it is not added to the manuscript as a new physical axiom or validation of ICC.
+
 ## Earlier Audits
 
 Initial audit scope: every scholarly source then linked from `PAPER.md`, plus foundational sources
