@@ -260,3 +260,30 @@ made in the manuscript.
   circuit geometry, fermionic subsystems, and superselection-resolved
   entanglement.
 - Added a complete reference list to `PAPER.md`.
+
+## v0.1.8 Addition: 16 October 2026
+
+Bounded source check for Appendix C, not a fresh audit of every historical
+reference. The new arXiv records and Barnett-Croke full-text Section 3.1 were
+checked; author/title/year identifiers agree with the cited versions.
+
+- **Marvian and Spekkens (2012), arXiv:1212.3378.** Supports the
+  asymmetry-resource account of conservation-constrained measurement. It does
+  not derive our Hamiltonian, access boundary or cosmological interpretation.
+- **Bartlett, Rudolph, Spekkens and Turner (2006), quant-ph/0602069.** Correct
+  published reference: New Journal of Physics 8, 58. Supplies direct prior art
+  for reference degradation and operational measurement quality, not the
+  particular three-qubit formulas.
+- **Barnett and Croke (2008), arXiv:0810.1970, Section 3.1.** The year refers
+  to the cited preprint. Supports minimum-error discrimination and spectral
+  optimization. The charge twirl and model-specific block evaluation are
+  derived in the supplement, not attributed to this review.
+- **Bartlett, Rudolph and Spekkens (2007), quant-ph/0610030.** Already present;
+  reused for reference frames and operational symmetry constraints.
+- **Bose, arXiv:0802.1224** appears only in the model supplement as context
+  for fixed-coupling spin-chain transport. Its record is consistent with that
+  narrow use; it does not establish the memory coupling or ICC relevance.
+
+None is cited as evidence for ICC, a new physical axiom, or independent
+certification of the calculation. No unproved OpenAI mathematics manuscript
+is used as a premise of this increment.

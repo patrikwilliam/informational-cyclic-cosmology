@@ -8,7 +8,7 @@ Author: Patrik William Pustejovsky
 DOI (all versions):
 [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416).
 
-This repository contains version 0.1.7 of a conceptual research note on emergent
+This repository contains version 0.1.8 of a conceptual research note on emergent
 time, informational conservation, entropy as local readability, and cyclic
 cosmology. It includes a minimal finite-dimensional illustration showing how the
 same global pure state can have different bipartite entanglement entropies under
@@ -17,14 +17,15 @@ CAR selector as a separate finite example. Its first three-cell robustness test
 is boundary-sensitive. At four cells, the transported residual law is shared by
 every nonzero contact in the declared translation-invariant onsite quartic
 class, so the periodic branch is not EC specific. The current update adds a
-conditional arithmetic reconstruction, its stationary-state and full-norm
-limitations, and a finite-access conditioning analysis with scoped Lean proofs.
-Earlier stability, transport, selector and measurement
-results remain unchanged. No physical selection mechanism is derived.
+finite reference-resource example: under fixed symmetry and reduced access,
+unread priming strictly shrinks the attainable measurement set, while both
+sets still span the same qubit algebra. Scoped Lean proofs check operator
+lemmas and an exact scalar gap, not the complete experiment. Earlier results
+remain unchanged. No physical selection mechanism is derived.
 
-Release date: 10 October 2026.
+Release date: 16 October 2026.
 
-This is version 0.1.7. Its purpose is to be broken.
+This is version 0.1.8. Its purpose is to be broken.
 
 The goal is not to defend this formulation, but to expose it to serious
 criticism, identify where it fails, and use those failure modes to build a
@@ -71,7 +72,32 @@ to every nonzero Hermitian translation-invariant onsite quartic contact in the
 declared four-cell class. This is a stop result for EC specificity, not a
 positive extension of the main ICC proposal.
 
-## What Changed in 0.1.7
+## What Changed in 0.1.8
+
+- Appendix C fixes one simultaneous three-qubit interaction and compares the
+  same charge-symmetric measurement class before and after unread priming.
+  When the old input is inaccessible, the full attainable effect set is
+  strictly smaller afterward, not merely worse for one chosen readout.
+- The original implemented before score, `0.7197744539`, exceeds the optimum
+  over all symmetric after measurements, `0.6813596618`. The broad benchmark
+  is not silently identified with the fixed Hamiltonian's hardware controls.
+- With the old input retained and arbitrary symmetric joint access, the full
+  capability sets are equal. Both reduced sets span the same `M_2` algebra.
+  The example does not derive an access boundary, algebra selector, entropy
+  reset or aeonic transition; core postulates and interpretation are unchanged.
+- The [Lean project](./research/v018/lean/README.md) checks pullback/effect
+  lemmas and the exact scalar separation, with a dependency audit and two
+  failing controls. The concrete Hamiltonian, channel instantiation and
+  Helstrom derivation remain analytic and numerically cross-checked.
+- The [v0.1.8 supplement](./research/v018/README.md) provides the derivations,
+  two bounded numerical suites, proof scope and separate internal reviews.
+  Established reference-resource and discrimination work is cited as prior
+  art, not new support for ICC or independent expert endorsement.
+
+See the [release notes](./RELEASE_NOTES-v0.1.8.md) and
+[integration verification](./feedback/v0.1.8-integration-verification.md).
+
+## Historical Changes in 0.1.7
 
 - Appendix B tests arithmetic reconstruction with a specified logarithmic
   Hamiltonian and coherent reference. These inputs recover multiplication
@@ -256,8 +282,13 @@ itself falsify the central aeonic boundary proposal.
 ## Main Document
 
 - [PAPER.md](./PAPER.md)
-- [Formatted PDF (v0.1.7)](./Informational-Cyclic-Cosmology-v0.1.7.pdf)
-- [Release notes for v0.1.7](./RELEASE_NOTES-v0.1.7.md)
+- [Formatted PDF (v0.1.8)](./Informational-Cyclic-Cosmology-v0.1.8.pdf)
+- [Release notes for v0.1.8](./RELEASE_NOTES-v0.1.8.md)
+- [v0.1.8 reproducibility supplement](./research/v018/README.md)
+- [v0.1.8 mathematical review](./feedback/v0.1.8-mathematical-review.md)
+- [v0.1.8 physics review](./feedback/v0.1.8-physics-review.md)
+- [v0.1.8 integration verification](./feedback/v0.1.8-integration-verification.md)
+- [Historical release notes for v0.1.7](./RELEASE_NOTES-v0.1.7.md)
 - [v0.1.7 reproducibility supplement](./research/v017/README.md)
 - [v0.1.7 mathematical review](./feedback/v0.1.7-mathematical-review.md)
 - [v0.1.7 physics review](./feedback/v0.1.7-physics-review.md)
@@ -305,6 +336,17 @@ itself falsify the central aeonic boundary proposal.
 
 ## Reproducing the Finite Calculations
 
+For the bounded v0.1.8 reference-resource and capability checks, use Python
+3.10 or later with NumPy:
+
+```bash
+python3 research/v018/run_checks.py --timeout 120
+```
+
+The separate [Lean instructions](./research/v018/lean/README.md) document the
+pinned toolchain, verification command and partial proof coverage. Numerical
+checks do not replace the analytic arguments or establish physical selection.
+
 For the v0.1.7 arithmetic diagnostics, use Python 3.10 or later with NumPy:
 
 ```bash
@@ -337,7 +379,7 @@ This checks the declared finite examples, not a physical selection mechanism.
 The supplement explains the exact-arithmetic certificate, numerical tolerances,
 recorded outputs and limits. It does not rerun the older lattice campaign.
 
-The finite calculations introduced in v0.1.3 are unchanged in v0.1.7. They
+The finite calculations introduced in v0.1.3 are unchanged in v0.1.8. They
 require Python 3.10 or later and NumPy. From the
 repository root, run:
 

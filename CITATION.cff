@@ -6,20 +6,20 @@ authors:
     given-names: "Patrik William"
     orcid: "https://orcid.org/0009-0008-1618-6619"
 doi: "10.5281/zenodo.21115416"
-version: "0.1.7"
-date-released: "2026-10-10"
+version: "0.1.8"
+date-released: "2026-10-16"
 license: "CC-BY-4.0"
 url: "https://github.com/patrikwilliam/informational-cyclic-cosmology"
 abstract: >-
   A speculative hypothesis treating the universe as a globally conserved
   informational structure, where cosmological cycles correspond to changes in
-  local information readability rather than temporal restarts. Version 0.1.7
-  adds a conditional arithmetic reconstruction with supplied coherent reference
-  data, a stationary-state entropy obstruction in its exact simple-spectrum
-  model, and an explicit failure of full operator-norm reconstruction stability.
-  A fixed-access follow-up separates failure of uniform stability under an
-  energy budget from local continuity conditioned on reference amplitudes.
-  Selected proof components are Lean-checked, not the complete construction.
+  local information readability rather than temporal restarts. Version 0.1.8
+  adds a finite reference-resource example: under a fixed charge-symmetric
+  processing class and loss of access to the old input, unread priming strictly
+  shrinks the attainable measurement set. Both sets span the same qubit algebra;
+  full symmetric access to the retained old input restores equivalence.
+  Selected operator lemmas and an exact scalar separation are Lean-checked,
+  not the concrete channel and discrimination derivations or physical inputs.
   Earlier results and core postulates are unchanged. No physical algebra
   selector, cosmological entropy functional, transition dynamics, or prediction
   is derived. Reviews and diagnostic checks are internal and AI-assisted.
@@ -33,7 +33,7 @@ preferred-citation:
       given-names: "Patrik William"
       orcid: "https://orcid.org/0009-0008-1618-6619"
   doi: "10.5281/zenodo.21115416"
-  version: "0.1.7"
+  version: "0.1.8"
   year: 2026
   status: preprint
   url: "https://doi.org/10.5281/zenodo.21115416"

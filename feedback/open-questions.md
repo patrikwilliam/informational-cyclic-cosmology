@@ -1,6 +1,6 @@
 # Open Questions
 
-This document accompanies version 0.1.7 (10 October 2026). Its purpose is to
+This document accompanies version 0.1.8 (16 October 2026). Its purpose is to
 identify what remains unresolved.
 
 The first selection-rule issue is isolated as a finite-dimensional
@@ -57,6 +57,16 @@ Any different transition candidate must identify and physically justify the
 assumptions it changes, its reference/coupling, its operational error metric,
 and a distinction beyond state-preserving symmetries.
 The result neither derives a continuum theory nor rules out other constraints.
+
+The v0.1.8 [reference-resource study](../research/v018/README.md) distinguishes
+genuine measurement-capability loss from a worse fixed readout. Its strict
+inclusion requires a supplied access boundary and charge-symmetric processing;
+both effect sets still span the same qubit algebra. Retaining the old input
+with full symmetric joint control restores equality. Which independently
+motivated physical or relational data would justify such an access boundary
+in ICC, and could they select an algebra rather than merely measurement
+strength within an already specified algebra? The finite example and partial
+Lean verification do not answer these questions or reopen the closed selectors.
 
 ## Main failure points
 

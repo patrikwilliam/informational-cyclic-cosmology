@@ -1,0 +1,201 @@
+{
+  "Born_matrix_unit_comparisons": 640,
+  "analytic_reuse_and_record_cases": 60,
+  "controls": {
+    "incoherent_reference": {
+      "effect_after": [
+        0.49999999999999967,
+        0.0,
+        0.0,
+        -0.23686938464004303
+      ],
+      "effect_before": [
+        0.4999999999999998,
+        0.0,
+        0.0,
+        -0.23686938464004315
+      ],
+      "phase_success_before_after": [
+        0.5,
+        0.5
+      ],
+      "record": {
+        "fixed_population_distance": 0.405404006697592,
+        "fixed_population_success": 0.7027020033487961,
+        "trace_distance": 0.5733278445121279
+      }
+    },
+    "no_exchange": {
+      "effect_after": [
+        0.49999999999999967,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effect_before": [
+        0.49999999999999983,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phase_success_before_after": [
+        0.5,
+        0.5
+      ],
+      "record": {
+        "fixed_population_distance": 0.4999999999999998,
+        "fixed_population_success": 0.7499999999999999,
+        "trace_distance": 0.7071067811865475
+      }
+    },
+    "no_memory_coupling": {
+      "effect_after": [
+        0.49999999999999983,
+        -5.748367925732728e-18,
+        0.1767766952966368,
+        -0.24999999999999994
+      ],
+      "effect_before": [
+        0.4999999999999999,
+        -8.129419882081721e-18,
+        0.24999999999999992,
+        -0.24999999999999997
+      ],
+      "phase_success_before_after": [
+        0.7499999999999999,
+        0.6767766952966368
+      ],
+      "record": {
+        "fixed_population_distance": 0.0,
+        "fixed_population_success": 0.5,
+        "trace_distance": 0.0
+      }
+    }
+  },
+  "max_residuals": {
+    "all_input_Born_rule": 3.331391796911832e-16,
+    "analytic_before_effect": 1.5612511831667126e-15,
+    "analytic_primed_memory_X_blocks": 1.4752290795525882e-15,
+    "analytic_record_population_distance": 8.326672684688674e-16,
+    "analytic_record_trace_distance": 7.216449660063518e-16,
+    "analytic_reuse_effect": 1.5543122344752192e-15,
+    "arbitrary_apparatus_X_dephasing_equivalence": 3.400235020906588e-16,
+    "charge_conservation": 0.0,
+    "detector_readout_symmetric": 0.0,
+    "effect_hermiticity": 3.1031676915590914e-17,
+    "incoherent_after_no_phase_access": 0.0,
+    "incoherent_before_no_phase_access": 0.0,
+    "initial_global_QFI": 3.3306690738754696e-16,
+    "memory_X_conservation": 0.0,
+    "memory_readout_symmetric": 0.0,
+    "mixed_memory_no_local_record": 2.7755575615628914e-16,
+    "mixed_memory_no_record_of_any_system_input": 2.5641499862360594e-16,
+    "no_coupling_no_record": 0.0,
+    "no_exchange_after_uninformative": 3.3306690738754696e-16,
+    "no_exchange_before_uninformative": 1.6653345369377348e-16,
+    "preserved_charge_mean": 3.3306690738754696e-16,
+    "preserved_global_QFI": 4.440892098500626e-16,
+    "preserved_total_energy": 4.74479684519577e-16,
+    "record_not_necessary_for_detector_effect": 1.1102230246251565e-16,
+    "reuse_X_dephasing_equivalence": 3.3306690738754696e-16,
+    "reused_mixed_memory_no_local_input_record": 4.440892098500626e-16,
+    "sector_propagator": 6.581112888423314e-15,
+    "two_qubit_before_limit": 1.1102230246251565e-16,
+    "two_qubit_without_intermediate_readout_limit": 2.220446049250313e-16,
+    "unitarity": 2.6645352591003757e-15,
+    "zero_coupling_propagator": 0.0
+  },
+  "mixed_memory_record": {
+    "fixed_population_distance": 3.885780586188048e-16,
+    "fixed_population_success": 0.5000000000000002,
+    "trace_distance": 3.0306959510999136e-16
+  },
+  "nearby_times": [
+    {
+      "commutator_norm": 0.06271968073625639,
+      "record": {
+        "fixed_population_distance": 0.35610542718158145,
+        "fixed_population_success": 0.6780527135907908,
+        "trace_distance": 0.548320112897676
+      },
+      "time": 0.7068583470577035
+    },
+    {
+      "commutator_norm": 0.08795001581814318,
+      "record": {
+        "fixed_population_distance": 0.405404006697592,
+        "fixed_population_success": 0.7027020033487961,
+        "trace_distance": 0.5733278445121279
+      },
+      "time": 0.7853981633974483
+    },
+    {
+      "commutator_norm": 0.1141057903686675,
+      "record": {
+        "fixed_population_distance": 0.4481793290743348,
+        "fixed_population_success": 0.7240896645371674,
+        "trace_distance": 0.5893948092854319
+      },
+      "time": 0.8639379797371932
+    }
+  ],
+  "numpy": "2.3.5",
+  "primary": {
+    "DM_correlation_distance": 0.3801133756714843,
+    "commutator_norm": 0.08795001581814318,
+    "detector_coherence_after": 0.45830347702581253,
+    "effect_after_I_X_Y_Z": [
+      0.49999999999999967,
+      -8.266489709794516e-17,
+      0.03412358149438335,
+      -0.23686938464004303
+    ],
+    "effect_before_I_X_Y_Z": [
+      0.4999999999999998,
+      -2.3018772402546526e-16,
+      0.21977445391885442,
+      -0.23686938464004315
+    ],
+    "g": 1,
+    "initial_D_record": {
+      "fixed_population_distance": 0.405404006697592,
+      "fixed_population_success": 0.7027020033487961,
+      "trace_distance": 0.5733278445121279
+    },
+    "k": 1,
+    "memory_readout_effect_on_S_I_X_Y_Z": [
+      0.2400962917369778,
+      -3.93675541786207e-17,
+      0.08374597406722961,
+      -0.047297996651203905
+    ],
+    "omega": 0,
+    "phase_success_before_after": [
+      0.7197744539188544,
+      0.5341235814943833
+    ],
+    "product_replacement_effect_error": 0.06659981489807697,
+    "time": 0.7853981633974483
+  },
+  "python": "3.12.14",
+  "random_propagator_cases": 80,
+  "scope": "One simultaneous, time-independent three-qubit model. Fresh input replacement and readout remain supplied. No entropy, selector, autonomous classical memory, broad search, or Lean claim.",
+  "seed": 20261015,
+  "simultaneous_vs_sequential_unitary_errors": [
+    0.28297131595691993,
+    0.2829713159569202
+  ],
+  "source_sha256": "0e25841cca90a9d840be81fb95305d89a4101f11a397dac8bd25835efb998035",
+  "status": "passed",
+  "tolerance": 2e-10,
+  "uniform_10_percent_timing_uncertainty": {
+    "commutator_norm": 0.08753347878729092,
+    "independent_exposures": true,
+    "phase_success_before_after": [
+      0.7186464620603505,
+      0.5337271145328999
+    ],
+    "quadrature_nodes": 32,
+    "record_population_distance": 0.4043146334353353
+  }
+}

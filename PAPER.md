@@ -8,18 +8,18 @@ ORCID: [0009-0008-1618-6619](https://orcid.org/0009-0008-1618-6619)
 
 DOI (all versions): [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416)
 
-Version: 0.1.7
+Version: 0.1.8
 
-Release date: 10 October 2026
+Release date: 16 October 2026
 
 Status: speculative hypothesis, not a completed physical theory.
 
-Revision note: version 0.1.7 adds a bounded arithmetic reconstruction study.
-Specified coherent reference data recover multiplication operations, but the
-compatible embeddings preserve restricted entropy for a fixed stationary state
-in the stated simple-spectrum model. Full-norm instability and a finite-access
-conditioning bound delimit reconstruction. Selected proof components are
-Lean-checked. Earlier results and core postulates are unchanged; no physical
+Revision note: version 0.1.8 adds a finite reference-resource study. With fixed
+symmetry restrictions and the old input inaccessible, unread priming strictly
+reduces the attainable measurement set. Both sets still span the same qubit
+algebra. Selected operator lemmas and the exact scalar separation are
+Lean-checked; the concrete channel and discrimination derivations remain
+analytic. Earlier results and core postulates are unchanged; no physical
 selector or aeonic transition is derived.
 
 ## Abstract
@@ -30,34 +30,31 @@ state, rather than restart evolution in external time. No selection mechanism,
 distinct quantitative cosmological prediction, or new general theorem about
 factorization or observational entropy is supplied.
 
-Finite studies delimit the proposal. A preliminary obstruction concerns a
-specific unrestricted Hamiltonian interaction-projection selector. Restricted
-Einstein-Cartan-inspired CAR examples do not evade the missing physical input:
-their three-cell robustness and four-cell EC-specificity tests fail. A distinct
-finite-time scrambling example has an internally certified entangled strict
-local minimum, but a product competitor has lower cost and better recovery in
-the stated task. This neither supplies physical selection nor contradicts the
-interaction-cost obstruction.
+Finite studies constrain the proposal. An unrestricted interaction-projection
+selector encounters a preliminary obstruction; restricted Einstein-Cartan-inspired
+CAR examples fail robustness and specificity tests. A finite-time scrambling
+example has an internally certified entangled strict local minimum, but a
+product competitor has lower cost and better recovery in the stated task.
 
 On a fixed Bell state, reduced-state entropies of one and zero bits coexist
 with observational entropies of two and five-thirds bits under a specified
-randomized Pauli protocol. Explicit formulas cover white noise and measurement
-sharpness. The new statistics are implementable by local operations on both
-original qubits and classical communication, but not first-qubit-only access
-for arbitrary inputs at nonzero sharpness. Matching statistics supplies neither
-coherent subsystem control nor a thermodynamic, gravitational, or cosmological
-reset.
+measurement protocol. On arbitrary inputs at nonzero sharpness, its statistics
+require access beyond the first original qubit; their implementation does not
+supply coherent subsystem control or a physical entropy reset.
 
-At fixed finite factor dimension, a continuity bound controls restricted-state
-entropy changes under operator-norm algebra perturbations. Prescribed algebra
-transport supplies geometric comparison, not physical selection. A separate
-arithmetic reconstruction with supplied reference data encounters a stationary
-entropy obstruction and full-norm instability. At fixed finite access,
-reconstruction is locally continuous, but an energy budget alone gives no
-uniform guarantee. Physical algebra selection, a cosmological entropy
-functional, relational transition dynamics, repeatability, and observational
-tests remain open. All mathematical and physical checks reported here are
-internal and LLM-assisted, not independent expert peer review.
+A fixed-interaction reference example gives strictly smaller attainable effect
+sets after unread priming under fixed symmetry restrictions and loss of old-input
+access. Retaining that input restores equivalence under full symmetric control.
+Both reduced sets span the same qubit algebra: measurement strength changes,
+not the algebra.
+
+Finite stability and prescribed-transport results remain conditional.
+Arithmetic reconstruction with supplied reference data encounters stationary
+entropy equality and full-norm instability; finite-access stability requires
+additional conditioning. Selected proof components are Lean-checked, not the
+complete constructions. Physical algebra selection, cosmological entropy,
+relational dynamics, repeatability and observational tests remain open.
+Reported reviews are internal and LLM-assisted, not independent expert review.
 
 ## Scope and Claimed Contribution
 
@@ -78,6 +75,12 @@ established tools; no novelty or independent expert certification is claimed.
 Version 0.1.7 adds the conditional arithmetic construction and its bounded
 limitations in Appendix B. It does not introduce a prime-number cosmological
 postulate or adopt an unverified AI-generated theorem.
+
+Version 0.1.8 adds the conditional measurement-capability example in Appendix C,
+using established finite-reference and state-discrimination methods. It does
+not claim a new resource-theoretic principle. A scoped Lean supplement checks
+general pullback lemmas and the primary scalar inequality, not an end-to-end
+formalization of the experiment or its physical assumptions.
 
 The narrower claim explored here is that these ingredients may admit a distinct
 cosmological application. In this interpretation, successive aeons are not
@@ -109,6 +112,7 @@ limited to the proposed synthesis and research question.
 | Finite algebra perturbations | Fixed-dimension restricted-entropy continuity bound | POVM or cosmological entropy stability without further assumptions |
 | Prescribed algebra transport | Horizontal paths can realize a fixed-state entropy contrast | A selected path, physical transition, or thermodynamic arrow |
 | Arithmetic reconstruction | Stationary entropy equality; full-norm instability; conditional finite-access stability | An independently derived selector, uniform energy-only guarantee, or ICC no-go |
+| Finite reference redistribution | Strictly smaller attainable effect set under fixed symmetry and reduced access | A different generated algebra, derived access boundary, or ICC transition |
 
 The [v0.1.5 reproducibility supplement](./research/v015/README.md) separates
 analytic identities, exact-arithmetic certificates, numerical checks and
@@ -119,6 +123,9 @@ The [v0.1.7 supplement](./research/v017/README.md) contains the arithmetic
 derivation, finite-access analysis, diagnostics, scoped Lean proofs, and separate
 internal mathematics and physics reviews. These are conditional results and
 limitations, not a new physical mechanism.
+The [v0.1.8 supplement](./research/v018/README.md) adds the three-qubit
+derivation, capability bounds, numerical controls and scoped Lean verification.
+Its access restrictions remain explicit inputs.
 
 ## 1. Core Postulates
 
@@ -1716,6 +1723,13 @@ remain useful as conditional mathematical results, not a transition mechanism.
 The broader physical selector question remains open; these limitations are not
 a universal no-go theorem for ICC.
 
+Appendix C separates a genuine loss of attainable measurement capability from
+an inefficient chosen readout. The loss follows under a supplied access
+boundary and fixed symmetry restriction; it disappears under unrestricted
+symmetric access to the retained old input. Both reduced capability sets span
+the same operator algebra. This identifies a finite operational distinction,
+not the missing physical algebra selector or a cosmological entropy change.
+
 To become a physical theory, the hypothesis needs:
 
 1. a rigorous definition of the admissible observable algebras and their
@@ -2542,6 +2556,195 @@ probes do not create stationary entropy contrast or free-evolution transitions.
 No physical selector, cosmological reset, continuum QFT construction, or
 general ICC no-go follows. Reviews remain internal and AI-assisted.
 
+## Appendix C. Finite Reference Resources and Measurement Capability
+
+### C.1 Fixed interaction and declared access
+
+This example asks whether unchanged allowed operations can yield genuinely
+different measurement capabilities after a finite reference resource is
+redistributed. It uses the established resource perspective on symmetry and
+reference frames (Bartlett, Rudolph, and Spekkens, 2007; Marvian and Spekkens,
+2012) and finite-reference degradation (Bartlett et al., 2006). These sources
+motivate the operational framework, not the particular Hamiltonian or ICC.
+The tensor factors, interaction, charge, exposure time and access restrictions
+below are supplied apparatus data, not derived cosmological inputs.
+
+Take an input qubit $S$, detector/reference qubit $D$, and charge-neutral
+logical memory qubit $M$. With $n=(I-Z)/2$, identity factors suppressed, and
+$\hbar=1$, fix
+
+$$
+H=\frac12(X_SX_D+Y_SY_D)+n_DX_M,\qquad
+Q=n_S+n_D,\qquad T=\frac\pi4,\qquad U_T=e^{-iHT}.
+$$
+
+The memory's two logical states carry the same charge and its bare Hamiltonian
+is zero in this idealization. It is an ordinary additional degree of freedom,
+not a new spatial dimension. Both couplings act simultaneously; their
+noncommutativity precludes replacing $U_T$ by two sequential gates. The
+interaction conserves $Q$. Initially the retained apparatus $R=DM$ has state
+$\tau_0=|+\rangle\langle+|_D\otimes|0\rangle\langle0|_M$.
+Unread priming with an invariant old input gives
+
+$$
+\tau_1=\Phi(\tau_0),\qquad
+\Phi(\tau)=\operatorname{Tr}_{S_{\rm old}}
+\left[U_T\left(\frac{I_{S_{\rm old}}}{2}\otimes\tau\right)U_T^\dagger\right].
+$$
+
+No intermediate readout, reset or postselection occurs. The old input and any
+preparation label or purification of its mixed state are then inaccessible;
+the correlated $DM$ state is retained and a fresh independent input is supplied.
+This access boundary and input replacement are assumptions, not an autonomous
+transport mechanism. Each trial uses one apparatus and one unknown input,
+without additional asymmetric references, coherent training probes or
+many-copy processing. The original readout is $n_D$ after another exposure to
+the same $H$ for the same duration $T$.
+
+For a broader benchmark, allow all joint binary effects obeying
+$0\le E\le I$ and $[E,n_S+Q_R]=0$, where $Q_R=n_D\otimes I_M$.
+Define the induced system effect and the attainable set by
+
+$$
+\operatorname{Tr}[\rho F_\tau(E)]
+=\operatorname{Tr}[(\rho\otimes\tau)E],\qquad
+\mathcal C_{\rm sym}(\tau)
+=\{F_\tau(E):0\le E\le I,\ [E,n_S+Q_R]=0\}.
+$$
+
+Exactly the same processing class is used before and after priming. It contains
+the original hardware effects but need not be implementable in full by that
+hardware. It includes effective POVMs obtained from symmetric operations with
+invariant ancillas and invariant readouts. Conservation of $Q$ alone would not
+exclude an experimenter supplying a new asymmetric reference; that additional
+resource is explicitly excluded here.
+
+### C.2 Exact capability bound and strict inclusion
+
+Use equal-prior test inputs $\rho_\pm=(I\pm Y)/2$, with their phase defined
+relative to the initial reference; their preparator is not an accessible extra
+resource. Let $\mathcal G$ delete coherences between distinct total-charge
+sectors. The Helstrom optimization (Barnett and Croke, 2008) reduces to
+
+$$
+p_{\rm sym}^\star(\tau)
+=\frac12+\frac14\|\mathcal G(Y\otimes\tau)\|_1
+=\frac12+\frac12\|B\|_1,\qquad
+\tau=\begin{pmatrix}A&B\\B^\dagger&C\end{pmatrix},
+$$
+
+where the entries are $M$ operators in the $D$-charge basis. The only nonzero
+twirled block is $\left(\begin{smallmatrix}0&-iB^\dagger\\iB&0\end{smallmatrix}\right)$;
+its eigenvalues are the positive and negative singular values of $B$.
+The positive spectral effect attains the optimum and is charge invariant.
+Equivalently every attainable effect has
+$|[F_\tau(E)]_{01}|\le\|B\|_1/2$. This transverse bound does not characterize
+the entire effect set, whose bias and longitudinal constraints also matter.
+
+Put $\theta=\pi\sqrt5/8$, $s=\sin\theta$, $c=\cos\theta$, and $u=4s^2/5$.
+Direct block evolution of the specified Hamiltonian gives
+
+$$
+\|B_0\|_1=\frac12,\qquad
+\|B_1\|_1=\frac12\sqrt{1-u},\qquad
+p_{\rm sym}^\star(\tau_1)=\frac12+\frac14\sqrt{1-u}.
+$$
+
+The original before-priming effect is
+$F_0=I/2+(sc/\sqrt5)Y-(u/2)Z$. Its transverse magnitude
+$y_0=sc/\sqrt5$ exceeds the after-priming ceiling
+$b_1=\sqrt{1-u}/4$. Numerically, $y_0\simeq0.2197744539$ and
+$b_1\simeq0.1813596618$. Thus an effect actually implemented before priming
+is unavailable afterward even in the larger symmetric benchmark.
+
+| Fixed access and processing class | Before | After |
+|---|---:|---:|
+| Original $H,n_D,T$ protocol | 0.7197744539 | 0.5341235815 |
+| Same $H,n_D$, optimized duration allowed on both sides | 0.7236067977 | 0.6731277438 |
+| All charge-symmetric measurements on fresh $S$ and retained $DM$ | 0.7500000000 | 0.6813596618 |
+| Old input retained; all charge-symmetric joint measurements | 0.7500000000 | 0.7500000000 |
+| Unrestricted direct system measurement, abandoning the charge restriction | 1.0000000000 | 1.0000000000 |
+
+All entries are unconditional equal-prior discrimination success probabilities,
+not entropy values. The duration row uses the same timing menu on both sides
+with priming fixed at $T$, and does not construct an autonomous clock.
+The [derivation](./research/v018/measurement-capability/README.md) gives the
+charge-block calculation and analytic duration maxima.
+
+There is also a full-set statement. The reduced channel $\Phi$ is completely
+positive, trace preserving and covariant. For any allowed after effect,
+$E'=(\mathrm{id}_S\otimes\Phi^*)(E)$ is a valid invariant before effect
+with the same Born probabilities on every input. The dual map preserves finite
+POVM normalization. This proves inclusion, while $F_0$ proves strictness:
+
+$$
+\mathcal C_{\rm sym}(\tau_1)\subsetneq\mathcal C_{\rm sym}(\tau_0),\qquad
+\inf_{F\in\mathcal C_{\rm sym}(\tau_1)}\|F_0-F\|_{\rm op}
+\ge y_0-b_1\simeq0.0384147921.
+$$
+
+The distance expression is a lower bound, not a computed exact nearest-effect
+distance. Any unchanged hardware class containing the original protocol and
+contained in the symmetric class also has different before/after attainable
+sets; nesting of those smaller hardware sets is not asserted. Universal
+inclusion follows from the dual-channel argument, not from random sampling.
+
+### C.3 Controls and physical limit
+
+If the old input remains coherently accessible, the apparatus transformation
+is unitary on the larger resource. Forward and inverse conjugation give a
+bijection of invariant effects, so the full symmetric capability sets are
+equal, not just their scores on this task. This comparison assumes arbitrary
+symmetric joint control, not availability of the inverse in the smaller
+fixed-$H$ hardware menu. If direct asymmetric system measurements are instead
+allowed, both discrimination scores are one.
+
+A maximally mixed memory produces the same original detector effects and the
+same optimum for this phase task without a locally readable preparation-label
+record. That single-score equality does not establish equality of its whole
+capability set with the pure-memory case. The model therefore does not show
+that record formation drives the change.
+
+Crucially, both reduced capability sets span $M_2(\mathbb C)$: diagonal effects
+remain sharp and nonzero charge coherence permits both transverse directions.
+Taking the linear span does not grant arbitrary sharp measurements. This is a
+quantitative measurement-strength loss within a fixed algebra, not a new
+observable algebra, factorization, global information loss, or entropy reset.
+The supplied charge, interaction, access boundary and timing remain the missing
+physical input in any proposed ICC application. No core postulate or aeonic
+interpretation is changed by this example.
+
+### C.4 Verification scope
+
+The [Lean supplement](./research/v018/lean/README.md) checks operator-level
+effect preservation by positive unital pullbacks, invariance under a specified
+covariant action, capability inclusion conditional on the Born-pairing
+identity, finite-POVM normalization, and equality under mutual simulation.
+Kraus positivity and normalization are proved for general finite families.
+It also certifies the exact scalar strict inequality above: for
+$x=\sin^2(\pi\sqrt5/8)$, it proves $1/2\le x\le3/4$ and
+
+$$
+\frac{x(1-x)}5-\frac{1-4x/5}{16}\ge\frac1{80}>0.
+$$
+
+These are the squares of $y_0$ and $b_1$. The certificate does not rely on
+rounded decimal evaluations. However, identifying these scalar quantities
+with the concrete Hamiltonian's effects, constructing its tensor-extended
+channel, proving its covariance and Born pairing, and deriving the Helstrom
+and trace-norm formulas remain analytic, not end-to-end Lean-verified.
+The formal mutual-simulation lemma does not itself instantiate the retained
+resource unitary. No physical assumption is validated by a proof checker.
+
+The pinned Lean 4.24.0/mathlib project passes its build, a dependency audit of
+13 named declarations and two deliberately failing controls. Its checked
+declarations use only the standard logical dependencies recorded in the
+supplement, with no proof placeholders. Two deterministic NumPy suites
+cross-check the model and capability formulas, including arbitrary-input Born
+identities, explicit dual-channel simulations and retained-resource controls.
+Numerical checks, scoped formal proofs and internal LLM-assisted mathematics
+and physics reviews are reported separately; none is independent peer review.
+
 ## References
 
 - Ahmad, S. A., Galley, T. D., Hoehn, P. A., Lock, M. P. E., and Smith, A. R. H.
@@ -2561,9 +2764,14 @@ general ICC no-go follows. Reviews remain internal and AI-assisted.
 - Audenaert, K. M. R. (2007). [A sharp continuity estimate for the von Neumann
   entropy](https://doi.org/10.1088/1751-8113/40/28/S18). *Journal of Physics A:
   Mathematical and Theoretical* 40, 8127-8136.
+- Barnett, S. M., and Croke, S. (2008). [Quantum state
+  discrimination](https://arxiv.org/abs/0810.1970). arXiv:0810.1970, Section 3.1.
 - Barnum, H., and Knill, E. (2002). [Reversing quantum dynamics with near-optimal
   quantum and classical fidelity](https://arxiv.org/abs/quant-ph/0004088v2).
   *Journal of Mathematical Physics* 43, 2097-2106. Revised arXiv version, 2026.
+- Bartlett, S. D., Rudolph, T., Spekkens, R. W., and Turner, P. S. (2006).
+  [Degradation of a quantum reference frame](https://arxiv.org/abs/quant-ph/0602069).
+  *New Journal of Physics* 8, 58.
 - Bartlett, S. D., Rudolph, T., and Spekkens, R. W. (2007). [Reference frames,
   superselection rules, and quantum information](https://arxiv.org/abs/quant-ph/0610030).
   *Reviews of Modern Physics* 79, 555-609.
@@ -2630,6 +2838,9 @@ general ICC no-go follows. Reviews remain internal and AI-assisted.
   Author-hosted lecture slides, slides 1-2.
 - Marletto, C., and Vedral, V. (2017). [Evolution without evolution, and without
   ambiguities](https://arxiv.org/abs/1610.04773). *Physical Review D* 95, 043510.
+- Marvian, I., and Spekkens, R. W. (2012). [An information-theoretic account of
+  the Wigner-Araki-Yanase theorem](https://arxiv.org/abs/1212.3378).
+  arXiv:1212.3378.
 - Meissner, K. A., and Penrose, R. (2025). [The Physics of Conformal Cyclic
   Cosmology](https://arxiv.org/abs/2503.24263). arXiv:2503.24263.
 - Moreva, E., et al. (2014). [Time from quantum entanglement: an experimental
@@ -2717,7 +2928,8 @@ the boundary ansatz, relational-time connections, the finite-dimensional
 illustrations, the EC/CAR candidate calculation, the finite-time selector
 study, the measurement-entropy and access analyses, and the finite
 entropy-stability, transport, conditional arithmetic-reconstruction and
-finite-access analyses; scoped Lean proof development and review;
+finite-access analyses, and the finite reference-resource and measurement-
+capability study; scoped Lean proof development and review;
 literature discovery and
 comparison; code drafting and review; manuscript organization; English drafting
 and rewriting; and preparation of publication metadata. Much of the present
