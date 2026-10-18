@@ -1,6 +1,6 @@
 # Open Questions
 
-This document accompanies version 0.1.6 (9 October 2026). Its purpose is to
+This document accompanies version 0.1.7 (10 October 2026). Its purpose is to
 identify what remains unresolved.
 
 The first selection-rule issue is isolated as a finite-dimensional
@@ -36,6 +36,27 @@ an unspecified POVM or pass to the continuum without further assumptions.
 The [transport review](../research/v016/transport-applicability.md) supplies
 geometry along a prescribed path, not a physical path or selector. Neither
 closes the main failure points below or reopens the closed selector searches.
+
+The v0.1.7 [arithmetic reconstruction](../research/v017/arithmetic-reconstruction.md)
+also does not supply a physical selector. For its exact simple-spectrum
+logarithmic Hamiltonian, coherent multiplication families lie in one diagonal
+symmetry orbit and preserve the restricted entropy of a fixed stationary state.
+Free reference evolution also leaves the algebra unchanged. The
+reference-phase-only route is closed as an ICC transition candidate under
+these assumptions; its reconstruction and stability results are retained.
+The broader selector question remains open, but improved reconstruction
+stability alone cannot reopen this route.
+Full operator-norm reconstruction is unstable under small reference errors.
+The [fixed-access follow-up](../research/v017/operational-stability.md) now
+provides a conditional local bound for compressed effect sets, but a common
+mean-energy ceiling does not ensure uniform stability. Which independently
+available reference/control resources justify the required amplitude floor,
+and what remains under mixed noise, spectral errors or imperfect frequency
+resolution? The finite-window result does not answer those questions.
+Any different transition candidate must identify and physically justify the
+assumptions it changes, its reference/coupling, its operational error metric,
+and a distinction beyond state-preserving symmetries.
+The result neither derives a continuum theory nor rules out other constraints.
 
 ## Main failure points
 

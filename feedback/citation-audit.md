@@ -87,6 +87,38 @@ provenance. The latter is a reported formalization, not a locally compiled or
 independently audited theorem. No part of the finite bound depends on it, and
 it is not added to the manuscript as a new physical axiom or validation of ICC.
 
+## Version 0.1.7 Targeted Addition
+
+Date: 2026-10-10. This is a bounded check of the new arithmetic appendix and
+supplement, not a new exhaustive citation audit.
+
+| Source | Verified use and limit |
+|---|---|
+| [Marcolli (2008), author-hosted slides](https://www.its.caltech.edu/~matilde/BCF1slides.pdf) | Slides 1-2 give the Bost-Connes generators, time evolution and multiplication-shift representation. Cited as lecture slides, not a new ICC theorem. |
+| [Kubota and Takeishi, v2 (2018; first submitted 2017)](https://arxiv.org/abs/1709.03281v2) | Theorem 1.1 and Corollary 1.2, PDF page 2, concern reconstruction/classification within the number-field Bost-Connes class. They do not derive that class from an arbitrary spectrum. No full proof re-audit is claimed. |
+| [Bartlett, Rudolph and Spekkens (2007)](https://arxiv.org/abs/quant-ph/0610030) | Physical context for reference-frame and coherence resources, not a derivation of the selected reference, the polar-reconstruction formula, or a cosmological transition. The arXiv record confirms the journal metadata. |
+
+The supplemental asymmetry, observable-induced-subsystem, modular-inclusion and
+clock-ambiguity sources retain explicitly limited uses in the full note. They
+are not used to infer a prime-number cosmological mechanism. The mathematical
+derivations in Appendix B are given explicitly, with no novelty claim and no
+dependence on an unverified OpenAI manuscript. The earlier family-289 provenance
+remains a separately disclosed motivation, not a premise of the finite bound.
+
+The fixed-access supplement additionally links
+[Shirokov, *Operator E-norms and their use*, v6 (2020)](https://arxiv.org/abs/1806.05668v6)
+as background for energy-sensitive comparisons, and
+[Li, *Relative Perturbation Bounds for the Unitary Polar Factor* (1994)](https://www2.eecs.berkeley.edu/Pubs/TechRpts/1994/5480.html)
+as polar-conditioning context. Their primary metadata and abstracts were
+rechecked on 10 October 2026. The former's E-norm is not identified with the
+hard-cutoff effect-set metric; the latter's structured relative-perturbation
+theorem is not used to prove the elementary scalar bound. No theorem-level
+proof audit of either source or external validation of ICC is implied.
+
+The included Lean project checks locally written proof components with pinned
+mathlib dependencies. It neither imports nor certifies the OpenAI family-289
+manuscript. Its exact formalization boundary is in the project README.
+
 ## Earlier Audits
 
 Initial audit scope: every scholarly source then linked from `PAPER.md`, plus foundational sources

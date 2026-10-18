@@ -1,0 +1,64 @@
+{
+  "polar_reconstruction": 2.2887833992611187e-16,
+  "frequency_covariance": 4.577566798522237e-16,
+  "boundary_partial_isometry": 2.220446049250313e-16,
+  "smallest_tested_nonzero_probe_weight": 0.029720565700142528,
+  "energy_on_allowed_finite_domain": 9.155133597044475e-16,
+  "missing_transition_partial_isometry": 2.220446049250313e-16,
+  "semigroup": 3.510833468576701e-16,
+  "double_commutation_on_rectangular_window": 2.220446049250313e-16,
+  "generic_basis_covariance": 7.720035903417359e-15,
+  "nonflat_probe_commutator_witness": 0.9999999999999999,
+  "free_reference_evolution_scalar_only": 3.510833468576701e-16,
+  "stationary_state_invariance": 1.5515838457795457e-17,
+  "stationary_entropy_invariance_bits": 0.0,
+  "stationary_restricted_spectrum": 2.7755575615628914e-17,
+  "nonproduct_reference_entropy_bits": 0.041281165323978894,
+  "small_reference_error_control": [
+    {
+      "epsilon": 0.1,
+      "reference_trace_distance": 0.11508643239660316,
+      "shift_operator_distance": 2.0,
+      "algebra_distance_lower_bound": 1.0
+    },
+    {
+      "epsilon": 0.001,
+      "reference_trace_distance": 0.0011547001534792,
+      "shift_operator_distance": 2.0,
+      "algebra_distance_lower_bound": 1.0
+    },
+    {
+      "epsilon": 1e-05,
+      "reference_trace_distance": 1.1547005383407617e-05,
+      "shift_operator_distance": 2.0,
+      "algebra_distance_lower_bound": 1.0
+    }
+  ],
+  "diagnostic_names": [
+    "polar_reconstruction",
+    "frequency_covariance",
+    "boundary_partial_isometry",
+    "energy_on_allowed_finite_domain",
+    "missing_transition_partial_isometry",
+    "semigroup",
+    "double_commutation_on_rectangular_window",
+    "generic_basis_covariance",
+    "nonflat_probe_commutator_witness",
+    "free_reference_evolution_scalar_only",
+    "stationary_state_invariance",
+    "stationary_entropy_invariance_bits",
+    "stationary_restricted_spectrum",
+    "nonproduct_reference_entropy_bits",
+    "small_reference_error_control"
+  ],
+  "configuration": {
+    "seed": 20261010,
+    "absolute_tolerance": 1e-10,
+    "prime_occupation_window": [
+      4,
+      3
+    ]
+  },
+  "status": "All finite diagnostic assertions passed",
+  "scope": "No continuum, selector, or cosmological validation"
+}

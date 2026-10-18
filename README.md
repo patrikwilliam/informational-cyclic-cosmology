@@ -8,7 +8,7 @@ Author: Patrik William Pustejovsky
 DOI (all versions):
 [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416).
 
-This repository contains version 0.1.6 of a conceptual research note on emergent
+This repository contains version 0.1.7 of a conceptual research note on emergent
 time, informational conservation, entropy as local readability, and cyclic
 cosmology. It includes a minimal finite-dimensional illustration showing how the
 same global pure state can have different bipartite entanglement entropies under
@@ -17,13 +17,14 @@ CAR selector as a separate finite example. Its first three-cell robustness test
 is boundary-sensitive. At four cells, the transported residual law is shared by
 every nonzero contact in the declared translation-invariant onsite quartic
 class, so the periodic branch is not EC specific. The current update adds a
-finite restricted-entropy stability bound and a bounded review of prescribed
-algebra transport, while retaining the earlier finite-time selector and
-measurement-access results. These are not a derived cosmological mechanism.
+conditional arithmetic reconstruction, its stationary-state and full-norm
+limitations, and a finite-access conditioning analysis with scoped Lean proofs.
+Earlier stability, transport, selector and measurement
+results remain unchanged. No physical selection mechanism is derived.
 
-Release date: 9 October 2026.
+Release date: 10 October 2026.
 
-This is version 0.1.6. Its purpose is to be broken.
+This is version 0.1.7. Its purpose is to be broken.
 
 The goal is not to defend this formulation, but to expose it to serious
 criticism, identify where it fails, and use those failure modes to build a
@@ -70,7 +71,36 @@ to every nonzero Hermitian translation-invariant onsite quartic contact in the
 declared four-cell class. This is a stop result for EC specificity, not a
 positive extension of the main ICC proposal.
 
-## What Changed in 0.1.6
+## What Changed in 0.1.7
+
+- Appendix B tests arithmetic reconstruction with a specified logarithmic
+  Hamiltonian and coherent reference. These inputs recover multiplication
+  operations but are not derived from ICC.
+- Compatible embeddings preserve the restricted entropy of a fixed normal
+  stationary state in this model. Free reference evolution leaves the algebras
+  unchanged. We therefore close the reference-phase-only route as an ICC
+  transition candidate under these assumptions, retaining its reconstruction
+  and stability results. The broader selector question remains open; this is
+  not a no-go for every selector.
+- Arbitrarily small reference errors can give maximal full operator-norm
+  algebra distance. The earlier finite entropy-continuity bound is not contradicted.
+- Appendix B.4 fixes one finite-access measurement comparison. A hard cutoff
+  hides high-energy flips but an energy budget alone still gives no uniform
+  stability. At each fixed full-support reference, local stability holds with
+  an explicit reference-amplitude conditioning bound.
+- The bundled [Lean project](./research/v017/lean/README.md) checks selected
+  infinite-dimensional witness and phase-bound components, not the entire
+  reconstruction, operational theorem, or ICC hypothesis. The combined numeric
+  runner includes 24 diagnostic groups.
+- The [v0.1.7 supplement](./research/v017/README.md) includes the derivation,
+  reproducible diagnostics, and separate internal mathematical and physical
+  reviews. No new OpenAI theorem, Riemann-hypothesis claim, prime-number
+  cosmological postulate or independent expert endorsement is introduced.
+
+See the [release notes](./RELEASE_NOTES-v0.1.7.md) and
+[integration verification](./feedback/v0.1.7-integration-verification.md).
+
+## Historical Changes in 0.1.6
 
 - A direct finite-dimensional bound controls restricted von Neumann entropy
   under small Kadison-Kastler algebra perturbations at fixed factor dimension.
@@ -226,8 +256,13 @@ itself falsify the central aeonic boundary proposal.
 ## Main Document
 
 - [PAPER.md](./PAPER.md)
-- [Formatted PDF (v0.1.6)](./Informational-Cyclic-Cosmology-v0.1.6.pdf)
-- [Release notes for v0.1.6](./RELEASE_NOTES-v0.1.6.md)
+- [Formatted PDF (v0.1.7)](./Informational-Cyclic-Cosmology-v0.1.7.pdf)
+- [Release notes for v0.1.7](./RELEASE_NOTES-v0.1.7.md)
+- [v0.1.7 reproducibility supplement](./research/v017/README.md)
+- [v0.1.7 mathematical review](./feedback/v0.1.7-mathematical-review.md)
+- [v0.1.7 physics review](./feedback/v0.1.7-physics-review.md)
+- [v0.1.7 integration verification](./feedback/v0.1.7-integration-verification.md)
+- [Historical release notes for v0.1.6](./RELEASE_NOTES-v0.1.6.md)
 - [v0.1.6 reproducibility supplement](./research/v016/README.md)
 - [v0.1.6 integration verification](./feedback/v0.1.6-integration-verification.md)
 - [Historical release notes for v0.1.5](./RELEASE_NOTES-v0.1.5.md)
@@ -270,6 +305,16 @@ itself falsify the central aeonic boundary proposal.
 
 ## Reproducing the Finite Calculations
 
+For the v0.1.7 arithmetic diagnostics, use Python 3.10 or later with NumPy:
+
+```bash
+python3 research/v017/run_checks.py
+```
+
+These are bounded matrix checks and counterexample witnesses, not validation
+of infinite-dimensional theorems or physical access. The analytic arguments
+are in the supplement and Appendix B. No older search is restarted.
+
 For the bounded v0.1.6 stability and transport checks, use Python 3.10 or later
 with NumPy and run:
 
@@ -292,7 +337,7 @@ This checks the declared finite examples, not a physical selection mechanism.
 The supplement explains the exact-arithmetic certificate, numerical tolerances,
 recorded outputs and limits. It does not rerun the older lattice campaign.
 
-The finite calculations introduced in v0.1.3 are unchanged in v0.1.6. They
+The finite calculations introduced in v0.1.3 are unchanged in v0.1.7. They
 require Python 3.10 or later and NumPy. From the
 repository root, run:
 
@@ -364,7 +409,8 @@ counterarguments; development and revision of the operator-algebraic notation,
 the boundary ansatz, relational-time connections, the finite-dimensional
 illustrations, the EC/CAR candidate calculation, the finite-time selector
 follow-up, the measurement-entropy and access analyses, and the finite
-entropy-stability and transport analyses; literature discovery and
+entropy-stability, transport, and conditional arithmetic-reconstruction
+analyses; literature discovery and
 comparison; code drafting and review; manuscript organization; English drafting
 and rewriting; and preparation of publication metadata. Much of the present
 wording, formal presentation, and exploratory code was generated or revised

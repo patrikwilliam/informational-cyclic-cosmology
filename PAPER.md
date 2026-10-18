@@ -8,53 +8,53 @@ ORCID: [0009-0008-1618-6619](https://orcid.org/0009-0008-1618-6619)
 
 DOI (all versions): [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416)
 
-Version: 0.1.6
+Version: 0.1.7
 
-Release date: 9 October 2026
+Release date: 10 October 2026
 
 Status: speculative hypothesis, not a completed physical theory.
 
-Revision note: version 0.1.6 adds a finite restricted-entropy stability bound
-and a bounded applicability review of prescribed observable-algebra transport.
-It also clarifies the limits of mass inaccessibility and cross-algebra
-gravitational entropy comparisons. Earlier selector and measurement results
-are unchanged. No physical algebra selector, cosmological entropy functional,
-or aeonic transition is derived.
+Revision note: version 0.1.7 adds a bounded arithmetic reconstruction study.
+Specified coherent reference data recover multiplication operations, but the
+compatible embeddings preserve restricted entropy for a fixed stationary state
+in the stated simple-spectrum model. Full-norm instability and a finite-access
+conditioning bound delimit reconstruction. Selected proof components are
+Lean-checked. Earlier results and core postulates are unchanged; no physical
+selector or aeonic transition is derived.
 
 ## Abstract
 
-This note explores a speculative cosmological interpretation in which an
-aeonic boundary changes the physically privileged local observable algebra of
-one globally conserved informational state, rather than restarting evolution
-in external time. The mechanism selecting that algebra is not provided. The
-proposal remains a conceptual research program without a distinct quantitative
-cosmological prediction; no new general theorem about factorization or
-observational entropy is claimed.
+This note explores whether an aeonic boundary could change the physically
+privileged local observable algebra of one globally conserved informational
+state, rather than restart evolution in external time. No selection mechanism,
+distinct quantitative cosmological prediction, or new general theorem about
+factorization or observational entropy is supplied.
 
 Finite studies delimit the proposal. A preliminary obstruction concerns a
 specific unrestricted Hamiltonian interaction-projection selector. Restricted
 Einstein-Cartan-inspired CAR examples do not evade the missing physical input:
 their three-cell robustness and four-cell EC-specificity tests fail. A distinct
-finite-time scrambling functional admits an internally certified entangled
-strict local minimum, but a product-state competitor has lower cost and better
-recovery in the stipulated operational task. This is not successful physical
-selection and does not contradict the interaction-cost obstruction.
+finite-time scrambling example has an internally certified entangled strict
+local minimum, but a product competitor has lower cost and better recovery in
+the stated task. This neither supplies physical selection nor contradicts the
+interaction-cost obstruction.
 
-A separate two-qubit illustration compares measurements on a fixed Bell state.
-The original reduced-state entropies are one and zero bits. A specified
-randomized Pauli protocol instead gives observational entropies of two and
-five-thirds bits, with an explicit white-noise and measurement-sharpness
-dependence. Its new measurement statistics are reproducible by local operations
-on both original qubits and classical communication, but not first-qubit-only
-access for arbitrary inputs at nonzero sharpness. Matching these statistics
-does not implement coherent control of the
-new subsystem. The comparison is not a temporal entropy decrease or a
-thermodynamic, gravitational, or cosmological reset.
+On a fixed Bell state, reduced-state entropies of one and zero bits coexist
+with observational entropies of two and five-thirds bits under a specified
+randomized Pauli protocol. Explicit formulas cover white noise and measurement
+sharpness. The new statistics are implementable by local operations on both
+original qubits and classical communication, but not first-qubit-only access
+for arbitrary inputs at nonzero sharpness. Matching statistics supplies neither
+coherent subsystem control nor a thermodynamic, gravitational, or cosmological
+reset.
 
 At fixed finite factor dimension, a continuity bound controls restricted-state
 entropy changes under operator-norm algebra perturbations. Prescribed algebra
-transport supplies geometric comparison, not physical selection. Physical
-algebra selection, a justified cosmological entropy
+transport supplies geometric comparison, not physical selection. A separate
+arithmetic reconstruction with supplied reference data encounters a stationary
+entropy obstruction and full-norm instability. At fixed finite access,
+reconstruction is locally continuous, but an energy budget alone gives no
+uniform guarantee. Physical algebra selection, a cosmological entropy
 functional, relational transition dynamics, repeatability, and observational
 tests remain open. All mathematical and physical checks reported here are
 internal and LLM-assisted, not independent expert peer review.
@@ -75,6 +75,9 @@ components already joined into a cosmological mechanism.
 
 Version 0.1.6 adds finite stability and prescribed-transport comparisons using
 established tools; no novelty or independent expert certification is claimed.
+Version 0.1.7 adds the conditional arithmetic construction and its bounded
+limitations in Appendix B. It does not introduce a prime-number cosmological
+postulate or adopt an unverified AI-generated theorem.
 
 The narrower claim explored here is that these ingredients may admit a distinct
 cosmological application. In this interpretation, successive aeons are not
@@ -105,12 +108,17 @@ limited to the proposed synthesis and research question.
 | Measurement access | Exact local implementation with classical communication | Coherent subsystem control or a derived change of access |
 | Finite algebra perturbations | Fixed-dimension restricted-entropy continuity bound | POVM or cosmological entropy stability without further assumptions |
 | Prescribed algebra transport | Horizontal paths can realize a fixed-state entropy contrast | A selected path, physical transition, or thermodynamic arrow |
+| Arithmetic reconstruction | Stationary entropy equality; full-norm instability; conditional finite-access stability | An independently derived selector, uniform energy-only guarantee, or ICC no-go |
 
 The [v0.1.5 reproducibility supplement](./research/v015/README.md) separates
 analytic identities, exact-arithmetic certificates, numerical checks and
 assumed physical resources. None is presented as external peer review.
 The [v0.1.6 supplement](./research/v016/README.md) adds the bounded stability
 and transport analyses without reopening the closed selector searches.
+The [v0.1.7 supplement](./research/v017/README.md) contains the arithmetic
+derivation, finite-access analysis, diagnostics, scoped Lean proofs, and separate
+internal mathematics and physics reviews. These are conditional results and
+limitations, not a new physical mechanism.
 
 ## 1. Core Postulates
 
@@ -1591,6 +1599,17 @@ measurement-relative entropy and an all-input measurement implementation, not
 an independently motivated selection or change of access. These tasks remain
 separate; their partial results do not jointly constitute a transition law.
 
+Appendix B supplies another bounded limitation. For its exact simple-spectrum
+logarithmic Hamiltonian, compatible multiplication families differ by diagonal
+unitaries preserving any normal stationary state. Their corresponding
+restricted entropies therefore agree. An independently specified coherent
+reference fixes an embedding but does not evade this obstruction; unrestricted
+operator-norm stability of that reconstruction also fails. A separate fixed-window
+analysis gives local continuity at each full-support reference, but no uniform
+guarantee from an energy budget alone. These conclusions do not apply
+automatically to a different constraint, a nonstationary target, or other
+energy-restricted error criteria.
+
 The boundary labels are also not yet mathematical limits. Any asymptotic
 interpretation of the superscripts $\infty$ and $0$ requires a relational
 parameter, topology, and convergence law; otherwise they remain labels for the
@@ -1684,6 +1703,18 @@ Neither comparison is a physical entropy-reducing process. The finite studies
 clarify operational meaning and limitations; they do not derive algebra
 selection, relational transition dynamics, or cosmological cycling. This
 version closes these finite examples rather than extending their scope.
+
+The arithmetic follow-up in Appendix B likewise identifies missing physical
+input rather than supplying it. Its conditional reconstruction cannot produce
+the proposed contrast for a fixed stationary state in the stated model, and
+small reference errors need not give small full operator-norm algebra errors.
+At fixed finite access, an independently certified reference-amplitude floor
+provides a conditional robustness bound; energy restriction alone does not.
+The reference-phase-only route is therefore closed as an ICC transition
+candidate under these assumptions. The reconstruction and stability results
+remain useful as conditional mathematical results, not a transition mechanism.
+The broader physical selector question remains open; these limitations are not
+a universal no-go theorem for ICC.
 
 To become a physical theory, the hypothesis needs:
 
@@ -2301,6 +2332,216 @@ It also does not show persistence at arbitrary cell count or that
 Einstein-Cartan dynamics selects this factorization family. These are required
 before the finite result can support the central ICC proposal.
 
+## Appendix B. Arithmetic Reconstruction and Its Limits
+
+This is a separate bounded test of whether arithmetic dynamics can determine
+observable algebras. Multiplication shifts occur in Bost-Connes representations
+([Marcolli, 2008](https://www.its.caltech.edu/~matilde/BCF1slides.pdf)). Their
+presence in that mathematical framework does not derive them from cosmology.
+[Kubota and Takeishi](https://arxiv.org/abs/1709.03281v2) reconstruct semigroup
+actions up to conjugacy from algebras already in the number-field Bost-Connes
+class; their theorem does not identify that class from an arbitrary Hamiltonian.
+The full derivation, controls and applicability review are in the
+[v0.1.7 supplement](./research/v017/arithmetic-reconstruction.md). No novelty
+or dependence on new OpenAI mathematics manuscripts is claimed.
+
+### B.1 Conditional reconstruction
+
+Assume, rather than derive, the represented ambient algebra
+$\mathcal B(\mathcal H)$ and the nondegenerate Hamiltonian
+
+$$
+\mathcal H=\ell^2(\mathbb N_{>0}),\qquad
+H|n\rangle=(\log n)|n\rangle,\qquad P_n=|n\rangle\langle n|.
+$$
+
+The energy zero and units are fixed. If isometries $T_m$, for positive integers
+$m$, satisfy
+
+$$
+e^{itH}T_m e^{-itH}=m^{it}T_m,\qquad T_mT_n=T_{mn},\qquad T_1=I,
+$$
+
+simple spectrum gives $T_m|n\rangle=\alpha_m(n)|mn\rangle$, with
+$|\alpha_m(n)|=1$. The semigroup identity acting on $|1\rangle$ implies
+
+$$
+\alpha_m(n)=\eta_{mn}\overline{\eta_n},\qquad
+T_m=D S_mD^*,\qquad S_m|n\rangle=|mn\rangle,
+$$
+
+where $\eta_n=\alpha_n(1)$ and $D|n\rangle=\eta_n|n\rangle$. Thus the
+compatible families form one diagonal-unitary orbit, not a uniquely determined
+physical embedding. The covariance and semigroup conditions are additional
+assumptions, not consequences of the spectrum alone.
+
+A specified normalized reference $|r\rangle=\sum_n c_n|n\rangle$, with every
+$c_n\ne0$, fixes one family through the polar decomposition of
+
+$$
+B_m=\sum_{n\ge1}P_{mn}|r\rangle\langle r|P_n,\qquad
+V_m^{(r)}|n\rangle=
+e^{i(\arg c_{mn}-\arg c_n)}|mn\rangle.
+$$
+
+The bounded weighted-shift sum converges strongly, and its polar factor is an
+isometry even when its weights approach zero. The resulting
+$\mathcal A_p^{(r)}=W^*(V_p^{(r)})$ is a diagonal-unitary conjugate of the
+prime-occupation factor obtained from $n=p^k q$, $p\nmid q$:
+$\mathcal B(\ell^2(\mathbb N_0))\otimes I$. Distinct primes give commuting
+factors. These are type-I factors in a specified representation, not spatially
+local QFT algebras.
+
+Reference coherence is a physical resource in quantum-information theory
+([Bartlett, Rudolph and Spekkens, 2007](https://arxiv.org/abs/quant-ph/0610030)),
+but this construction does not explain why ICC supplies this particular
+reference or makes the polar operations accessible. In particular,
+$(V_m^{(r)})^*H V_m^{(r)}=H+\log m$ on the energy domain requires energy
+exchange in an implementation. A general probe need not obey the compatible
+phase relations; the supplement supplies a failing control.
+
+### B.2 Stationary-state obstruction
+
+Let $\rho$ be a fixed normal density operator invariant under $e^{-itH}$.
+Nondegeneracy makes it diagonal. Every $D$ above preserves $\rho$, so for
+each fixed prime $p$ and any two full-support references,
+
+$$
+S_\rho(\mathcal A_p^{(r)})=S_\rho(\mathcal A_p^{(s)}).
+$$
+
+Here $S_\rho$ is ordinary type-I restricted-state entropy, possibly infinite;
+no subtraction of divergent quantities or gravitational interpretation is made.
+Also $r(t)=e^{-itH}r$ gives
+$V_m^{(r(t))}=m^{-it}V_m^{(r)}$, leaving each algebra unchanged. Thus changing
+only these reference phases does not yield a stationary entropy contrast, and
+free reference evolution does not generate an algebra transition. This is a
+limited statement about the specified model, not about every possible ICC
+constraint or every arithmetic algebra.
+
+Accordingly, we discontinue the reference-phase-only route as an ICC transition
+mechanism under these assumptions. This closes that proposed use, not the
+conditional reconstruction or stability analyses retained here. The broader
+selector question remains open. A different candidate would need to identify
+and physically justify which assumptions it changes; improved reconstruction
+stability alone cannot remove the stationary-state obstruction.
+
+### B.3 Full-norm instability
+
+Take $c_n=\sqrt6/(\pi n)>0$ and $D_j=I-2P_j$ for odd $j\to\infty$.
+The reference has finite mean energy, and the trace distance obeys
+
+$$
+\tfrac12\bigl\||c\rangle\langle c|
+-D_j|c\rangle\langle c|D_j^*\bigr\|_1
+=2|c_j|\sqrt{1-|c_j|^2}\longrightarrow0.
+$$
+
+Nevertheless, for $\mathcal A_2=W^*(S_2)$ in this fixed ambient representation,
+
+$$
+d_{\rm KK}(\mathcal A_2,D_j\mathcal A_2D_j^*)=1.
+$$
+
+The distance is the full unit-ball Hausdorff distance in operator norm used in
+Section 5.4. Indeed, an element of $\mathcal A_2$ has the same matrix element
+from occupation zero to one in every odd-$q$ fiber of $n=2^k q$. The unit-ball
+witness $D_jS_2D_j^*$ has that element $-1$ in the $j$-fiber and $+1$ in any
+other fiber. Its distance from $\mathcal A_2$ is therefore at least
+$\min_z\max\{|z-1|,|z+1|\}=1$, and zero in the unit ball supplies the upper
+bound. This is not a failure of the earlier finite entropy bound: its small
+algebra-distance premise is absent here.
+
+Energy-restricted or state-weighted criteria require separate analysis. The
+following subsection addresses one hard-cutoff comparison, not every such
+criterion.
+
+### B.4 Fixed access and conditional stability
+
+Keep the doubling algebra $\mathcal A=\mathcal A_2$ and write
+$\mathcal A_c=D_c\mathcal A D_c^*$ for a full-support reference, with
+$D_c|n\rangle=c_n|c_n|^{-1}|n\rangle$. Fix a spectral window
+$\Pi_N=\sum_{n=1}^N P_n$, independently of reference phases. Define
+
+$$
+\begin{aligned}
+\mathcal E_N(\mathcal A_c)&=\{\Pi_N a\Pi_N:a\in\mathcal A_c,\ 0\le a\le I\},\\
+d_N(\mathcal A_c,\mathcal A_d)&=d_{\rm H}^{\|\cdot\|}
+(\mathcal E_N(\mathcal A_c),\mathcal E_N(\mathcal A_d)).
+\end{aligned}
+$$
+
+The norm is on $\Pi_N\mathcal H$. It measures worst-case probability error
+over test states supported there; the Hausdorff comparison concerns ideal
+binary-effect approximation, not a channel, instrument, or reconstruction
+algorithm. Coherent test-state preparation and a fixed external phase standard
+are supplied. Candidate measurements remain exactly the sets $\mathcal E_N$;
+external preparation resources do not enlarge them to unrestricted laboratory
+measurement sets. No implementation cost or back-action bound is established.
+
+Every compressed effect is within $1/2$ of the common midpoint $\Pi_N/2$,
+so $d_N\le1/2$. This differs from the unit-ball normalization in B.3.
+If $j>N$, then $\Pi_N D_j=\Pi_N$: the old high-index flip is invisible.
+Uniform continuity nevertheless fails for every fixed $N\ge6$. Set
+
+$$
+u_3=0,\quad u_n=\sqrt{192/61}\,2^{-n}\ (n\ne3),\qquad
+c_\epsilon^\pm=\sqrt{1-\epsilon^2}\,u\pm\epsilon|3\rangle,
+\quad 0<\epsilon<1/2.
+$$
+
+Since $\sum_{n\ne3}4^{-n}=61/192$, both references are normalized and
+full-support. Their trace distance is $2\epsilon\sqrt{1-\epsilon^2}\to0$.
+Also $\langle u,Hu\rangle\le\sum_n n|u_n|^2=229/183<2$ and $\log3<2$,
+so both satisfy the same mean-energy budget $\langle H\rangle<2$.
+This reference budget is separate from the test-state hard cutoff $\log N$.
+Their reconstructed algebras are $\mathcal A$ and $D_3\mathcal A D_3$.
+
+To see the exact separation, let $L\in\mathcal A$ swap occupations $k=0,1$
+in every odd fiber of $n=2^kq$, fixing higher occupations. Then
+$Q=(I+L)/2$ is a projection. The effect $Q'=D_3QD_3$ gives probabilities
+1 and 0 on the fixed preparations
+
+$$
+\psi_0=(|1\rangle+|2\rangle)/\sqrt2,\qquad
+\psi_1=(|3\rangle+|6\rangle)/\sqrt2.
+$$
+
+Every effect in $\mathcal A$ has one common expectation $z$ on these
+preparations. Hence its error against $Q'$ is at least
+$\max\{|1-z|,|z|\}\ge1/2$, proving $d_N=1/2$ for $N\ge6$.
+This disproves uniform continuity over the stated reference class, not
+continuity at each full-support reference: the limiting $u$ is outside that
+domain.
+
+Indeed, for fixed finite $N$, put
+$\mu_N(c)=\min_{n\le N}|c_n|>0$ and
+$\delta=\min_{|\lambda|=1}\|c-\lambda d\|$. The scalar estimate
+$\left|\frac z{|z|}-\frac w{|w|}\right|\le\frac{2|z-w|}{|z|}$
+for nonzero $z,w$, and centering effects at $\Pi_N/2$, give
+
+$$
+d_N(\mathcal A_c,\mathcal A_d)
+\le\min\left\{\frac12,\frac{2\delta}{\mu_N(c)}\right\}.
+$$
+
+A common certified amplitude floor gives a uniform bound on that restricted
+class; the mean-energy budget alone supplies none. This is a pure-reference
+perturbation statement, not a bound for mixed noise, spectral errors, finite
+frequency resolution, or a continuum limit. Energy-diagonal test states cannot
+detect the phase-conjugation distinction; co-transporting states and apparatus
+also preserves probabilities. Neither comparison produces a selector.
+
+The [operational supplement](./research/v017/operational-stability.md) gives
+the full proof and controls. The [Lean project](./research/v017/lean/README.md)
+checks the infinite-dimensional B.3 witness and vector limit, and B.4's effect
+witness, two-probe bound and scalar phase estimate. Reconstruction, reference
+sums, trace distance, and the assembled compressed-set and continuity theorems
+remain analytic, not end-to-end formalized. B.2 is unchanged: coherent external
+probes do not create stationary entropy contrast or free-evolution transitions.
+No physical selector, cosmological reset, continuum QFT construction, or
+general ICC no-go follows. Reviews remain internal and AI-assisted.
+
 ## References
 
 - Ahmad, S. A., Galley, T. D., Hoehn, P. A., Lock, M. P. E., and Smith, A. R. H.
@@ -2323,6 +2564,9 @@ before the finite result can support the central ICC proposal.
 - Barnum, H., and Knill, E. (2002). [Reversing quantum dynamics with near-optimal
   quantum and classical fidelity](https://arxiv.org/abs/quant-ph/0004088v2).
   *Journal of Mathematical Physics* 43, 2097-2106. Revised arXiv version, 2026.
+- Bartlett, S. D., Rudolph, T., and Spekkens, R. W. (2007). [Reference frames,
+  superselection rules, and quantum information](https://arxiv.org/abs/quant-ph/0610030).
+  *Reviews of Modern Physics* 79, 555-609.
 - Bodnia, E., Isenbaev, V., Colburn, K., Swearngin, J., and Bouwmeester, D.
   (2022). [The quest for CMB signatures of Conformal Cyclic
   Cosmology](https://arxiv.org/abs/2208.06021). arXiv:2208.06021.
@@ -2372,12 +2616,18 @@ before the finite result can support the central ICC proposal.
   equations](https://arxiv.org/abs/1804.04434). *Physical Review D* 98, 104027.
 - Koslowski, T. A. (2007). [A Cosmological Sector in Loop Quantum
   Gravity](https://arxiv.org/abs/0711.1098). arXiv:0711.1098.
+- Kubota, Y., and Takeishi, T. (2018). [Reconstructing the Bost-Connes semigroup
+  actions from K-theory](https://arxiv.org/abs/1709.03281v2).
+  arXiv:1709.03281v2; first submitted 2017.
 - Lucat, S., and Prokopec, T. (2017). [Cosmological singularities and bounce in
   Cartan-Einstein theory](https://arxiv.org/abs/1512.06074). *Journal of
   Cosmology and Astroparticle Physics* 2017(10), 047.
 - Maldacena, J. M. (1998). [The Large N Limit of Superconformal Field Theories
   and Supergravity](https://arxiv.org/abs/hep-th/9711200). *Advances in
   Theoretical and Mathematical Physics* 2, 231-252.
+- Marcolli, M. (2008). [Bost-Connes, F1,
+  3-manifolds](https://www.its.caltech.edu/~matilde/BCF1slides.pdf).
+  Author-hosted lecture slides, slides 1-2.
 - Marletto, C., and Vedral, V. (2017). [Evolution without evolution, and without
   ambiguities](https://arxiv.org/abs/1610.04773). *Physical Review D* 95, 043510.
 - Meissner, K. A., and Penrose, R. (2025). [The Physics of Conformal Cyclic
@@ -2466,7 +2716,9 @@ counterarguments; development and revision of the operator-algebraic notation,
 the boundary ansatz, relational-time connections, the finite-dimensional
 illustrations, the EC/CAR candidate calculation, the finite-time selector
 study, the measurement-entropy and access analyses, and the finite
-entropy-stability and transport analyses; literature discovery and
+entropy-stability, transport, conditional arithmetic-reconstruction and
+finite-access analyses; scoped Lean proof development and review;
+literature discovery and
 comparison; code drafting and review; manuscript organization; English drafting
 and rewriting; and preparation of publication metadata. Much of the present
 wording, formal presentation, and exploratory code was generated or revised
