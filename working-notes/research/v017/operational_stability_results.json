@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "seed": 10102026,
+  "tolerance": 2e-12,
+  "checks": [
+    "positive_effect_witness",
+    "two_fixed_probe_obstruction",
+    "midpoint_upper_bound_witness",
+    "fiber_symmetry_samples",
+    "diagonal_access_control",
+    "cotransport_control",
+    "cutoff_control",
+    "reference_error_and_energy_diagnostics",
+    "conditional_phase_and_centered_effect_bound_samples"
+  ],
+  "windows": [
+    {
+      "window": 6,
+      "witness_probabilities": [
+        0.9999999999999998,
+        0.0
+      ],
+      "witness_midpoint_distance": 0.5,
+      "sampled_common_probability_error": 2.220446049250313e-16,
+      "diagonal_state_control_error": 0.0,
+      "cotransport_control_error": 0.0,
+      "outside_window_control_error": 0.0
+    },
+    {
+      "window": 12,
+      "witness_probabilities": [
+        0.9999999999999998,
+        0.0
+      ],
+      "witness_midpoint_distance": 0.5,
+      "sampled_common_probability_error": 0.0,
+      "diagonal_state_control_error": 0.0,
+      "cotransport_control_error": 0.0,
+      "outside_window_control_error": 0.0
+    }
+  ],
+  "reference_diagnostics": [
+    {
+      "epsilon": 0.1,
+      "vector_error": 0.2,
+      "trace_distance": 0.19899748742132406,
+      "truncated_mean_energy": 0.16961852963997912
+    },
+    {
+      "epsilon": 0.01,
+      "vector_error": 0.02,
+      "trace_distance": 0.019998999974998752,
+      "truncated_mean_energy": 0.16032859204969777
+    },
+    {
+      "epsilon": 0.0001,
+      "vector_error": 0.0002,
+      "trace_distance": 0.00019999999900000004,
+      "truncated_mean_energy": 0.1602347636800359
+    },
+    {
+      "epsilon": 1e-06,
+      "vector_error": 2e-06,
+      "trace_distance": 1.999999999999e-06,
+      "truncated_mean_energy": 0.160234754297199
+    }
+  ],
+  "conditional_bound_worst_excess": 0.0,
+  "limits": "Finite diagnostics only; no optimization proof or physical selector."
+}

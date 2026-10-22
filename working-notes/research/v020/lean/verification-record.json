@@ -1,0 +1,305 @@
+{
+  "started_utc": "2026-10-19T12:51:37.630247+00:00",
+  "steps": [
+    {
+      "name": "mathlib-revision",
+      "command": [
+        "git",
+        "-C",
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/working-notes/outcome-tick-review-2026-10-19/lean/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.037,
+      "expected_failure": false
+    },
+    {
+      "name": "mathlib-clean",
+      "command": [
+        "git",
+        "-C",
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/working-notes/outcome-tick-review-2026-10-19/lean/.lake/packages/mathlib",
+        "diff",
+        "--exit-code",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.274,
+      "expected_failure": false
+    },
+    {
+      "name": "version",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.883,
+      "expected_failure": false
+    },
+    {
+      "name": "build",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.058,
+      "expected_failure": false
+    },
+    {
+      "name": "check-IccOutcomeTick",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "IccOutcomeTick.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.692,
+      "expected_failure": false
+    },
+    {
+      "name": "check-IccTickSeparation",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "IccTickSeparation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.572,
+      "expected_failure": false
+    },
+    {
+      "name": "audit",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.63,
+      "expected_failure": false
+    },
+    {
+      "name": "NegativeControlInstrument",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "NegativeControlInstrument.lean"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 3.223,
+      "expected_failure": true
+    },
+    {
+      "name": "NegativeControlAttenuation",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "NegativeControlAttenuation.lean"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 3.154,
+      "expected_failure": true
+    },
+    {
+      "name": "NegativeControlIndependence",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "NegativeControlIndependence.lean"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 3.273,
+      "expected_failure": true
+    }
+  ],
+  "source_sha256": {
+    "Audit.lean": "1c4241bc77d84bace0855f7a4623a483a3564086e9cceb4ec7a5fae9b6f978aa",
+    "IccOutcomeTick.lean": "453e3a534d415edf1fea26cf25e0fd0e04ae663d52a25fee78e2c97dabfed955",
+    "IccTickSeparation.lean": "7577c7779bfb648fcf078b0d48c1aea5c489ac1514a4d60633940dd0a9b7e290",
+    "NegativeControlAttenuation.lean": "346c96189d7100e551c459bac9f32a005f6f05f5f74b2142f6a5c743f05d9b9c",
+    "NegativeControlIndependence.lean": "92b7c23ce7824eb842f1d45a68cc7edd7ae8499e01622c041a1c286be4485548",
+    "NegativeControlInstrument.lean": "d60c877c84bc6c09fe187f267ab165a0bdb8fe16331a45ec6a3c7556e4f0920b",
+    "lakefile.toml": "111203a4d5586d65cea9c097432e1e6841314ca57c5e0071c7a1d0c65a9b33d2",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lake-manifest.json": "b59afeb612f0cfcec7b3f5cb28109b37df0ff4e327aa3727b0908e67ee4f543c",
+    "verify.py": "49512708c318bf8134837f445a3d0e9f1dbd04a3c9f62b74e2a1ffa1aa6131e3"
+  },
+  "mathlib_revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "lean_version": "Lean (version 4.24.0, arm64-apple-darwin23.6.0, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "axioms": {
+    "IccOutcomeTick.r_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.c_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.rC_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.cC_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.M_hermitian": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.kraus_effect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.effects_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.kraus_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.effect_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.M_rescale": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.M_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.luders_square_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.luders_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.luders_offdiagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.luders_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.reset_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.reset_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.composed_effect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.same_effect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.alternative_normalization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.resetOutcome_composition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.resetOutcome_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.same_outcome_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.alternative_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.reset_readout": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.down_effect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.second_detector_statistics": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.instruments_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.maximallyMixed_density": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.density_outputs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOutcomeTick.density_outputs_differ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccTickSeparation.span_intersection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "status": "passed",
+  "elapsed_seconds": 41.805,
+  "finished_utc": "2026-10-19T12:52:19.436012+00:00"
+}

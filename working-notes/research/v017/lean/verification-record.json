@@ -1,0 +1,160 @@
+{
+  "started_utc": "2026-10-10T14:26:20.452639+00:00",
+  "steps": [
+    {
+      "name": "version",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.574,
+      "expected_failure": false
+    },
+    {
+      "name": "build",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 29.489,
+      "expected_failure": false
+    },
+    {
+      "name": "audit",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.257,
+      "expected_failure": false
+    },
+    {
+      "name": "negative-control",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "NegativeControl.lean"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 3.329,
+      "expected_failure": true
+    },
+    {
+      "name": "negative-control-operational",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "NegativeControlOperational.lean"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 3.196,
+      "expected_failure": true
+    }
+  ],
+  "source_sha256": {
+    "Audit.lean": "c34282463892a5f6dc00ed8f6dcc525251f6de4a342c3074169dd8cfaa15a182",
+    "IccArithmetic.lean": "964c8d5f458a514f40ad0c8592ec8065804673879cdb6a2d763f2422f43c9e68",
+    "IccConcrete.lean": "562c930440669e4db93428eaec1c7004e45abc3cde3c02b8fa245598da644a21",
+    "IccOperational.lean": "061e8a625f8acc064262cc8b30850e038b2c79f3b21253af08b29fec18bcbd7c",
+    "IccWitness.lean": "c9bf57e1380c3910f0951121f75f253ea84d0ebfd028aa6af50aae0e0018676d",
+    "NegativeControl.lean": "4976f84776f0e1688c3e2ae5486806c338c85127d4213ade6e99799dba8a96d0",
+    "NegativeControlOperational.lean": "07189b271412c3a9c73fadfb2a43c34df73df9e3e0fb5f4c3ad13b6cf0902368",
+    "lakefile.toml": "a42068cdf484b7a9aa7396fafdd87b6761573ea729b6138f28c76dfbafb6545b",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lake-manifest.json": "8cd863ea40955c73a5469311e4c82c7f8f4fa5488fdd9b80959b8a73e9c0143b",
+    "verify.py": "4840074604fe4b6643ae19e3bc6c6d98ec44211dfd2f71a7eb09c798b716a9aa"
+  },
+  "lean_version": "Lean (version 4.24.0, arm64-apple-darwin23.6.0, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "axioms": {
+    "IccWitness.two_fiber_hausdorff_eq_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccConcrete.algebraBundled": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccConcrete.phaseFlip_star": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccConcrete.concrete_distance_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccConcrete.shift_difference_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccConcrete.phaseFlip_tendsto_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccConcrete.arbitrarily_close_vectors_distance_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccArithmetic.positiveLabels": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccArithmetic.label_shift": [
+      "propext"
+    ],
+    "IccOperational.effect_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOperational.effect_projection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOperational.ray_norm_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOperational.flipped_effect_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOperational.probability_range": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOperational.fixed_two_probe_obstruction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccOperational.phase_perturbation_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "status": "passed",
+  "elapsed_seconds": 47.848,
+  "finished_utc": "2026-10-10T14:27:08.300744+00:00"
+}

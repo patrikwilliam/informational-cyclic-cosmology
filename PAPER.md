@@ -8,53 +8,55 @@ ORCID: [0009-0008-1618-6619](https://orcid.org/0009-0008-1618-6619)
 
 DOI (all versions): [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416)
 
-Version: 0.1.8
+Version: 0.2.0
 
-Release date: 16 October 2026
+Release date: 19 October 2026
 
 Status: speculative hypothesis, not a completed physical theory.
 
-Revision note: version 0.1.8 adds a finite reference-resource study. With fixed
-symmetry restrictions and the old input inaccessible, unread priming strictly
-reduces the attainable measurement set. Both sets still span the same qubit
-algebra. Selected operator lemmas and the exact scalar separation are
-Lean-checked; the concrete channel and discrimination derivations remain
-analytic. Earlier results and core postulates are unchanged; no physical
+Revision note: version 0.2.0 adds a conditional continuum detector and
+outcome-bearing tick construction. Its two retained-record marginals have
+different operator systems under a stipulated instrument. A same-POVM
+counterexample exposes instrument dependence. Selected detector identities
+and a conditional span lemma are Lean-checked, not the continuum dynamics.
+Earlier results and core postulates are unchanged; no physical algebra
 selector or aeonic transition is derived.
 
 ## Abstract
 
-This note explores whether an aeonic boundary could change the physically
-privileged local observable algebra of one globally conserved informational
-state, rather than restart evolution in external time. No selection mechanism,
-distinct quantitative cosmological prediction, or new general theorem about
-factorization or observational entropy is supplied.
+This note asks whether an aeonic boundary could change the physically privileged
+observable algebra of one conserved global state, rather than restart external
+time. No physical selector, quantitative cosmological prediction or new general
+factorization theorem is supplied.
 
-Finite studies constrain the proposal. An unrestricted interaction-projection
-selector encounters a preliminary obstruction; restricted Einstein-Cartan-inspired
-CAR examples fail robustness and specificity tests. A finite-time scrambling
-example has an internally certified entangled strict local minimum, but a
-product competitor has lower cost and better recovery in the stated task.
+Finite studies constrain the proposal: an interaction-projection selector
+encounters a preliminary obstruction; restricted Einstein-Cartan-inspired CAR
+examples fail robustness and specificity tests. A scrambling example has an
+internally certified entangled strict local minimum, but a product competitor
+has lower cost and better recovery.
 
-On a fixed Bell state, reduced-state entropies of one and zero bits coexist
-with observational entropies of two and five-thirds bits under a specified
-measurement protocol. On arbitrary inputs at nonzero sharpness, its statistics
-require access beyond the first original qubit; their implementation does not
-supply coherent subsystem control or a physical entropy reset.
+For a fixed Bell state, specified protocols give reduced-state entropies of one
+and zero bits but observational entropies of two and five-thirds bits. On
+arbitrary inputs at nonzero sharpness, the measurement statistics require access
+beyond the first original qubit, without establishing coherent subsystem control
+or an entropy reset.
 
-A fixed-interaction reference example gives strictly smaller attainable effect
-sets after unread priming under fixed symmetry restrictions and loss of old-input
-access. Retaining that input restores equivalence under full symmetric control.
-Both reduced sets span the same qubit algebra: measurement strength changes,
-not the algebra.
+A reference example gives smaller attainable effect sets after unread priming
+under fixed symmetry restrictions and loss of old-input access. Retaining that
+input restores equivalence under full symmetric control. Both reduced sets
+span the same qubit algebra.
 
-Finite stability and prescribed-transport results remain conditional.
-Arithmetic reconstruction with supplied reference data encounters stationary
-entropy equality and full-norm instability; finite-access stability requires
-additional conditioning. Selected proof components are Lean-checked, not the
-complete constructions. Physical algebra selection, cosmological entropy,
-relational dynamics, repeatability and observational tests remain open.
-Reported reviews are internal and LLM-assisted, not independent expert review.
+A continuum detector with a fixed effective tick-and-record law gives compatible
+marginals whose operator systems intersect only in scalars under a supplied
+tetrahedral Luders instrument. Different generated algebras are not established.
+The instrument is not microscopically derived; a same-POVM alternative makes
+the second marginal field-independent.
+
+Stability and prescribed transport remain conditional. Arithmetic reconstruction
+encounters stationary entropy equality and full-norm instability. Selected
+components are Lean-checked, not complete constructions. Physical algebra
+selection, cosmological entropy, relational dynamics, repeatability and tests
+remain open. Reported reviews are LLM-assisted, not independent expert review.
 
 ## Scope and Claimed Contribution
 
@@ -81,6 +83,14 @@ using established finite-reference and state-discrimination methods. It does
 not claim a new resource-theoretic principle. A scoped Lean supplement checks
 general pullback lemmas and the primary scalar inequality, not an end-to-end
 formalization of the experiment or its physical assumptions.
+
+Version 0.2.0 adds Appendix D: a conditional field-detector calculation with
+retained outcome-bearing ticks, its instrument-dependent counterexample,
+finite diagnostics and selected Lean proofs. Existing field, measurement and
+clock methods are used without a novelty claim. The effective construction
+uses ordinary apparatus time and supplied material resources, not a derived
+Page-Wootters clock or a cosmological boundary. The version number marks a new
+research branch, not resolution of the main selection problem.
 
 The narrower claim explored here is that these ingredients may admit a distinct
 cosmological application. In this interpretation, successive aeons are not
@@ -113,6 +123,7 @@ limited to the proposed synthesis and research question.
 | Prescribed algebra transport | Horizontal paths can realize a fixed-state entropy contrast | A selected path, physical transition, or thermodynamic arrow |
 | Arithmetic reconstruction | Stationary entropy equality; full-norm instability; conditional finite-access stability | An independently derived selector, uniform energy-only guarantee, or ICC no-go |
 | Finite reference redistribution | Strictly smaller attainable effect set under fixed symmetry and reduced access | A different generated algebra, derived access boundary, or ICC transition |
+| Outcome-bearing ticks | Distinct marginal operator systems under a fixed stipulated instrument | Different generated algebras, microscopic instrument derivation, or an ICC transition |
 
 The [v0.1.5 reproducibility supplement](./research/v015/README.md) separates
 analytic identities, exact-arithmetic certificates, numerical checks and
@@ -126,6 +137,9 @@ limitations, not a new physical mechanism.
 The [v0.1.8 supplement](./research/v018/README.md) adds the three-qubit
 derivation, capability bounds, numerical controls and scoped Lean verification.
 Its access restrictions remain explicit inputs.
+The [v0.2.0 supplement](./research/v020/README.md) provides the tick diagnostics,
+instrument counterexample, scoped Lean verification and reproduction
+instructions. The continuum independence argument remains analytic.
 
 ## 1. Core Postulates
 
@@ -1730,6 +1744,14 @@ symmetric access to the retained old input. Both reduced capability sets span
 the same operator algebra. This identifies a finite operational distinction,
 not the missing physical algebra selector or a cosmological entropy change.
 
+Appendix D advances the operational comparison to two different operator
+systems in a specified continuum model, with both records retained in one
+archive. It does not derive different generated algebras or replace one
+description by another. The measurement instrument and initial resources are
+still supplied; the next relevant gate is their physical derivation, not a
+new entropy calculation. Its open-system law is an effective description,
+not a proposed violation of fundamental global unitarity.
+
 To become a physical theory, the hypothesis needs:
 
 1. a rigorous definition of the admissible observable algebras and their
@@ -2745,6 +2767,337 @@ identities, explicit dual-channel simulations and retained-resource controls.
 Numerical checks, scoped formal proofs and internal LLM-assisted mathematics
 and physics reviews are reported separately; none is independent peer review.
 
+## Appendix D. Conditional Outcome-Bearing Ticks
+
+### D.1 Fixed model and physical assumptions
+
+This appendix asks whether a single unchanged effective interaction can write
+records of genuinely different field-measurement statistics. It is a
+conditional benchmark, not a derived material observer, an autonomous
+selection of cosmological algebras, or a claim of novelty. Unlike Appendix C,
+the marginal operator systems here differ. Their generated von Neumann
+algebras are not identified.
+
+Use units $\hbar=c=1$ and the vacuum Fock representation of one neutral real
+Klein-Gordon field in $3+1$ Minkowski spacetime, with $m>0$. Fix nonzero real
+radial $h\in C_c^\infty(\mathbb R^3)$, real $g\ne0$, and $\Omega>0$. The
+two-level detector is an internal spatial scalar, not a spatial spin. Set
+
+$$
+H_{FD}=H_\phi\otimes I+I\otimes\frac{\Omega Z}{2}
+       +g\Phi(h)\otimes Z,\qquad
+H_\phi=d\Gamma(\omega),\quad \omega_k=\sqrt{|k|^2+m^2}.
+$$
+
+On the one-particle space $L^2(\mathbb R^3,d^3k)$ use the unitary Fourier
+transform, an inner product antilinear in its first argument, and
+
+$$
+u=\frac{\widehat h}{\sqrt\omega},\quad
+\varphi(v)=\frac{a^\dagger(v)+a(v)}{\sqrt2},\quad
+\Phi(h)=\varphi(u),\quad W(v)=e^{i\varphi(v)}.
+$$
+
+Thus $W(v)W(w)=e^{-i\operatorname{Im}\langle v,w\rangle/2}W(v+w)$.
+The mass and smearing give $u,u/\sqrt\omega,u/\omega\in L^2$.
+The field perturbation is infinitesimally $H_\phi$-bounded, so $H_{FD}$ is
+self-adjoint on its free-field domain and bounded below. No pointlike,
+massless or infinite-time limit is taken.
+
+Prepare the detector in $|+x\rangle$. The four unit Bloch vectors are
+$(1,1,1),(1,-1,-1),(-1,1,-1),(-1,-1,1)$ divided by $\sqrt3$. Stipulate
+the tetrahedral effects and their **Luders instrument**:
+
+$$
+F_j=\frac{I+\mathbf v_j\cdot\boldsymbol\sigma}{4},\qquad
+M_j=\sqrt{F_j}=\frac{I+\mathbf v_j\cdot\boldsymbol\sigma}{2\sqrt2}.
+$$
+
+Effects alone do not specify the post-measurement state. The matrices $M_j$
+are an additional fixed input, not selected by the field Hamiltonian.
+
+Add a clock with levels $2,1,0$ and two registers, each with a blank state $b$
+and four labelled outcomes. With field identities suppressed and tensor
+order clock, detector, first register, second register, use fixed jumps
+
+$$
+\begin{aligned}
+L_{1j}&=\sqrt\gamma\,|1\rangle\langle2|\otimes M_j
+       \otimes|j\rangle\langle b|\otimes I,\\
+L_{2k}&=\sqrt\gamma\,|0\rangle\langle1|\otimes M_k
+       \otimes I\otimes|k\rangle\langle b|,\qquad \gamma>0.
+\end{aligned}
+$$
+
+Extend $H_{FD}$ by fixed diagonal clock/register Hamiltonians and these eight
+jumps in a time-independent Gorini-Kossakowski-Lindblad-Sudarshan (GKSL)
+generator. Initially the clock/registers are $|2,b,b\rangle$. The bounded
+jumps define a bounded dissipative perturbation of the unitary dynamics.
+Their squared sum on each active blank sector is $\gamma I$, giving constant
+tick hazard and exponential waiting times. The coupling never switches off;
+no external pulse writes an outcome or resets the first register.
+
+This is autonomy of a stipulated effective writer. Its initial preparation,
+readout phase reference, reservoirs and memory hardware are not derived.
+The parameter $t$ is apparatus time; the analysis does not derive relational
+time. The open-system semigroup is not asserted to be a fundamental global
+law. The record architecture is motivated by Woods (2021), not furnished
+microscopically by that work for these particular detector jumps.
+
+### D.2 Complete archive and sequential backaction
+
+At one common finite horizon $T>0$, the archive distinguishes no tick,
+exactly one labelled tick, and two labelled ticks: $1+4+16=21$ outcomes.
+Let $U(t)=e^{-itH_{FD}}$, $\iota\psi=\psi\otimes|+x\rangle$, and
+$\varepsilon_t(B)=\iota^*U(t)^*(I\otimes B)U(t)\iota$. The input-field
+effects are
+
+$$
+E_0=e^{-\gamma T}I,\qquad
+E_{1j}=\gamma e^{-\gamma T}\int_0^T\varepsilon_t(F_j)\,dt,
+$$
+$$
+K_{jk}(t_1,t_2)=(I\otimes M_k)U(t_2-t_1)
+                 (I\otimes M_j)U(t_1)\iota,
+$$
+$$
+E_{2jk}=\int_0^Tdt_2\int_0^{t_2}dt_1\,
+       \gamma^2e^{-\gamma t_2}K_{jk}(t_1,t_2)^*K_{jk}(t_1,t_2).
+$$
+
+All are positive and sum to $I$. Evolution after the second tick cancels
+from record probabilities, not from the physical state. The two marginal
+measurements retain their respective missing-event outcomes; no unfinished
+run is postselected away. Their labelled effects are
+
+$$
+A_j=E_{1j}+\sum_k E_{2jk}
+   =\int_0^T\gamma e^{-\gamma t}\varepsilon_t(F_j)\,dt,
+\qquad B_k=\sum_j E_{2jk}.
+$$
+
+The actual first measurement changes the second response. Its nonselective
+qubit channel is exactly
+
+$$
+\Lambda(X)=\sum_jM_jXM_j^*=\frac{X+\operatorname{tr}(X)I}{3}.
+$$
+
+It multiplies joint detector off-diagonal blocks by $1/3$. The diagonal-block
+traces remain equal for the chosen initial detector state, and subsequent
+pure dephasing does not mix those blocks. Consequently the second marginal
+contains $1/3$ of the undisturbed off-diagonal response at its second tick,
+independently of the first tick time.
+
+For completeness the conditional sector propagators are
+
+$$
+U_s(t)=e^{-itH_\phi}e^{-is\Omega t/2}e^{i\theta(t)}W(-sf_t),
+\qquad f_t=g\int_0^t e^{i\omega r}u\,dr,\quad s=\pm1,
+$$
+$$
+\theta(t)=\frac{g^2}{2}\int d^3k\,|u(k)|^2
+ \left(\frac{t}{\omega_k}-\frac{\sin(\omega_kt)}{\omega_k^2}\right).
+$$
+
+The scalar time-ordering phase is common to both sectors and cancels in
+$Z_t=U_+(t)^*U_-(t)=e^{i\Omega t}W(2f_t)$, not in $U_s$ itself. Define
+
+$$
+Z_1=\int_0^T\gamma e^{-\gamma t}Z_t\,dt,\qquad
+Z_2=\int_0^T\gamma^2te^{-\gamma t}Z_t\,dt,\qquad
+C_r=\frac{Z_r+Z_r^*}{2},\quad S_r=\frac{Z_r-Z_r^*}{2i}.
+$$
+
+These are strong-vector/ultraweak integrals of bounded operators. No
+operator-norm continuity of the Weyl representation is assumed. With
+$q_1=1-e^{-\gamma T}$ and $q_2=1-e^{-\gamma T}(1+\gamma T)$, the result is
+
+$$
+A_j=\frac{q_1}{4}I+\frac{v_{jx}C_1+v_{jy}S_1}{4},\qquad
+B_k=\frac{q_2}{4}I+\frac{v_{kx}C_2+v_{ky}S_2}{12}.
+$$
+
+The missing-event effects are $(1-q_1)I$ and $(1-q_2)I$. The second time
+weight differs by the nonconstant factor $\gamma t$; the separate $1/3$
+factor is the calculated first-readout disturbance.
+
+### D.3 Conditional continuum separation
+
+**Claim with all D.1 assumptions, including the Luders instrument:** for every
+finite $T>0$ and $\gamma>0$, $I,Z_1,Z_1^*,Z_2,Z_2^*$ are complex-linearly
+independent. Hence the marginal operator systems satisfy
+
+$$
+\begin{aligned}
+\mathcal S_A&=\operatorname{span}_{\mathbb C}\{I,Z_1,Z_1^*\},\\
+\mathcal S_B&=\operatorname{span}_{\mathbb C}\{I,Z_2,Z_2^*\},\qquad
+\mathcal S_A\cap\mathcal S_B=\mathbb CI.
+\end{aligned}
+$$
+
+Here an operator system is a complex linear, adjoint-closed subspace
+containing identity, not necessarily closed under multiplication.
+
+**Analytic argument.** The nonzero smooth profile supplies an open frequency
+interval where $u$ is nonzero. If $f_s$ and $f_t$ were proportional for
+distinct positive times, the entire functions
+$(e^{izs}-1)/(iz)$ and $(e^{izt}-1)/(iz)$ would be proportional on that
+interval. Their values and first derivatives at zero force $s=t$.
+Likewise $f_t\ne0$ for $t>0$. Thus the compact continuous arcs
+$k_t=2f_t$ and $-k_t$, $0\le t\le T$, are injective and meet only at zero.
+
+Evaluate a proposed relation $aI+bZ_1+cZ_1^*+dZ_2+eZ_2^*=0$ in coherent
+states $W(q)|0\rangle$. With the above conventions,
+
+$$
+\langle W(q)0|W(k)|W(q)0\rangle
+ =e^{-\|k\|^2/4}e^{i\operatorname{Im}\langle q,k\rangle}.
+$$
+
+This is the Fourier transform of a finite complex measure on those compact
+arcs, with atom $a$ at zero. The positive arc has pushforward density
+
+$$
+(b\gamma e^{-\gamma t}+d\gamma^2te^{-\gamma t})
+ e^{i\Omega t}e^{-\|f_t\|^2}\,dt;
+$$
+
+the negative arc has the corresponding density with $c,e$ and opposite
+phase. The complex linear span of the characters
+$e^{i\operatorname{Im}\langle q,k\rangle}$ is a self-adjoint unital algebra
+separating points of the compact union. Complex Stone-Weierstrass gives
+density in its continuous functions, so the measure vanishes. The atom
+separates from the nonatomic time pushforwards; away from zero the two arcs
+are disjoint Borel sets. The nonvanishing Gaussian and phase factors then
+give $a=0$, $b+d\gamma t=0$ and $c+e\gamma t=0$ almost everywhere on
+$(0,T)$. All coefficients vanish. The tetrahedral coordinate vectors recover
+both real and imaginary parts from each marginal's effects.
+
+Neither marginal POVM is a classical postprocessing of the other, since
+postprocessing cannot enlarge its linear operator system. Nevertheless
+**both are compatible marginals of the same complete archive**. This is not
+measurement incompatibility, loss of the first record, or an assertion about
+noncontainment of their generated von Neumann algebras. Averages $Z_r$ need
+not be normal, and distinct operator systems can generate the same algebra.
+
+Finite-energy normal input-state witnesses also exist. A finite-dimensional
+compression $P$, with range in the dense free-energy form domain, can
+preserve independence of $I,C_1,S_1,C_2,S_2$: finitely many matrix elements
+between vectors in that domain separate this finite-dimensional span. From
+a compressed $B$ effect outside the compressed $A$ span subtract its
+Hilbert-Schmidt projection to obtain a nonzero traceless Hermitian $D$.
+Writing $d=\operatorname{rank}P$, the states
+$P/d\pm\epsilon D$ are positive and normalized for
+$0<\epsilon\le1/(2d\|D\|)$. They agree on all $A$ outcomes and differ on
+that $B$ outcome by $2\epsilon\operatorname{tr}(D^2)>0$; the reverse
+direction is analogous. This proves existence, not a uniform energy budget,
+preparation protocol, robustness margin or finite-sample efficiency bound.
+
+### D.4 Same effects, different instrument
+
+Let $|v_j\rangle$ be the normalized positive eigenvector of
+$\mathbf v_j\cdot\boldsymbol\sigma$ and replace the fixed detector
+instrument by
+
+$$
+N_j=\frac{|-z\rangle\langle v_j|}{\sqrt2},\qquad
+N_j^*N_j=F_j,\qquad
+\sum_jN_jXN_j^*=\operatorname{tr}(X)|-z\rangle\langle-z|.
+$$
+
+First-outcome probabilities and tick hazards are unchanged. After the first
+readout the detector occupies a $Z$ eigenstate, which the unchanged
+pure-dephasing coupling cannot rotate. With the same second POVM its
+second marginal is therefore
+
+$$
+B_k^{\rm reset}=q_2\frac{1-v_{kz}}4 I.
+$$
+
+Its operator system is only $\mathbb CI$. This is a counterexample to an
+instrument-independent version of D.3, not to its stated assumptions.
+It neither shows that every small perturbation destroys the Luders result
+nor that the full joint archive contains no additional information: the
+archive also resolves the count by $T$.
+
+### D.5 Physical implementation and the next gate
+
+A fixed jump law is not a microscopic derivation. One must account for the
+phase reference, detector and interaction energy, reservoir spectrum and
+state, inverse processes, approximations and labelled memory outputs.
+Matching an unlabelled master equation is insufficient: the outcome-labelled
+instrument must match. Woods (2021) provides an effective registered-clock
+framework, not these material resources. Trushechkin (2021) resolves couplings
+by energy frequencies in a weak-coupling construction; its discrete system
+spectrum assumption prevents using it directly as a theorem for this whole
+continuum field-detector model.
+
+There is also a restricted implementation obstruction. For a system with
+Hamiltonian $H_S$, assume a readout unitary conserving additive $H_S+H_A$,
+a stationary apparatus state $\xi$, and labelled pointer projections $P_j$
+commuting with $H_A$. Then
+
+$$
+G_j=(\operatorname{id}\otimes\xi)
+       [U^*(I\otimes P_j)U]
+$$
+
+is invariant under the system's time translations: commute a joint time
+translation through $U$ and the pointer and use stationarity of $\xi$.
+For a standalone nondegenerate detector $H_D=\Omega Z/2$, the tetrahedral
+effects violate that invariance. This symmetry-restricted apparatus class cannot
+implement them without changing its resource assumptions, consistently
+with the conservation-law analysis of Mohammady, Miyadera and Loveridge
+(2023). The argument does not replace the full interacting system energy
+by $H_D$, and a time-independent total Hamiltonian does not itself imply
+additive bare-energy conservation. This is not a universal decay no-go.
+
+The next bounded task is a resource-accounted derivation or approximation
+of this labelled instrument, not cosmological extrapolation. An approximation
+must specify its allowed error class and an operational success criterion,
+such as a positive statistical separation from classical postprocessing on
+stated finite-energy preparations. Small effect errors alone need not preserve
+the exact scalar-only intersection of the operator systems; retaining that
+exact statement would require separately justified structural restrictions.
+Even success would leave generation and selection of relevant full algebras,
+relational transition dynamics, entropy and repeatability unresolved.
+
+### D.6 Verification and limitations
+
+The [v0.2.0 reproducibility supplement](./research/v020/README.md) contains
+two small matrix methods: jump-time quadrature and a record-block master
+equation on a three-level field surrogate. They agree to approximately
+$6.1\times10^{-16}$ for the recorded effects at the chosen parameters;
+the explicit finite-state witness has equality residuals below
+$1.3\times10^{-13}$. These are numerical diagnostics, not error-certified
+continuum proofs. The exponential-series truncation estimate excludes
+floating-point roundoff. Zero coupling makes all field effects scalar;
+discrete-mode substitutes do not establish the continuum arc argument.
+
+A simple independent absorbing-failure hazard $\eta$ multiplies all good
+records by $e^{-\eta T}$ and adds $(1-e^{-\eta T})I$. This preserves the
+operator-system distinction for finite $T$, but supplies no material memory
+model and does not cover state-dependent errors.
+
+The [Lean supplement](./research/v020/lean/README.md) checks 32 declarations,
+including helpers, with standard classical Lean/mathlib foundations and no
+proof placeholders or additional axioms. It verifies the concrete qubit
+normalization, positive square roots, channel formula, same-POVM reset
+counterexample, and an abstract span-intersection implication. The reset
+instrument is represented by two unrecorded Kraus indices per labelled
+outcome; this is still a four-outcome instrument. On the normalized state
+$I/2$, the two nonselective outputs are respectively $I/2$ and
+$|-z\rangle\langle-z|$.
+
+The span theorem **assumes** the five inputs' linear independence. Lean does
+not prove that premise for the continuum, identify the record spans, extend
+the qubit identities to field-valued blocks, derive the 21-effect dynamics,
+or prove the time-integrated reset formula. Those remain analytic bridges
+and numerical cross-checks. Three deliberately false controls are rejected;
+this is a regression check, not physical validation. The scoped proof work
+does not establish a microscopic instrument or an ICC transition.
+
 ## References
 
 - Ahmad, S. A., Galley, T. D., Hoehn, P. A., Lock, M. P. E., and Smith, A. R. H.
@@ -2843,6 +3196,9 @@ and physics reviews are reported separately; none is independent peer review.
   arXiv:1212.3378.
 - Meissner, K. A., and Penrose, R. (2025). [The Physics of Conformal Cyclic
   Cosmology](https://arxiv.org/abs/2503.24263). arXiv:2503.24263.
+- Mohammady, M. H., Miyadera, T., and Loveridge, L. (2023). [Measurement
+  disturbance and conservation laws in quantum mechanics](https://arxiv.org/abs/2110.11705v3).
+  *Quantum* 7, 1033.
 - Moreva, E., et al. (2014). [Time from quantum entanglement: an experimental
   illustration](https://arxiv.org/abs/1310.4691). *Physical Review A* 89, 052122.
 - Nielsen, M. A. (2006). [A geometric approach to quantum circuit lower
@@ -2890,6 +3246,9 @@ and physics reviews are reported separately; none is independent peer review.
   [Entanglement or separability: The choice of how to factorize the algebra of a
   density matrix](https://arxiv.org/abs/1106.3047). *European Physical Journal
   D* 64, 181-196.
+- Trushechkin, A. (2021). [Unified Gorini-Kossakowski-Lindblad-Sudarshan quantum
+  master equation beyond the secular approximation](https://arxiv.org/abs/2103.12042v3).
+  *Physical Review A* 103, 062226.
 - Van Raamsdonk, M. (2010). [Building up spacetime with quantum
   entanglement](https://arxiv.org/abs/1005.3035). *General Relativity and
   Gravitation* 42, 2323-2329.
@@ -2899,6 +3258,8 @@ and physics reviews are reported separately; none is independent peer review.
   91, 097902.
 - Witten, E. (2018). [Notes on Some Entanglement Properties of Quantum Field
   Theory](https://arxiv.org/abs/1803.04993). *Reviews of Modern Physics* 90, 045003.
+- Woods, M. P. (2021). [Autonomous Ticking Clocks from Axiomatic
+  Principles](https://arxiv.org/abs/2005.04628v3). *Quantum* 5, 381.
 - Zanardi, P. (2001). [Virtual Quantum
   Subsystems](https://arxiv.org/abs/quant-ph/0103030). *Physical Review Letters* 87, 077901.
 - Zanardi, P. (2026). [Universal holonomic control of algebras of
@@ -2929,7 +3290,9 @@ illustrations, the EC/CAR candidate calculation, the finite-time selector
 study, the measurement-entropy and access analyses, and the finite
 entropy-stability, transport, conditional arithmetic-reconstruction and
 finite-access analyses, and the finite reference-resource and measurement-
-capability study; scoped Lean proof development and review;
+capability study; the conditional field-detector and outcome-bearing tick
+construction, its instrument counterexample and diagnostics; scoped Lean
+proof development and review;
 literature discovery and
 comparison; code drafting and review; manuscript organization; English drafting
 and rewriting; and preparation of publication metadata. Much of the present

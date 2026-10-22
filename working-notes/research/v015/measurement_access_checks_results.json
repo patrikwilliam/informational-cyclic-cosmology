@@ -1,0 +1,155 @@
+{
+  "status": "bounded finite access closure; no physical algebra selector",
+  "numpy_version": "2.3.5",
+  "tolerance": 1e-11,
+  "conditional_effect_checks": 18,
+  "spanning_state_probability_checks": 288,
+  "spanning_input_states": 16,
+  "matched_previous_entropy_cases": 12,
+  "max_residuals": {
+    "unitary": 2.220446049250313e-16,
+    "pauli_decomposition": 2.220446049250313e-16,
+    "observable_square": 4.440892098500626e-16,
+    "branch_hermitian": 0.0,
+    "branch_projector": 5.551115123125783e-17,
+    "branch_trace": 0.0,
+    "ideal_effect": 1.1102230246251565e-16,
+    "axis_completeness": 1.1102230246251565e-16,
+    "same_A_marginal": 0.0,
+    "unsharp_effect": 1.1102230246251565e-16,
+    "unsharp_effect_volume": 4.440892098500626e-16,
+    "spanning_state_probability": 2.220446049250313e-16,
+    "kraus_outcome_probability": 2.220446049250313e-16,
+    "full_povm_completeness": 2.220446049250313e-16,
+    "original_protocol_effects": 5.551115123125783e-17,
+    "original_protocol_probabilities": 5.551115123125783e-17,
+    "original_protocol_entropy": 4.440892098500626e-16,
+    "A_only_witness": 1.1102230246251565e-16,
+    "refined_completeness": 3.469446951953614e-18,
+    "refined_volumes": 5.551115123125783e-17,
+    "record_merging": 1.3877787807814457e-17,
+    "parity_outcome_probability": 2.220446049250313e-16,
+    "luders_conditional": 1.1102230246251565e-16,
+    "local_conditional": 2.220446049250313e-16,
+    "conditional_entropies": 6.406853007629834e-16,
+    "luders_partial_transpose": 2.220446049250313e-16,
+    "local_partial_transpose": 2.220446049250313e-16,
+    "instrument_completeness": 2.220446049250313e-16
+  },
+  "minimum_margins": {
+    "effect_positivity": -2.2580533735111075e-16,
+    "refinement_entropy": -4.440892098500626e-16
+  },
+  "A_only_observable_projection_residuals": {
+    "X": 1.414213562373095,
+    "Y": 1.9999999999999998,
+    "Z": 1.9999999999999998
+  },
+  "A_only_witness": [
+    {
+      "eta": 0.0,
+      "plus_probabilities_00_01": [
+        0.5000000000000001,
+        0.5000000000000001
+      ]
+    },
+    {
+      "eta": 0.5,
+      "plus_probabilities_00_01": [
+        0.7499999999999999,
+        0.25
+      ]
+    },
+    {
+      "eta": 1.0,
+      "plus_probabilities_00_01": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "entropy_rows": [
+    {
+      "p": 0.0,
+      "eta": 0.0,
+      "entropy_bits": 1.9999999999999998
+    },
+    {
+      "p": 0.1,
+      "eta": 0.0,
+      "entropy_bits": 1.9999999999999998
+    },
+    {
+      "p": 0.5,
+      "eta": 0.0,
+      "entropy_bits": 2.0
+    },
+    {
+      "p": 1.0,
+      "eta": 0.0,
+      "entropy_bits": 2.0
+    },
+    {
+      "p": 0.0,
+      "eta": 0.5,
+      "entropy_bits": 1.937092708153044
+    },
+    {
+      "p": 0.1,
+      "eta": 0.5,
+      "entropy_bits": 1.9495160594315382
+    },
+    {
+      "p": 0.5,
+      "eta": 0.5,
+      "entropy_bits": 1.9848113343083214
+    },
+    {
+      "p": 1.0,
+      "eta": 0.5,
+      "entropy_bits": 1.9999999999999996
+    },
+    {
+      "p": 0.0,
+      "eta": 1.0,
+      "entropy_bits": 1.6666666666666663
+    },
+    {
+      "p": 0.1,
+      "eta": 1.0,
+      "entropy_bits": 1.7621323190386518
+    },
+    {
+      "p": 0.5,
+      "eta": 1.0,
+      "entropy_bits": 1.937092708153044
+    },
+    {
+      "p": 1.0,
+      "eta": 1.0,
+      "entropy_bits": 1.9999999999999996
+    }
+  ],
+  "ideal_record_entropy_bits": {
+    "intermediate_records_retained": 1.4005840244619043,
+    "intermediate_records_omitted": 1.6666666666666663
+  },
+  "parity_instrument_witness": {
+    "input": "|++>",
+    "plus_probability": 0.5,
+    "luders_conditional_state": "|Phi+><Phi+|",
+    "local_conditional_state": "(|00><00| + |11><11|)/2",
+    "luders_partial_transpose_eigenvalues": [
+      -0.4999999999999998,
+      0.4999999999999998,
+      0.4999999999999998,
+      0.4999999999999998
+    ],
+    "local_partial_transpose_eigenvalues": [
+      0.0,
+      0.0,
+      0.4999999999999998,
+      0.4999999999999998
+    ]
+  }
+}

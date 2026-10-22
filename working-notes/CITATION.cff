@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: "Informational Cyclic Cosmology"
+message: "Please cite the manuscript using the metadata in preferred-citation."
+authors:
+  - family-names: "Pustejovsky"
+    given-names: "Patrik William"
+    orcid: "https://orcid.org/0009-0008-1618-6619"
+doi: "10.5281/zenodo.21115416"
+version: "0.2.0"
+date-released: "2026-10-19"
+license: "CC-BY-4.0"
+url: "https://github.com/patrikwilliam/informational-cyclic-cosmology"
+abstract: >-
+  A speculative hypothesis treating the universe as a globally conserved
+  informational structure, where cosmological cycles correspond to changes in
+  local information readability rather than temporal restarts. Version 0.2.0
+  adds a conditional continuum field-detector and outcome-bearing tick study.
+  Two retained-record marginals have distinct operator systems under a
+  stipulated instrument, without establishing different generated algebras.
+  An alternative instrument with the same POVM makes the second marginal
+  field-independent. Selected detector identities and a conditional span lemma
+  are Lean-checked, not the continuum independence argument or full dynamics.
+  Earlier results and core postulates are unchanged. No physical algebra
+  selector, cosmological entropy functional, transition dynamics, or prediction
+  is derived. Reviews and diagnostic checks are internal and AI-assisted.
+preferred-citation:
+  type: unpublished
+  title: >-
+    Informational Cyclic Cosmology: A Conceptual Hypothesis of Relational Time,
+    Algebra-Relative Entropy, and Aeonic Readability
+  authors:
+    - family-names: "Pustejovsky"
+      given-names: "Patrik William"
+      orcid: "https://orcid.org/0009-0008-1618-6619"
+  doi: "10.5281/zenodo.21115416"
+  version: "0.2.0"
+  year: 2026
+  status: preprint
+  url: "https://doi.org/10.5281/zenodo.21115416"

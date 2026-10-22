@@ -1,0 +1,99 @@
+{
+  "Born_matrix_unit_checks": 320,
+  "after_optimization_recovers_over_fixed_readout": 0.1472360802829661,
+  "analytic_charge_block_cases": 60,
+  "before_fixed_hardware_minus_after_symmetric_ceiling": 0.038414792141505005,
+  "constructive_inclusion_checks": 80,
+  "fixed_hardware_success_before_after": [
+    0.7197744539188544,
+    0.5341235814943833
+  ],
+  "global_equivalence_checks": 20,
+  "max_residuals": {
+    "all_input_Born_rule": 1.1102230246251565e-16,
+    "analytic_capacity": 2.220446049250313e-16,
+    "analytic_charge_coherence_matrix": 4.974328028993003e-16,
+    "analytic_charge_coherence_norm": 1.1102230246251565e-16,
+    "charge_block_Helstrom_identity": 1.1102230246251565e-16,
+    "detector_only_capacity": 0.0,
+    "diagonal_effect_attained": 2.220446049250313e-16,
+    "diagonal_system_effect_Hermitian": 0.0,
+    "diagonal_system_effect_invariant": 0.0,
+    "full_effect_inclusion_constructive_witness": 3.3307392515293266e-16,
+    "global_pullback_Hermitian": 2.220446115424761e-16,
+    "global_pullback_has_inverse": 1.930500174617263e-15,
+    "global_pullback_invariant": 0.0,
+    "hardware_orbit_analytic_phase_coefficient": 1.942890293094024e-16,
+    "hardware_time_optimum_after_attained": 2.220446049250313e-16,
+    "hardware_time_optimum_before_attained": 0.0,
+    "initial_optimum": 0.0,
+    "mixed_memory_same_phase_capacity": 2.220446049250313e-16,
+    "no_exchange_no_capability_loss": 0.0,
+    "offdiagonal_bound_attained": 1.3877787807814457e-16,
+    "optimal_after_Hermitian": 0.0,
+    "optimal_after_attained": 0.0,
+    "optimal_after_invariant": 0.0,
+    "optimal_before_Hermitian": 0.0,
+    "optimal_before_attained": 0.0,
+    "optimal_before_invariant": 0.0,
+    "priming_Kraus_matches_partial_trace": 1.1102230246251565e-16,
+    "priming_channel_covariance": 1.1178203268234443e-16,
+    "priming_channel_trace_preserving": 8.881784197001252e-16,
+    "pulled_back_effect_Hermitian": 1.6479873021779665e-16,
+    "pulled_back_effect_invariant": 0.0,
+    "random_optimal_Hermitian": 0.0,
+    "random_optimal_attainment": 2.220446049250313e-16,
+    "random_optimal_invariant": 0.0,
+    "retained_global_capacity_after": 0.0,
+    "retained_global_capacity_before": 0.0,
+    "retained_global_effect_set_unitary_equivalence": 2.2209584450625177e-16,
+    "rotated_phase_effect_Hermitian": 0.0,
+    "rotated_phase_effect_invariant": 0.0,
+    "support_after_attained": 8.881784197001252e-16,
+    "support_before_attained": 6.661338147750939e-16,
+    "unattainable_effect_distance_lower_bound": 2.7755575615628914e-17,
+    "unrestricted_perfect_control": 1.1102230246251565e-16
+  },
+  "model_source_sha256": "0e25841cca90a9d840be81fb95305d89a4101f11a397dac8bd25835efb998035",
+  "numpy": "2.3.5",
+  "primary_resource_charge_coherence_norm_before_after": [
+    0.5,
+    0.3627193235546989
+  ],
+  "python": "3.12.14",
+  "random_state_optimization_cases": 80,
+  "same_H_pointer_arbitrary_duration_optimum_before_after": [
+    0.7236067977499789,
+    0.6731277438202645
+  ],
+  "same_H_pointer_optimizing_durations": [
+    0.7024814731040726,
+    1.8830035917056416
+  ],
+  "scope": "Single-copy, deterministic measurement statistics; fixed Q-invariant measurement class before and after. Full symmetric controls are a benchmark upper envelope, not derived hardware access. Old input unavailable except in the explicit retained-resource control. No fresh phase reference, postselection advantage, entropy calculation, cosmological selector, or Lean proof.",
+  "seed": 20261015,
+  "source_sha256": "aaa50601e6a5b16470b72990e5c47c02bc95f91c8b7f907253d19e9998cf1173",
+  "status": "passed",
+  "support_direction_checks": 80,
+  "symmetric_DM_optimum_before_after": [
+    0.75,
+    0.6813596617773494
+  ],
+  "symmetric_D_only_optimum_before_after": [
+    0.75,
+    0.6145758692564531
+  ],
+  "symmetric_effect_linear_span_dimensions_before_after": [
+    4,
+    4
+  ],
+  "symmetric_retained_old_input_optimum_before_after": [
+    0.75,
+    0.75
+  ],
+  "tolerance": 2e-10,
+  "unrestricted_optimum_before_after": [
+    1.0,
+    1.0
+  ]
+}

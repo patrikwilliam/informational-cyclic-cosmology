@@ -8,7 +8,7 @@ Author: Patrik William Pustejovsky
 DOI (all versions):
 [10.5281/zenodo.21115416](https://doi.org/10.5281/zenodo.21115416).
 
-This repository contains version 0.1.8 of a conceptual research note on emergent
+This repository contains version 0.2.0 of a conceptual research note on emergent
 time, informational conservation, entropy as local readability, and cyclic
 cosmology. It includes a minimal finite-dimensional illustration showing how the
 same global pure state can have different bipartite entanglement entropies under
@@ -16,16 +16,17 @@ different local observable algebras, plus a restricted Einstein-Cartan-inspired
 CAR selector as a separate finite example. Its first three-cell robustness test
 is boundary-sensitive. At four cells, the transported residual law is shared by
 every nonzero contact in the declared translation-invariant onsite quartic
-class, so the periodic branch is not EC specific. The current update adds a
-finite reference-resource example: under fixed symmetry and reduced access,
-unread priming strictly shrinks the attainable measurement set, while both
-sets still span the same qubit algebra. Scoped Lean proofs check operator
-lemmas and an exact scalar gap, not the complete experiment. Earlier results
-remain unchanged. No physical selection mechanism is derived.
+class, so the periodic branch is not EC specific. Version 0.1.8's finite
+reference-resource study changes measurement capability within one algebra.
+The current update adds a conditional continuum field-detector study: two
+retained-record marginals have different operator systems under a specified
+instrument, but different generated algebras are not established. A same-POVM
+counterexample and scoped Lean proofs clarify the dependence on the state
+update. No microscopic instrument or physical selection mechanism is derived.
 
-Release date: 16 October 2026.
+Release date: 19 October 2026.
 
-This is version 0.1.8. Its purpose is to be broken.
+This is version 0.2.0. Its purpose is to be broken.
 
 The goal is not to defend this formulation, but to expose it to serious
 criticism, identify where it fails, and use those failure modes to build a
@@ -72,7 +73,30 @@ to every nonzero Hermitian translation-invariant onsite quartic contact in the
 declared four-cell class. This is a stop result for EC specificity, not a
 positive extension of the main ICC proposal.
 
-## What Changed in 0.1.8
+## What Changed in 0.2.0
+
+- Appendix D specifies one massive scalar field, one pure-dephasing detector,
+  and a fixed effective tick-and-record law with all 21 archive outcomes retained.
+- Under its stated Luders instrument, the two marginal operator systems
+  intersect only in scalars. They remain compatible readouts of one archive;
+  this is not a result about different generated von Neumann algebras.
+- A fixed alternative instrument has the same first-outcome POVM but a
+  field-independent second marginal. The state update matters, not only the
+  probabilities. The example does not show the Luders model is impossible.
+- The [new Lean package](./research/v020/lean/README.md) checks concrete
+  detector identities, a same-POVM counterexample and a conditional
+  span-intersection lemma. Its 32 declarations include helpers; the continuum
+  independence premise and full field-clock dynamics are not Lean-proved.
+- The [supplement](./research/v020/README.md) separates analytic arguments,
+  two finite diagnostic methods, proof coverage and physical assumptions.
+  The next gate is a resource-accounted labelled-instrument derivation.
+- Core postulates, older results, license, author ORCID and all-versions DOI
+  are unchanged. The version bump marks a new branch, not a solved selector.
+
+See the [release notes](./RELEASE_NOTES-v0.2.0.md) and
+[release instructions](./RELEASE_INSTRUCTIONS-v0.2.0.md).
+
+## Historical Changes in 0.1.8
 
 - Appendix C fixes one simultaneous three-qubit interaction and compares the
   same charge-symmetric measurement class before and after unread priming.
@@ -282,8 +306,14 @@ itself falsify the central aeonic boundary proposal.
 ## Main Document
 
 - [PAPER.md](./PAPER.md)
-- [Formatted PDF (v0.1.8)](./Informational-Cyclic-Cosmology-v0.1.8.pdf)
-- [Release notes for v0.1.8](./RELEASE_NOTES-v0.1.8.md)
+- [Formatted PDF (v0.2.0)](./Informational-Cyclic-Cosmology-v0.2.0.pdf)
+- [Release notes for v0.2.0](./RELEASE_NOTES-v0.2.0.md)
+- [Release instructions](./RELEASE_INSTRUCTIONS-v0.2.0.md)
+- [v0.2.0 reproducibility supplement](./research/v020/README.md)
+- [v0.2.0 PDF mathematical review](./feedback/v0.2.0-pdf-mathematical-review.md)
+- [v0.2.0 PDF physics review](./feedback/v0.2.0-pdf-physics-review.md)
+- [v0.2.0 integration verification](./feedback/v0.2.0-integration-verification.md)
+- [Historical release notes for v0.1.8](./RELEASE_NOTES-v0.1.8.md)
 - [v0.1.8 reproducibility supplement](./research/v018/README.md)
 - [v0.1.8 mathematical review](./feedback/v0.1.8-mathematical-review.md)
 - [v0.1.8 physics review](./feedback/v0.1.8-physics-review.md)
@@ -335,6 +365,16 @@ itself falsify the central aeonic boundary proposal.
 - [Technical-validity audit](./feedback/technical-validity-audit.md)
 
 ## Reproducing the Finite Calculations
+
+For the v0.2.0 tick diagnostics, with Python 3.10+ and NumPy:
+
+```bash
+python3 research/v020/run_checks.py --timeout 120
+```
+
+The [v0.2.0 Lean instructions](./research/v020/lean/README.md) give the pinned
+toolchain and exact scope. Neither the matrix surrogate nor these selected
+proof components certifies the continuum construction or its physical realization.
 
 For the bounded v0.1.8 reference-resource and capability checks, use Python
 3.10 or later with NumPy:
@@ -452,7 +492,9 @@ the boundary ansatz, relational-time connections, the finite-dimensional
 illustrations, the EC/CAR candidate calculation, the finite-time selector
 follow-up, the measurement-entropy and access analyses, and the finite
 entropy-stability, transport, and conditional arithmetic-reconstruction
-analyses; literature discovery and
+analyses; the finite reference-resource and capability study; the conditional
+field-detector and outcome-bearing tick construction, instrument counterexample
+and diagnostics; scoped Lean proof development and review; literature discovery and
 comparison; code drafting and review; manuscript organization; English drafting
 and rewriting; and preparation of publication metadata. Much of the present
 wording, formal presentation, and exploratory code was generated or revised

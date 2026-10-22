@@ -1,0 +1,83 @@
+{
+  "started_utc": "2026-10-19T13:57:33.514309+00:00",
+  "suites": {
+    "check.py": {
+      "status": "passed",
+      "completeness_error": 0.0,
+      "tetrahedral_channel_error": 7.850462293418876e-17,
+      "minimum_transverse_commutator_norm": 0.2886751345948129,
+      "energy_diagonal_control_commutator_norm": 0.0,
+      "quadrature_convergence_error": 1.2209130243754703e-16,
+      "cases": [
+        {
+          "order": 16,
+          "coupling": 0.35,
+          "normalization_error": 1.0521646057955913e-15,
+          "first_marginal_error": 2.674384590200136e-16,
+          "second_marginal_error": 3.9448846572326954e-16,
+          "second_completion_error": 7.465861583983689e-16,
+          "minimum_record_eigenvalue": 0.0014058696370432171
+        },
+        {
+          "order": 24,
+          "coupling": 0.35,
+          "normalization_error": 1.0298131514268016e-15,
+          "first_marginal_error": 3.4786653967207294e-16,
+          "second_marginal_error": 3.867503383589833e-16,
+          "second_completion_error": 7.363483154348647e-16,
+          "minimum_record_eigenvalue": 0.0014058696370432171
+        },
+        {
+          "order": 16,
+          "coupling": 0.0,
+          "normalization_error": 3.1402677558467194e-16,
+          "first_marginal_error": 1.8851259241787167e-16,
+          "second_marginal_error": 9.179293821800322e-17,
+          "second_completion_error": 1.9229626863835638e-16,
+          "minimum_record_eigenvalue": 0.0018976684353538586,
+          "zero_coupling_scalar_error": 2.781157996915717e-17
+        }
+      ],
+      "scope": "Finite matrix checks of formulas and negative controls only; no continuum, microscopic, or Lean certificate."
+    },
+    "audit-check.py": {
+      "mathematics": {
+        "status": "passed",
+        "errors": {
+          "generator_vs_quadrature": 6.125366258273815e-16,
+          "taylor_64_vs_80": 0.0,
+          "record_normalization": 6.516035771064938e-16,
+          "same_povm_under_reset": 2.1499376424746292e-16,
+          "reset_first_marginal": 2.0754647813385623e-16,
+          "reset_second_scalar_formula": 1.4257810464036594e-16,
+          "finite_witness_first_gap": 6.275882639937942e-14,
+          "finite_witness_trace": 1.2323475573339238e-13,
+          "retention_survival": 2.4013355849868027e-16,
+          "retention_failure": 2.4195150398111184e-17,
+          "zero_coupling_generator": 2.8948099049183223e-16
+        },
+        "finite_witness_second_gap": 9.702253195060986e-05,
+        "finite_witness_minimum_eigenvalue": 0.1666666666666668,
+        "analytic_truncation_bound_per_basis_input": 1.1060536128547413e-37,
+        "fault_truncation_bound_per_basis_input": 9.795114030124428e-37,
+        "scope": "Finite-generator diagnostics and instrument counterexample; not a numerical continuum proof."
+      },
+      "physics_control": {
+        "status": "passed",
+        "additive_energy_commutator": 0.0,
+        "stationary_apparatus_effect_commutator": 0.0,
+        "coherent_apparatus_effect_commutator": 0.659051158018337,
+        "scope": "Control of the restricted symmetry argument only; not a realization of the tetrahedral tick instrument."
+      }
+    }
+  },
+  "status": "passed",
+  "elapsed_seconds": 0.314,
+  "finished_utc": "2026-10-19T13:57:33.828235+00:00",
+  "source_sha256": {
+    "check.py": "7866cabaa9473c75d1714190a23dd6e005998b3e1c999d7d59c2d32d113c921e",
+    "audit-check.py": "ea34ff2c97ee14791a7c53432c3baa20d6e5427a821b5729126c134a649b68a8",
+    "run_checks.py": "2ea070eea7db5d30312cce589f9bd0de4326e692139807920a555a4e0cd46abe"
+  },
+  "scope": "Finite diagnostics with assertions enabled; not continuum or physical validation."
+}

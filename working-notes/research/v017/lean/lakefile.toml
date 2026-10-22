@@ -1,0 +1,20 @@
+name = "icc_witness"
+version = "0.0.1"
+defaultTargets = ["IccWitness", "IccConcrete", "IccArithmetic", "IccOperational"]
+
+[[lean_lib]]
+name = "IccWitness"
+
+[[lean_lib]]
+name = "IccConcrete"
+
+[[lean_lib]]
+name = "IccArithmetic"
+
+[[lean_lib]]
+name = "IccOperational"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.24.0"

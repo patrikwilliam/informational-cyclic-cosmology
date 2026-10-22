@@ -1,6 +1,6 @@
 # Open Questions
 
-This document accompanies version 0.1.8 (16 October 2026). Its purpose is to
+This document accompanies version 0.2.0 (19 October 2026). Its purpose is to
 identify what remains unresolved.
 
 The first selection-rule issue is isolated as a finite-dimensional
@@ -67,6 +67,19 @@ motivated physical or relational data would justify such an access boundary
 in ICC, and could they select an algebra rather than merely measurement
 strength within an already specified algebra? The finite example and partial
 Lean verification do not answer these questions or reopen the closed selectors.
+
+The v0.2.0 [outcome-tick study](../research/v020/README.md) gives distinct
+marginal operator systems under a specified effective instrument, but retains
+both in one cumulative archive. Can a fixed, resource-accounted microscopic
+model reproduce the outcome-labelled instrument, including its backaction,
+within stated errors? Which error class and finite-energy statistical
+separation criterion should define success, given that small effect errors
+alone need not preserve the exact scalar-only operator-system intersection?
+Which phase reference, energy exchange, reservoir limits
+and memory resources are required? The same-POVM reset counterexample prevents
+substituting first-outcome agreement for instrument agreement. Neither the
+analytic continuum argument nor selected Lean proofs establishes different
+generated algebras, physical algebra selection or an ICC transition.
 
 ## Main failure points
 

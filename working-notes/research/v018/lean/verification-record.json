@@ -1,0 +1,144 @@
+{
+  "started_utc": "2026-10-16T13:41:20.229338+00:00",
+  "steps": [
+    {
+      "name": "version",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.446,
+      "expected_failure": false
+    },
+    {
+      "name": "build",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.757,
+      "expected_failure": false
+    },
+    {
+      "name": "audit",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.222,
+      "expected_failure": false
+    },
+    {
+      "name": "negative-control",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "NegativeControl.lean"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 3.214,
+      "expected_failure": true
+    },
+    {
+      "name": "negative-control-interval",
+      "command": [
+        "/Users/pwp/oadev/devtools/informational-cyclic-cosmology/tmp/lean-feasibility-v017/elan/bin/lake",
+        "env",
+        "lean",
+        "NegativeControlInterval.lean"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 3.239,
+      "expected_failure": true
+    }
+  ],
+  "source_sha256": {
+    "Audit.lean": "99a988cd430a9a52db41e254255fba9acd535bf6ce06cbffb7b36379bc9c1933",
+    "IccCapability.lean": "90d60664cf0c6604daec2e7ee4d3fbf76bbcb216bf1aa2f95a152e16c4e4c810",
+    "NegativeControl.lean": "63afe54deca2391c399005e24c9e336d4568b36a9c06e0ad1558ec5c88723a78",
+    "NegativeControlInterval.lean": "e26512949742bd84b66c56f9f00defb78a6d686a0d85ff9a1b083d075b96d2e1",
+    "lakefile.toml": "717fbe891152d2c4d85155d64c2eecf05f137098e96649fbc70144ed4f894049",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lake-manifest.json": "0f5cb8cf8ef0a22c4e69bcebd9296541cc10a7b19ec54608e756f6aa1ebdb5da",
+    "verify.py": "ae5d7d8b793f81558a6035a37176b4de44c9c3e4742b6f8be97e2d764b4246cb"
+  },
+  "lean_version": "Lean (version 4.24.0, arm64-apple-darwin23.6.0, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "axioms": {
+    "IccCapability.kraus_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.kraus_unital": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.krausPullback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.pullback_effect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.pullback_invariant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.capability_inclusion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.finite_povm_pullback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.reversible_capabilities": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.strict_inclusion_from_witness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.squared_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.strict_scalar_separation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.primary_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IccCapability.primary_scalar_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "status": "passed",
+  "elapsed_seconds": 28.882,
+  "finished_utc": "2026-10-16T13:41:49.111368+00:00"
+}
